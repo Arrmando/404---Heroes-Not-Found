@@ -1,21 +1,19 @@
-
-
-#ifndef interfaceRace_H
-#define interfaceRace_H
+#ifndef INTERFACERACE_H
+#define INTERFACERACE_H
 
 #include <string>
 
 class interfaceRace {
 public:
-    virtual void onStart() = 0;
-    virtual void onDestroy() = 0;
+    interfaceRace() = default;
+    virtual ~interfaceRace() = default;
+
     virtual void setDefaultAttributes() = 0;
     virtual void raceSpecialTrait() = 0;
-    virtual std::string getRaceName() const = 0;
-    virtual ~interfaceRace() {}
+    std::string getRaceName() const;
+
+protected:
+  std::string name;
 };
 
-#endif //interfaceRace_H
-
-git config --global user.name "EliasDMS"
-git config --global user.email "eliasdaniel_ms@outlook.com.br"
+#endif //INTERFACERACE_H

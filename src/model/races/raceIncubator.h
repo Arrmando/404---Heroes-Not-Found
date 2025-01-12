@@ -56,6 +56,3 @@ public:
 };
 
 #endif // raceIncubator_H
-
-git config --global user.name "EliasDMS"
-git config --global user.email "eliasdaniel_ms@outlook.com.br"

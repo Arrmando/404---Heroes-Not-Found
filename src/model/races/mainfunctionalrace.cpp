@@ -27,6 +27,3 @@ int main() {
 
     return 0;
 }
-
-git config --global user.name "EliasDMS"
-git config --global user.email "eliasdaniel_ms@outlook.com.br"
