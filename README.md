@@ -120,5 +120,6 @@ SST significa que cada pedaço de dados deve ter uma única fonte autoritativa n
 ### Links UML:
 1. **Ficha**:  https://lucid.app/lucidchart/51e15665-4458-46f7-9239-b45c6e16ee9d/edit?viewport_loc=-130%2C-192%2C5713%2C2798%2CHWEp-vi-RSFO&invitationId=inv_818e31c4-3184-4dc9-8c62-0607c3d38d67
 2. **InterfaceGráfica**:  https://lucid.app/lucidchart/9cb1650a-1c5e-443c-a44b-0280fa08f1da/edit?view_items=xjFJOcZq0O16&invitationId=inv_edcb17ae-dbe9-4af1-80ba-9172aa813db7
+3. **Combate**:  https://lucid.app/lucidchart/7b504578-92c7-4290-8840-85f5eeef0bce/edit?viewport_loc=-2401%2C143%2C4490%2C2199%2C0_0&invitationId=inv_61148b24-fc1f-4a19-897c-9a5da20b8ef2
 
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
