@@ -117,4 +117,8 @@ SST significa que cada pedaço de dados deve ter uma única fonte autoritativa n
 3. **Documentação**: Mantenha o código bem comentado e atualize a documentação conforme necessário.
 4. **Testes**: Escreva testes de unidade para novas funcionalidades, especialmente para as classes no `model`.
 
+### Links UML:
+*1*:  https://lucid.app/lucidchart/51e15665-4458-46f7-9239-b45c6e16ee9d/edit?viewport_loc=-130%2C-192%2C5713%2C2798%2CHWEp-vi-RSFO&invitationId=inv_818e31c4-3184-4dc9-8c62-0607c3d38d67
+*2*:  https://lucid.app/lucidchart/9cb1650a-1c5e-443c-a44b-0280fa08f1da/edit?view_items=xjFJOcZq0O16&invitationId=inv_edcb17ae-dbe9-4af1-80ba-9172aa813db7
+
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
