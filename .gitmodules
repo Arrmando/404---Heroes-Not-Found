@@ -1,0 +1,3 @@
+[submodule "libs/cppcoro"]
+	path = libs/cppcoro
+	url = https://github.com/andreasbuhr/cppcoro.git
