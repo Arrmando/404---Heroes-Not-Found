@@ -1,8 +1,8 @@
 #ifndef HUMAN_H
 #define HUMAN_H
 
-#include "Races.h"
-#include "Attributes.h"
+#include "Races.hpp"
+#include "Attributes.hpp"
 #include <iostream>
 
 class Human : public Races {

@@ -1,7 +1,7 @@
 #ifndef RACE_INTERFACE_H
 #define RACE_INTERFACE_H
 
-#include "utils/include/Race.h"
+#include "utils/include/Race.hpp"
 #include <string>
 
 class RaceInterface {

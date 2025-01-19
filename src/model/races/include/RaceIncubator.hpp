@@ -1,16 +1,16 @@
 #ifndef RACEINCUBATOR_H
 #define RACEINCUBATOR_H
 
-#include "RacesInterface.h"
-#include "Human.h"
-#include "Elf.h"
-#include "Demihuman.h"
-#include "Fairy.h"
-#include "Draconic.h"
-#include "Giant.h"
-#include "Races.h"
-#include "Orc.h"
-#include "Undead.h"
+#include "RacesInterface.hpp"
+#include "Human.hpp"
+#include "Elf.hpp"
+#include "Demihuman.hpp"
+#include "Fairy.hpp"
+#include "Draconic.hpp"
+#include "Giant.hpp"
+#include "Races.hpp"
+#include "Orc.hpp"
+#include "Undead.hpp"
 #include <memory>
 #include <string>
 

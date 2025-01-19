@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <memory>
-#include "raceIncubator.h"
+#include "raceIncubator.hpp"
 
 int main() {
     // Vetor para armazenar diferentes raças tanto as criadas já no sistemas quanto futuras, espero que rode direito
