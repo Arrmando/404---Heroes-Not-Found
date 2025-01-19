@@ -8,9 +8,10 @@ class Button {
 private:
     sf::RectangleShape shape;
     sf::Text text;
+    float fontSize;
 
 public:
-    Button(float x, float y, float width, float height, const sf::Color& color, const std::string& label, sf::Font& font);
+    Button(float x, float y, float width, float height, const sf::Color& color, const std::string& label, sf::Font& font, float fontSize);
     void draw(sf::RenderWindow& window);
     bool isClicked(const sf::Vector2i& mousePos);
     bool isHover(const sf::Vector2i& mousePos) const;

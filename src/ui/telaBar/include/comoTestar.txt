@@ -1,0 +1,2 @@
+compilar:  g++ src/ui/telaBar/testeViewBar.cpp src/ui/Components/Button.cpp src/ui/telaBar/viewBar.cpp src/ui/telaBar/viewModel.cpp -o testeViewBar -I src/ui/telaBar/include -I include -lsfml-graphics -lsfml-window -lsfml-system
+executar:  ./testeViewBar
