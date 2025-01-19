@@ -17,7 +17,7 @@ public:
     bool isHover(const sf::Vector2i& mousePos) const;
     void setText(const std::string& label); 
     void setColor(const sf::Color& color);
-    void setColorHover(const sf::Color& color);
+    void setColorHover(const sf::Color& hoverColor, const sf::Color& defaultColor, sf::RenderWindow& window); 
 };
 
 #endif

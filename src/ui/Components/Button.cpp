@@ -21,6 +21,15 @@ void Button::setColor(const sf::Color& color) {
     shape.setFillColor(color);  
 }
 
+void Button::setColorHover(const sf::Color& hoverColor, const sf::Color& defaultColor, sf::RenderWindow& window) {
+    sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+    if (isHover(mousePos)) {
+        shape.setFillColor(hoverColor);
+    } else {
+        shape.setFillColor(defaultColor);
+    }
+}
+
 void Button::draw(sf::RenderWindow& window) {
     window.draw(shape);
     window.draw(text);
@@ -44,3 +53,4 @@ void Button::setText(const std::string& label) {
         shape.getPosition().y + (shape.getSize().y - text.getGlobalBounds().height) / 2.f
     );
 }
+

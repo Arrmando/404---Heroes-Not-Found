@@ -1,15 +1,19 @@
 #include "viewModelCombate.hpp"
+#include <iostream>
 
 ViewModelCombate::ViewModelCombate() {
-    // Construtor
+    // Constructor
 }
 
 void ViewModelCombate::handleAttack() {
-    // Logica de ataque
+    // Logic for attack
+    std::cout << "Ataque Click" << std::endl;
+    
+    
 }
 
 void ViewModelCombate::handleSpecial() {
-    // Logica do especial
+    // Logic for special action
+    std::cout << "Especial Click" << std::endl;
+    // Additional logic for special action can be added here
 }
-
-
