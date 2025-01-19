@@ -1,13 +1,13 @@
 #include "./include/Button.hpp"
 
-Button::Button(float x, float y, float width, float height, const sf::Color& color, const std::string& label, sf::Font& font) {
+Button::Button(float x, float y, float width, float height, const sf::Color& color, const std::string& label, sf::Font& font, float fontSize ) {
     shape.setPosition(x, y);
     shape.setSize(sf::Vector2f(width, height));
     shape.setFillColor(color);
 
     text.setFont(font);
     text.setString(label);
-    text.setCharacterSize(50);
+    text.setCharacterSize(fontSize);
     text.setFillColor(sf::Color::Black);
 
     // Centraliza o texto no botão
