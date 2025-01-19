@@ -1,7 +1,7 @@
 #ifndef DEMIHUMAN_H
 #define DEMIHUMAN_H
 
-#include "Races.h"
+#include "Races.hpp"
 
 class Demihuman : public Races {
 public:

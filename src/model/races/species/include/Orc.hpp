@@ -1,8 +1,8 @@
 #ifndef ORC_H
 #define ORC_H
 
-#include "Races.h"
-#include "Attributes.h"
+#include "Races.hpp"
+#include "Attributes.hpp"
 #include <iostream>
 
 class Orc : public Races {

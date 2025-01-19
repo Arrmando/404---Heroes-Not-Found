@@ -1,0 +1,22 @@
+#ifndef JOBS_INTERFACE_H
+#define JOBS_INTERFACE_H
+
+#include "Job.hpp"
+class JobInterface {
+public:
+    Job job;
+
+    virtual ~JobInterface() = default;
+
+    virtual Job getJob() const = 0;
+    
+    virtual std::string getJobSpecialTrait() const = 0;
+
+protected:
+    virtual void setJobSpecialTrait() = 0;
+    
+    virtual void setJob(const Job& selectedRace) = 0;
+
+};
+
+#endif

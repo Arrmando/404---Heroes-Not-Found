@@ -1,8 +1,8 @@
 #ifndef FAIRY_H
 #define FAIRY_H
 
-#include "Races.h"
-#include "Attributes.h"
+#include "Races.hpp"
+#include "Attributes.hpp"
 #include <iostream>
 
 class Fairy : public Races {

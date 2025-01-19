@@ -1,10 +1,7 @@
-#ifndef RACES_H
-#define RACES_H
-
 #include <iostream>
 #include <string>
 #include <memory>
-#include "RacesInterface.h"
+#include "RacesInterface.hpp"
 
 class Races : public RaceInterface {
 public:
@@ -21,5 +18,3 @@ protected:
     };
 
 };
-
-#endif 

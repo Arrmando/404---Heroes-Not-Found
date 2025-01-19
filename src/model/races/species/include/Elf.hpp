@@ -1,8 +1,8 @@
 #ifndef ELF_H
 #define ELF_H
 
-#include "Races.h"
-#include "Attributes.h"
+#include "Races.hpp"
+#include "Attributes.hpp"
 #include <iostream>
 
 class Elf : public Races {

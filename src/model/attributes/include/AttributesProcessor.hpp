@@ -3,9 +3,9 @@
 
 #include <iostream>
 #include <algorithm>
-#include "Attributes.h"
-#include "Race.h"
-#include "Job.h"
+#include "Attributes.hpp"
+#include "Race.hpp"
+#include "Job.hpp"
 #include "ModifiersProcessor.hpp"
 #include <memory>
 #include "AttibutesType.hpp"

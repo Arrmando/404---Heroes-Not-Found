@@ -2,8 +2,8 @@
 #define RACE_H
 
 #include <string>
-#include "Attributes.h"
-#include "Species.h"
+#include "Attributes.hpp"
+#include "Species.hpp"
 
 struct Race{
     Species species;
