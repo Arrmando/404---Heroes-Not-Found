@@ -2,14 +2,18 @@
 #define CLASSES_H
 
 enum class Classes {
-    HUMAN,
-    ELF,
-    DEMIHUMAN,
-    FAIRY,
-    GIANT,
-    ORC,
-    DRACONIC,
-    UNDEAD
+    WARRIOR,
+    MAGE,
+    ROGUE,
+    PALADIN,
+    RANGER,
+    CLERIC,
+    BARD,
+    BARBARIAN,
+    SORCERER,
+    DRUID,
+    MONK,
+    NECROMANCER,
 };
 
 #endif
