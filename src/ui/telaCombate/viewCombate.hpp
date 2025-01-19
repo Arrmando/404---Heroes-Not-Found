@@ -3,8 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
-#include "../Components/include/Button.hpp"
-#include "../Components/include/lifeBar.hpp"
+#include "../components/include/Button.hpp"
+#include "../components/include/lifeBar.hpp"
 #include "viewModelCombate.hpp"
 
 class CombatScreen {
