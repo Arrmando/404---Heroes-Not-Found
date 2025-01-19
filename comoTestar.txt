@@ -1,0 +1,9 @@
+Testar viewBar
+
+compilar:  g++ src/ui/telaBar/testeViewBar.cpp src/ui/Components/Button.cpp src/ui/telaBar/viewBar.cpp src/ui/telaBar/viewModel.cpp -o testeViewBar -I src/ui/telaBar/include -I include -lsfml-graphics -lsfml-window -lsfml-system
+executar:  ./testeViewBar
+
+Testar viewCidade
+
+compilar: g++ src/ui/telaCidade/testeViewCidade.cpp src/ui/components/Button.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaCidade/viewModelCidade.cpp -o testeViewCidade -I src/ui/telaCidade/include -I include -lsfml-graphics -lsfml-window -lsfml-systemexecutar:  ./testeViewBar
+executar: ./testeViewCidade

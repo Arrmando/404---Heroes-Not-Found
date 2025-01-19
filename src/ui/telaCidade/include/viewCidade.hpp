@@ -1,5 +1,5 @@
-#ifndef BAR_HPP
-#define BAR_HPP
+#ifndef CIDADE_HPP
+#define CIDADE_HPP
 
 #include <SFML/Graphics.hpp>
 #include <vector>
@@ -7,29 +7,28 @@
 #include <memory>
 #include "../../components/include/Button.hpp"
 
-class Bar {
+class Cidade {
 public:
-    Bar();
+    Cidade();
     void run();
     void handleEvents();
     void update();
     void render();
     
-
 private:
-    std::unique_ptr<Button> comprarMercenario;
-    sf::RenderWindow telaBar;
+    std::unique_ptr<Button> irLoja;
+    std::unique_ptr<Button> irBar;
+    std::unique_ptr<Button> irCombate;
+    std::unique_ptr<Button> irMenu;
+    sf::RenderWindow telaCidade;
     sf::Font font;
-    sf::Texture barTexture;
-    sf::Sprite barSprite;
+    sf::Texture cidadeTexture;
+    sf::Sprite cidadeSprite;
     
     int money = 10;
-    int precoMecenario = 3;
     sf::Text moneyText;
-    sf::Text mercenarioText;
 
     void updateMoneyText();
-    void updateMercenarioText();
 };
 
 #endif

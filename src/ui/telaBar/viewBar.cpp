@@ -2,7 +2,7 @@
 #include "./include/viewModel.hpp"
 
 Bar::Bar()
-    : telaBar(sf::VideoMode(600, 300), "Bar"){
+    : telaBar(sf::VideoMode(900, 600), "Bar"){
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
@@ -11,9 +11,9 @@ Bar::Bar()
     }
 
     barSprite.setTexture(barTexture);
-    barSprite.setScale(0.35f, 0.35f);
+    barSprite.setScale(0.6f, 0.6f);
 
-    comprarMercenario = std::make_unique<Button>(10, 200, 200, 100, sf::Color::White, "Comprar", font, 50);
+    comprarMercenario = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar", font, 30);
 
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
@@ -26,8 +26,8 @@ Bar::Bar()
 void Bar::updateMercenarioText() {
     mercenarioText.setString("ORK Guerreiro level: 15");
 }
-void Bar::updateMoneyText() {
-    moneyText.setString("Dinheiro: " + std::to_string(money));
+void Bar::updateMoneyText() {                                                                                                                                     
+    moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
 }
 void Bar::handleEvents() {
     sf::Event event;
