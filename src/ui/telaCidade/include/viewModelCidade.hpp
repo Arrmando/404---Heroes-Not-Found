@@ -6,6 +6,10 @@
 
 
 class ViewModelCidade{
+private:
+
+sf::RenderWindow* janela;
+
 public:
 
 void mudarParaMenu();

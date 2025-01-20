@@ -5,20 +5,20 @@ Menu::Menu()
     : window(sf::VideoMode(800, 600), "Heroes not found"), 
       font(), 
       viewModel(std::make_unique<MenuViewModel>(font)) { // Initialize viewModel
-    if (!font.loadFromFile("/root/JOGO-BY-ME/assets/fonts/CongresoDePerros.TTF")) {
+    if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
 
     titleText.setFont(font);
     titleText.setString("Heroes not found");
-    titleText.setCharacterSize(100); 
+    titleText.setCharacterSize(50); 
     titleText.setFillColor(sf::Color::Black);
 
     sf::FloatRect textBounds = titleText.getLocalBounds();
     titleText.setOrigin(textBounds.width / 2, textBounds.height / 2);
     titleText.setPosition(300, 20);
 
-    if (!backgroundTexture.loadFromFile("/root/JOGO-BY-ME/assets/textures/background.jpg")) { 
+    if (!backgroundTexture.loadFromFile("assets/images/menu.jpg")) { 
         throw std::runtime_error("Erro ao carregar o arquivo SVG de fundo!");
     }
     backgroundSprite.setTexture(backgroundTexture);
