@@ -9,22 +9,25 @@
 
 class CombatScreen {
 public:
-    CombatScreen();
-    ~CombatScreen();
-    void run();
+    CombatScreen();  // Construtor
+    ~CombatScreen(); // Destrutor
+
+    void run();    
+    void handleEvents();
+    void render();   
 
 private:
     sf::RenderWindow window;
-    Button* attackButton; 
-    Button* specialButton; 
-    lifeBar* lifeBossBar;
     sf::Font font;
-    ViewModelCombate* viewModel; 
-    sf::RectangleShape area;
-    sf::RectangleShape areaTop;
+    ViewModelCombate* viewModel;  
+    Button* attackButton;  
+    Button* specialButton; 
+    lifeBar* lifeBossBar;  
+    lifeBar* lifePlayerBar;
 
-    void handleEvents();
-    void render();
+    float bossInitialLife; 
+    sf::RectangleShape area;    
+    sf::RectangleShape areaTop; 
 };
 
 #endif

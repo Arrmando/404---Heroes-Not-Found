@@ -2,22 +2,22 @@
 #define LIFEBAR_HPP
 
 #include <SFML/Graphics.hpp>
-#include <string>
 
 class lifeBar {
-private:
-    sf::RectangleShape lifeFill;
-    sf::RectangleShape lifeBack;
-    float maxLife;
-    float currentLife;
-    float lifeWidth;    
-    bool isFlashing;
-
 public:
-    lifeBar(float x, float y, float width, float height, const sf::Color& fillcolor, float maxLife, float currentLife);
-    void reduceLife(float amount);
-    void update();
+    lifeBar(float x, float y, float width, float height, const sf::Color& fillColor, float maxLife, float currentLife);
+    
     void draw(sf::RenderWindow& window);
+    void setHealth(float health);  // Atualiza a vida
+
+private:
+    float maxLife;           
+    float currentLife;       
+    float lifeWidth;          
+
+    bool isFlashing;          
+    sf::RectangleShape lifeFill;   
+    sf::RectangleShape lifeBack;   
 };
 
 #endif

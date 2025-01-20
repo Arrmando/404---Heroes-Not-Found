@@ -1,4 +1,5 @@
 #include "viewCombate.hpp"
+#include <iostream>
 
 CombatScreen::CombatScreen() {
     // Abre a Janela
@@ -7,16 +8,24 @@ CombatScreen::CombatScreen() {
     if (!font.loadFromFile("assets/fonts/pixel-arial-11.TTF")) {
         // Handle font loading error
     }
+    
+    // Inicia o ViewModel
+    viewModel = new ViewModelCombate();
+    if (viewModel == nullptr) {
+        std::cerr << "Erro: Falha ao instanciar ViewModelCombate!" << std::endl;
+    // Tratar o erro adequadamente
+    }
+
 
     // Define os botões
     attackButton = new Button(0.0f, 100.0f, 760.0f, 620.0f, sf::Color::Transparent, "", font, 0);
-    specialButton = new Button(300.0f, 500.0f, 150.0f, 50.0f, sf::Color(128, 128, 128), "Especial", font, 30);
+    specialButton = new Button(785.0f, 500.0f, 150.0f, 50.0f, sf::Color::Magenta, "Especial", font, 30);
+
+    bossInitialLife = viewModel->getHealthBoss();
 
     // Barra de vida
-    lifeBossBar = new lifeBar(25.0f, 55.0f, 560.0f, 25.0f, sf::Color::Red, 100.0f, 80.0f);
-
-    // Inicia o ViewModel
-    viewModel = new ViewModelCombate();
+    lifeBossBar = new lifeBar(25.0f, 55.0f, 560.0f, 25.0f, sf::Color::Red, bossInitialLife, viewModel->getHealthBoss());
+    lifePlayerBar = new lifeBar(785.0f, 55.0f, 150.0f, 25.0f, sf::Color::Blue, viewModel->getHealthPlayer(), viewModel->getHealthPlayer());
 
     // Área lateral
     area.setSize(sf::Vector2f(200.0f, 720.0f)); 
@@ -57,10 +66,10 @@ void CombatScreen::handleEvents() {
         // Handle button clicks
         if (event.type == sf::Event::MouseButtonPressed) {
             if (attackButton->isClicked(sf::Mouse::getPosition(window))) {
-                viewModel->handleAttack(); // Call the attack method in the view model
+                viewModel->handleAttack(); 
             }
             if (specialButton->isClicked(sf::Mouse::getPosition(window))) {
-                viewModel->handleSpecial(); // Call the special method in the view model
+                viewModel->handleSpecial(); 
             }
         }
     }
@@ -72,15 +81,18 @@ void CombatScreen::render() {
     sf::Color defaultColor = sf::Color(128, 128, 128); // Default color
     sf::Color attackColor = sf::Color(200, 200, 200, 10);
 
-    // Update button colors based on hover state
+    // Barra de vida atualiza
+    lifeBossBar->setHealth(viewModel->getHealthBoss());
+
     attackButton->setColorHover(hoverColor, attackColor, window);
     specialButton->setColorHover(hoverColor, defaultColor, window);
-
-    attackButton->draw(window);
-    specialButton->draw(window);
 
     window.draw(area); 
     window.draw(areaTop);
 
     lifeBossBar->draw(window);
+    lifePlayerBar->draw(window);
+
+    attackButton->draw(window);
+    specialButton->draw(window);
 }

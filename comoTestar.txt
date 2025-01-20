@@ -7,3 +7,8 @@ Testar viewCidade
 
 compilar: g++ src/ui/telaCidade/testeViewCidade.cpp src/ui/components/Button.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaCidade/viewModelCidade.cpp -o testeViewCidade -I src/ui/telaCidade/include -I include -lsfml-graphics -lsfml-window -lsfml-systemexecutar:  ./testeViewBar
 executar: ./testeViewCidade
+
+Testar viewCombate
+
+compilar: g++ -o combatScreen src/ui/telaCombate/testeViewCombate.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/Button.cpp src/ui/components/lifeBar.cpp -I./src/ui/telaCombate -I./src/ui/components -lsfml-graphics -lsfml-window -lsfml-system
+executar: ./combatScreen 
