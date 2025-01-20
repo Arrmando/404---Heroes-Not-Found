@@ -1,4 +1,4 @@
-#include "viewCombate.hpp"
+#include "./include/viewCombate.hpp"
 #include <iostream>
 
 CombatScreen::CombatScreen() {

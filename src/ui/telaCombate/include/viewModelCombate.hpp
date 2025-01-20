@@ -1,5 +1,3 @@
-// viewModelCombate.hpp
-
 #ifndef VIEWMODEL_COMBATE_HPP
 #define VIEWMODEL_COMBATE_HPP
 

@@ -1,6 +1,4 @@
-// viewModelCombate.cpp
-
-#include "viewModelCombate.hpp"
+#include "./include/viewModelCombate.hpp"
 #include <iostream>
 
 ViewModelCombate::ViewModelCombate() {

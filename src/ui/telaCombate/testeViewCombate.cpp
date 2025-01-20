@@ -1,4 +1,4 @@
-#include "viewCombate.hpp"
+#include "./include/viewCombate.hpp"
 
 int main() {
     CombatScreen combatScreen;
