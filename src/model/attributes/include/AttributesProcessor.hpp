@@ -51,6 +51,8 @@ public:
 
     cppcoro::task<void> setTemporaryAttributesStatusByTime(int timerSeconds, const Attributes& tempAttributes);
 
+    void setModifiersEffect(int timer, Attributes& attributes);
+    
     Attributes getCurrentAttributes();
     
     Attributes getTotalAttributes();

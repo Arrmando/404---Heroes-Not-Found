@@ -110,6 +110,10 @@ public:
         co_return;
     }
 
+    void setModifiersEffect(int timer, Attributes& attributes) {
+        modifiersProcessor.setTemporaryModifiersByTime(timer, attributes);
+    }
+
     Attributes getCurrentAttributes() const { 
         return currentAttributes;
     }
