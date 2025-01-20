@@ -12,3 +12,8 @@ Testar viewCombate
 
 compilar: g++ -o combatScreen src/ui/telaCombate/testeViewCombate.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/Button.cpp src/ui/components/lifeBar.cpp -I./src/ui/telaCombate -I./src/ui/components -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./combatScreen 
+
+Testar viewMenu
+
+compilar: g++ -o menu src/ui/telaMenu/testeMenu.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp -lsfml-graphics -lsfml-window -lsfml-system
+executar: ./menu

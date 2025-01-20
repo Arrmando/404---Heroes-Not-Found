@@ -79,12 +79,12 @@ void CombatScreen::render() {
     // Set hover colors
     sf::Color hoverColor = sf::Color(200, 200, 200); // Example hover color
     sf::Color defaultColor = sf::Color(128, 128, 128); // Default color
-    sf::Color attackColor = sf::Color(200, 200, 200, 10);
+    sf::Color attackColor = sf::Color(128, 128, 128, 100);
 
     // Barra de vida atualiza
     lifeBossBar->setHealth(viewModel->getHealthBoss());
 
-    attackButton->setColorHover(hoverColor, attackColor, window);
+    attackButton->setColorHover(attackColor, sf::Color::Transparent, window);
     specialButton->setColorHover(hoverColor, defaultColor, window);
 
     window.draw(area); 
