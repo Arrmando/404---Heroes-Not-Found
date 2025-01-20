@@ -5,14 +5,6 @@
 class Paladin : public Jobs {
 public:
     Paladin() {
-        Attributes paladinAttributes = {
-            .hp = 140.0f,
-            .magicAttack = 20.0f,
-            .physicalAttack = 25.0f,
-            .magicDefense = 30.0f,
-            .physicalDefense = 25.0f
-        };
-
         Attributes paladinModifiers = {
             .hp = 1.2f,
             .magicAttack = 1.1f,
@@ -24,15 +16,20 @@ public:
         Job paladin = {
             .occupation = Classes::PALADIN,
             .description = "A holy warrior, combining physical strength with divine magic to protect and heal.",
-            .attributes = paladinAttributes,
             .modifiers = paladinModifiers
         };
 
         setJob(paladin);
     }
 
-protected:
-    void setJobSpecialTrait() override {
+    void skill(Attributes* buff, int* tempo, lvl) override { //cast all
+
+        buff.hp *= (lvl/3);
+        buff.magicAttack *= (lvl/3);
+        buff.magicDefense *= (lvl/2);
+        buff.physicalAttack *= (lvl/3);
+        buff.physicalDefense *= (lvl/2);
+        tempo = 6; 
         std::cout << "Paladin: You combine holy magic with martial prowess to shield and support your allies.\n";
     }
 };

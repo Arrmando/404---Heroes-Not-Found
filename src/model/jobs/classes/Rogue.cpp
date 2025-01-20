@@ -5,16 +5,8 @@
 class Rogue : public Jobs {
 public:
     Rogue() {
-        Attributes rogueAttributes = {
-            .hp = 100.0f,
-            .magicAttack = 15.0f,
-            .physicalAttack = 25.0f,
-            .magicDefense = 15.0f,
-            .physicalDefense = 15.0f
-        };
-
         Attributes rogueModifiers = {
-            .hp = 1.0f,
+            .hp = 0.8f,
             .magicAttack = 1.0f,
             .physicalAttack = 1.3f,
             .magicDefense = 1.0f,
@@ -24,15 +16,20 @@ public:
         Job rogue = {
             .occupation = Classes::ROGUE,
             .description = "A nimble and cunning fighter, skilled in evasion and precise attacks.",
-            .attributes = rogueAttributes,
             .modifiers = rogueModifiers
         };
 
         setJob(rogue);
     }
 
-protected:
-    void setJobSpecialTrait() override {
+     void skill(Attributes* buff, int* tempo, lvl) override { //cast self
+
+        buff.hp = 0;
+        buff.magicAttack *= 2;
+        buff.magicDefense = 0;
+        buff.physicalAttack *= 3;
+        buff.physicalDefense = 0;
+        tempo = 3;    
         std::cout << "Rogue: Your agility and cunning make you a deadly and elusive opponent.\n";
     }
 };

@@ -13,9 +13,9 @@ public:
     virtual std::string getJobSpecialTrait() const = 0;
 
 protected:
-    virtual void setJobSpecialTrait() = 0;
+    virtual void skill() = 0;
     
-    virtual void setJob(const Job& selectedRace) = 0;
+    virtual void setJob(const Job& selectedJob) = 0;
 
 };
 

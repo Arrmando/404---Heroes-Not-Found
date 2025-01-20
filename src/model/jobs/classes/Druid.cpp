@@ -5,34 +5,26 @@
 class Druid : public Jobs {
 public:
     Druid() {
-        Attributes druidAttributes = {
-            .hp = 90.0f,
-            .magicAttack = 30.0f,
-            .physicalAttack = 15.0f,
-            .magicDefense = 25.0f,
-            .physicalDefense = 15.0f
-        };
-
         Attributes druidModifiers = {
-            .hp = 1.0f,
-            .magicAttack = 1.4f,
-            .physicalAttack = 1.0f,
-            .magicDefense = 1.3f,
-            .physicalDefense = 1.0f
+            .hp = 1.3f,
+            .magicAttack = 1.3f,
+            .physicalAttack = 1.2f,
+            .magicDefense = 1.2f,
+            .physicalDefense = 1.1f
         };
 
         Job druid = {
             .occupation = Classes::DRUID,
             .description = "A guardian of nature, capable of shapeshifting and wielding natural magic.",
-            .attributes = druidAttributes,
             .modifiers = druidModifiers
         };
 
         setJob(druid);
     }
 
-protected:
-    void setJobSpecialTrait() override {
+    void skill(int* hp, int level) override { //Necessário que hp seja igual ao HP máximo do druida; //cast all
+        hp = hp*(0.1+(0.01*level));
+        job.skill(&hp);
         std::cout << "Druid: Your connection to nature grants you unique powers and versatility.";
     }
 };

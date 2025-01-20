@@ -5,14 +5,6 @@
 class Monk : public Jobs {
 public:
     Monk() {
-        Attributes monkAttributes = {
-            .hp = 100.0f,
-            .magicAttack = 20.0f,
-            .physicalAttack = 20.0f,
-            .magicDefense = 20.0f,
-            .physicalDefense = 20.0f
-        };
-
         Attributes monkModifiers = {
             .hp = 1.1f,
             .magicAttack = 1.0f,
@@ -24,15 +16,23 @@ public:
         Job monk = {
             .occupation = Classes::MONK,
             .description = "A disciplined combatant who channels spiritual energy into martial prowess.",
-            .attributes = monkAttributes,
             .modifiers = monkModifiers
         };
 
         setJob(monk);
     }
 
-protected:
-    void setJobSpecialTrait() override {
+    void skill() override {
+
+        void skill(Attributes* buff, int* tempo, lvl) override { //cast self
+
+        buff.hp = 0;
+        buff.magicAttack = 0;
+        buff.magicDefense *= lvl;
+        buff.physicalAttack *= lvl;
+        buff.physicalDefense *= lvl;
+        tempo = 12; 
+
         std::cout << "Monk: Your discipline and spiritual energy make you a master of martial arts.";
     }
 };

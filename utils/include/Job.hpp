@@ -8,7 +8,6 @@
 struct Job{
     Classes occupation;
     std::string description;
-    Attributes attributes;   // Job basic attributes
     Attributes modifiers;    // Modifiers of attributes
 };
 

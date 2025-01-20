@@ -5,34 +5,31 @@
 class Bard : public Jobs {
 public:
     Bard() {
-        Attributes bardAttributes = {
-            .hp = 100.0f,
-            .magicAttack = 25.0f,
-            .physicalAttack = 20.0f,
-            .magicDefense = 20.0f,
-            .physicalDefense = 15.0f
-        };
-
         Attributes bardModifiers = {
-            .hp = 1.0f,
+            .hp = 0.8f,
             .magicAttack = 1.3f,
-            .physicalAttack = 1.1f,
+            .physicalAttack = 1.0f,
             .magicDefense = 1.2f,
-            .physicalDefense = 1.0f
+            .physicalDefense = 0.9f
         };
 
         Job bard = {
             .occupation = Classes::BARD,
             .description = "A charismatic performer, inspiring allies and confounding enemies with music and magic.",
-            .attributes = bardAttributes,
             .modifiers = bardModifiers
         };
 
         setJob(bard);
     }
+    
+     void skill(Attributes* buff, int* tempo, lvl) override { //cast all
 
-protected:
-    void setJobSpecialTrait() override {
+        buff.hp *= lvl;
+        buff.magicAttack *= (lvl/2);
+        buff.magicDefense *= (lvl/2);
+        buff.physicalAttack = 0;
+        buff.physicalDefense = 0;
+        tempo = 6; 
         std::cout << "Bard: You inspire and support your allies while weakening your enemies with your enchanting melodies.\n";
     }
 };
