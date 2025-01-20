@@ -2,13 +2,19 @@
 #include "./include/viewModel.hpp"
 
 Bar::Bar()
-    : telaBar(sf::VideoMode(900, 600), "Bar"){
+    : telaBar(sf::VideoMode(900, 600), "Bar"),
+    timer(font, 350, 250, 50){
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
     if (!barTexture.loadFromFile("assets/images/bar.jpg")) {
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
+    
+    
+    timer.start(120); // Inicia o timer com 2 minutos
+
+    sf::Clock clock;
 
     barSprite.setTexture(barTexture);
     barSprite.setScale(0.6f, 0.6f);
@@ -22,6 +28,12 @@ Bar::Bar()
 
     updateMoneyText(); // Atualiza o texto do contador
  }
+ void Bar::update() {
+    sf::Time deltaTime = gameClock.restart();  // Obtém o tempo passado desde o último quadro
+    timer.update(deltaTime);  // Passa o deltaTime para atualizar o timer
+    updateMoneyText();  // Atualiza o texto do dinheiro
+    updateMercenarioText();  // Atualiza o texto do mercenário
+}
 
 void Bar::updateMercenarioText() {
     mercenarioText.setString("ORK Guerreiro level: 15");
@@ -49,13 +61,22 @@ void Bar::run() {
     while (telaBar.isOpen()) {
         handleEvents();
         render();
+        update();
     }
 }
 
 void Bar::render() {
+    sf::Color hoverColor = sf::Color(200, 200, 200); // Example hover color
+    sf::Color defaultColor = sf::Color(128, 128, 128); // Default color
+    sf::Color attackColor = sf::Color(200, 200, 200, 10);
+
+    // Update button colors based on hover state
+    comprarMercenario->setColorHover(hoverColor, defaultColor, telaBar);
+
     telaBar.clear();
     telaBar.draw(barSprite);// Exibe o texto do dinheiro
     comprarMercenario->draw(telaBar);
+    timer.draw(telaBar);
     telaBar.draw(moneyText);
     telaBar.draw(mercenarioText);
     telaBar.display();

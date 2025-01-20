@@ -5,6 +5,7 @@
 #include <vector>
 #include <string>
 #include <memory>
+#include "viewModelCidade.hpp"
 #include "../../components/include/Button.hpp"
 
 class Cidade {
@@ -24,6 +25,7 @@ private:
     sf::Font font;
     sf::Texture cidadeTexture;
     sf::Sprite cidadeSprite;
+    ViewModelCidade* viewModel;  
     
     int money = 10;
     sf::Text moneyText;

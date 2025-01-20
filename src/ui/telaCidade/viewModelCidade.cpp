@@ -1,25 +1,19 @@
-#include "./include/viewModelCidade.hpp"       
-#include "../telaBar/viewBar.cpp"       
-#include <SFML/Graphics.hpp>
-#include <memory>
-
+#include "./include/viewModelCidade.hpp"
+#include "../telaBar/include/viewBar.hpp"
+#include "../telaCombate/viewCombate.hpp"       
+#include "../telaMenu/include/viewMenu.hpp"
 // Gerenciador de janela única
-std::unique_ptr<sf::RenderWindow> currentWindow = nullptr;
-
-void fecharJanelaAtual() {
-    if (currentWindow && currentWindow->isOpen()) {
-        currentWindow->close();
-        currentWindow.reset(); // Libera o recurso
-    }
+void ViewModelCidade :: mudarParaBar(){
+    Bar bar;
+    bar.run();
 }
 
-
-
-void mudarParaBar() {
-    fecharJanelaAtual();
-
-    currentWindow = std::make_unique<sf::RenderWindow>(sf::VideoMode(640, 480), "Bar");
-    Bar(*currentWindow); // Passa a nova janela para o bar
+void ViewModelCidade :: mudarParaMenu(){
+    Menu menu;
+    menu.run();
 }
 
-
+void ViewModelCidade :: mudarParaCombate(){
+    CombatScreen combatScreen;
+    combatScreen.run();
+}
