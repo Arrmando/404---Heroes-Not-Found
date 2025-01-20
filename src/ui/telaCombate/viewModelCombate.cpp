@@ -5,6 +5,9 @@ ViewModelCombate::ViewModelCombate() {
     healthPlayer = 5000.0f;
     healthBoss = 1000.0f;   
     damagePlayer = 100.0f; 
+    damageBoss = 1.0f;
+    attackSpeed = 0.1f;
+    attackCooldown = 0.1f;
 }
 
 float ViewModelCombate::getHealthPlayer() {
@@ -24,7 +27,7 @@ void ViewModelCombate::setHealthPlayer(float newHealth) {
 }
 
 void ViewModelCombate::handleAttack() {
-    healthBoss -= damagePlayer;  // Diminuir a vida do boss com o dano do player
+    healthBoss -= damagePlayer;  
     if (healthBoss < 0) {
         healthBoss = 0;
     }
@@ -32,6 +35,25 @@ void ViewModelCombate::handleAttack() {
     std::cout << "Ataque! Dano causado: " << damagePlayer << std::endl;
     std::cout << "Vida do Boss: " << healthBoss << std::endl;
 
+}
+
+void ViewModelCombate::handleBossAttack() {
+    healthPlayer -= damageBoss;  
+    if (healthPlayer < 0) {
+        healthPlayer = 0;
+
+    }
+    std::cout << "Ataque do Boss! Dano causado: " << damageBoss << std::endl;
+    std::cout << "Vida do Jogador: " << healthPlayer << std::endl;
+}
+
+// velocidade de ataque do boss usando ataque por segundo
+void ViewModelCombate::handleAttackSpeed() {
+    float elapsedTime = attackClock.getElapsedTime().asSeconds();
+    if (elapsedTime >= attackCooldown) {
+        attackClock.restart();
+        handleBossAttack();
+}
     
 }
 

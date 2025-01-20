@@ -24,10 +24,20 @@ private:
     Button* specialButton; 
     lifeBar* lifeBossBar;  
     lifeBar* lifePlayerBar;
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
 
     float bossInitialLife; 
+    float playerInitialLife;
+
+    sf::VideoMode desktop;
+    int posX, posY, windowWidth, windowHeight;
+    
     sf::RectangleShape area;    
     sf::RectangleShape areaTop; 
+
+    sf::Text bossName;
+    sf::Text playerName;
 };
 
 #endif
