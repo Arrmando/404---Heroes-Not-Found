@@ -2,6 +2,7 @@
 #define JOBS_INTERFACE_H
 
 #include "Job.hpp"
+
 class JobInterface {
 public:
     Job job;

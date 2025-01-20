@@ -11,7 +11,7 @@
 #include <memory>
 #include <string>
 
-class raceIncubator {
+class RaceIncubator {
 public:
 
     static std::unique_ptr<RaceInterface> createRace(Species type) {
