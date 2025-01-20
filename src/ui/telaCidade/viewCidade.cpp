@@ -1,6 +1,5 @@
 #include "./include/viewCidade.hpp"
 
-
 Cidade::Cidade()
     : telaCidade(sf::VideoMode(700, 700), "Cidade"){
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
@@ -16,6 +15,7 @@ Cidade::Cidade()
     irMenu = std::make_unique<Button>(350, 500, 200, 100, sf::Color::Yellow, "Menu", font, 30);
     irBar = std::make_unique<Button>(350, 200, 200, 100, sf::Color::Yellow, "Bar", font, 30);
     irCombate = std::make_unique<Button>(350, 50, 200, 100, sf::Color::Yellow, "Combate", font, 30);
+    irLoja = std::make_unique<Button>(350, 350, 200, 100, sf::Color::Yellow, "Loja", font, 30); // Initialize irLoja
 
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
@@ -25,15 +25,11 @@ Cidade::Cidade()
     updateMoneyText(); // Atualiza o texto do contador
 
     viewModel = new ViewModelCidade();
-
- }
-
+}
 
 void Cidade::updateMoneyText() {                                                                                                                                     
     moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
 }
-
-
 
 void Cidade::handleEvents() {
     sf::Event event;
@@ -46,7 +42,6 @@ void Cidade::handleEvents() {
 
             if (irMenu->isClicked(mousePos)) {
               viewModel->mudarParaMenu();
-
             }
     
             if (irBar->isClicked(mousePos)) {
@@ -69,9 +64,9 @@ void Cidade::run() {
 
 void Cidade::render() {
     telaCidade.clear();
-    telaCidade.draw(cidadeSprite);// Exibe o texto do dinheiro
+    telaCidade.draw(cidadeSprite); // Exibe o texto do dinheiro
     irCombate->draw(telaCidade);
-    irLoja->draw(telaCidade);
+    irLoja->draw(telaCidade); // Ensure irLoja is drawn
     irBar->draw(telaCidade);
     irMenu->draw(telaCidade);
     telaCidade.draw(moneyText);

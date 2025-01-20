@@ -18,5 +18,5 @@ Testar viewMenu
 compilar: g++ -o menu src/ui/telaMenu/testeMenu.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./menu
 
-compilar (quase) tudo: g++ -o cidade src/ui/telaCidade/testeViewCidade.cpp src/ui/telaBar/viewBar.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp src/ui/components/timer.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/lifeBar.cpp src/ui/telaCidade/viewModelCidade.cpp -lsfml-graphics -lsfml-window -lsfml-system
+compilar tudo: g++ -o cidade src/ui/telaCidade/testeViewCidade.cpp src/ui/telaBar/viewBar.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp src/ui/components/timer.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/lifeBar.cpp src/ui/telaCidade/viewModelCidade.cpp -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./cidade
