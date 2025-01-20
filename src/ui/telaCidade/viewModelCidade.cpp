@@ -1,6 +1,6 @@
 #include "./include/viewModelCidade.hpp"
 #include "../telaBar/include/viewBar.hpp"
-#include "../telaCombate/viewCombate.hpp"       
+#include "../telaCombate/include/viewCombate.hpp"       
 #include "../telaMenu/include/viewMenu.hpp"
 // Gerenciador de janela única
 void ViewModelCidade :: mudarParaBar(){
