@@ -54,11 +54,10 @@ public:
         totalAttributes.physicalDefense = job.attributes.physicalDefense + race.attributes.physicalDefense;
     }
 
-    void setCurrentAttributes() {
+    void setCurrentAttributes() {*=
         currentAttributes = totalAttributes;
     }
    
-    }
  
     void takePhysicalDamage(float damage) {
         float damageReduction = currentAttributes.physicalDefense / (currentAttributes.physicalDefense + 100.0f); 
@@ -120,13 +119,14 @@ public:
         return totalAttributes;
     }
     
-     float dealSpecialPhysicalDamage(float superAttack) {
+    float dealSpecialPhysicalDamage(float superAttack) {
         float damage = currentAttributes.physicalAttack + (currentAttributes.physicalAttack * superAttack);
         return damage;   
     }
     float dealSpecialMagicalDamage(float superAttack) {
         float damage = currentAttributes.magicAttack + (correntAttributes.magicAttack * superAttack);
         return damage;
+    }
 
 private:
     void stopTemporaryAttributesJob() {
@@ -139,5 +139,5 @@ private:
         total->magicDefense += add.magicDefense;
         total->physicalAttack += add.physicalAttack;
         total->physicalDefense += add.physicalDefense;
-    }
-};
+    };
+}
