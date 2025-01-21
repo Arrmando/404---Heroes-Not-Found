@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Barbarian : public Jobs {
 public:
@@ -22,13 +23,20 @@ public:
         setJob(barbarian);
     }
 
-    void skill(Attributes* buff, int* tempo, lvl) override { //cast self
-        buff.hp *= 2*lvl;
-        buff.magicAttack = 0;
-        buff.magicDefense = 0;
-        buff.physicalAttack *= 2*lvl;
-        buff.physicalDefense = 0;
-        tempo = 18; 
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
+
+        Attributes buff{
+            .hp = currentAttributes.hp*2*level,
+            .magicAttack = 0,
+            .physicalAttack = currentAttributes.physicalAttack*2*level,
+            .magicDefense = 0,
+            .physicalDefense = 0,
+        };
+
+        int timer = 18;
+
+        attributesProcessor.setModifiersEffect(timer, buff);        
 
         std::cout << "Barbarian: Your raw strength and ferocity make you a relentless force in battle.";
     }
