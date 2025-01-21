@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Bard : public Jobs {
 public:
@@ -22,14 +23,21 @@ public:
         setJob(bard);
     }
     
-     void skill(Attributes* buff, int* tempo, lvl) override { //cast all
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
 
-        buff.hp *= lvl;
-        buff.magicAttack *= (lvl/2);
-        buff.magicDefense *= (lvl/2);
-        buff.physicalAttack = 0;
-        buff.physicalDefense = 0;
-        tempo = 6; 
+        Attributes buff{
+            .hp = currentAttributes.hp * level,
+            .magicAttack = currentAttributes.magicAttack * (level/2),
+            .physicalAttack = 0,            
+            .magicDefense = currentAttributes.magicDefense * (level/2),
+            .physicalDefense = 0,
+        };
+        
+        int timer = 6;
+
+        attributesProcessor.setModifiersEffect(timer, buff);
+
         std::cout << "Bard: You inspire and support your allies while weakening your enemies with your enchanting melodies.\n";
     }
 };
