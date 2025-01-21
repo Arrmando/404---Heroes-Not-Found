@@ -1,5 +1,5 @@
-#ifndef VIEW_MODEL_HPP
-#define VIEW_MODEL_HPP
+#ifndef VIEW_MODELCIDADE_HPP
+#define VIEW_MODELCIDADE_HPP
 
 #include <SFML/Graphics.hpp>
 #include <memory>      
@@ -11,6 +11,7 @@ public:
 void mudarParaMenu();
 void mudarParaCombate();
 void mudarParaBar();
+void mudarParaLoja();
 
 void fecharJanelaAtual();
 };

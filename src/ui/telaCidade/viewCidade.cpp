@@ -1,4 +1,5 @@
 #include "./include/viewCidade.hpp"
+#include "./include/viewModelCidade.hpp"
 
 Cidade::Cidade()
     : telaCidade(sf::VideoMode(700, 700), "Cidade"){
@@ -44,6 +45,10 @@ void Cidade::handleEvents() {
               viewModel->mudarParaMenu();
             }
     
+            if (irLoja->isClicked(mousePos)) {
+              viewModel->mudarParaLoja();
+            }
+
             if (irBar->isClicked(mousePos)) {
               viewModel->mudarParaBar();
             }
