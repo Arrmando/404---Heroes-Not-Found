@@ -32,18 +32,18 @@ public:
 
     void updateRaceAttributes(const unsigned int level) {
         race.attributes.hp += race.attributes.hp * modifiersProcessor.getHpModifier(AttributesType::RACE)*level;
-        race.attributes.magicAttack *= race.attributes.magicAttack * modifiersProcessor.getMagicAttackModifier(AttributesType::RACE)*level;
-        race.attributes.magicDefense *= race.attributes.magicDefense * modifiersProcessor.getMagicDefenseModifier(AttributesType::RACE)*level;
-        race.attributes.physicalAttack *= race.attributes.physicalAttack * modifiersProcessor.getPhysicalAttackModifier(AttributesType::RACE)*level;
-        race.attributes.physicalDefense *= race.attributes.physicalDefense * modifiersProcessor.getPhysicalDefenseModifier(AttributesType::RACE)*level;
+        race.attributes.magicAttack += race.attributes.magicAttack * modifiersProcessor.getMagicAttackModifier(AttributesType::RACE)*level;
+        race.attributes.magicDefense += race.attributes.magicDefense * modifiersProcessor.getMagicDefenseModifier(AttributesType::RACE)*level;
+        race.attributes.physicalAttack += race.attributes.physicalAttack * modifiersProcessor.getPhysicalAttackModifier(AttributesType::RACE)*level;
+        race.attributes.physicalDefense += race.attributes.physicalDefense * modifiersProcessor.getPhysicalDefenseModifier(AttributesType::RACE)*level;
     }
 
     void updateJobAttributes(const unsigned int level) {
-        job.attributes.hp += job.attributes.hp * modifiersProcessor.getHpModifier(AttributesType::JOB)*level;
-        job.attributes.magicAttack *= job.attributes.magicAttack * modifiersProcessor.getMagicAttackModifier(AttributesType::JOB)*level;
-        job.attributes.magicDefense *= job.attributes.magicDefense * modifiersProcessor.getMagicDefenseModifier(AttributesType::JOB)*level;
-        job.attributes.physicalAttack *= job.attributes.physicalAttack * modifiersProcessor.getPhysicalAttackModifier(AttributesType::JOB)*level;
-        job.attributes.physicalDefense *= job.attributes.physicalDefense * modifiersProcessor.getPhysicalDefenseModifier(AttributesType::JOB)*level;
+        job.attributes.hp += race.attributes.hp * modifiersProcessor.getHpModifier(AttributesType::JOB)*level;
+        job.attributes.magicAttack += race.attributes.magicAttack * modifiersProcessor.getMagicAttackModifier(AttributesType::JOB)*level;
+        job.attributes.magicDefense += race.attributes.magicDefense * modifiersProcessor.getMagicDefenseModifier(AttributesType::JOB)*level;
+        job.attributes.physicalAttack += race.attributes.physicalAttack * modifiersProcessor.getPhysicalAttackModifier(AttributesType::JOB)*level;
+        job.attributes.physicalDefense += race.attributes.physicalDefense * modifiersProcessor.getPhysicalDefenseModifier(AttributesType::JOB)*level;
     }
 
     void calculateTotalAttributes() {
@@ -54,11 +54,12 @@ public:
         totalAttributes.physicalDefense = job.attributes.physicalDefense + race.attributes.physicalDefense;
     }
 
-    void setCurrentAttributes() {
+    void setCurrentAttributes() {*=
         currentAttributes = totalAttributes;
     }
-
-    float takePhysicalDamage(float damage) {
+   
+ 
+    void takePhysicalDamage(float damage) {
         float damageReduction = currentAttributes.physicalDefense / (currentAttributes.physicalDefense + 100.0f); 
         float realPhysicalDamage = std::max(0.0f, damage * (1.0f - damageReduction));
         currentAttributes.hp -= realPhysicalDamage;
@@ -67,7 +68,7 @@ public:
         std::cout << "Remaining HP: " << currentAttributes.hp << std::endl;
     }
 
-    float takeMagicDamage(float damage) {
+    void takeMagicDamage(float damage) {
         float damageReduction = currentAttributes.magicDefense / (currentAttributes.magicDefense + 100.0f); 
         float realMagicDamage = std::max(0.0f, damage * (1.0f - damageReduction));
         currentAttributes.hp -= realMagicDamage;
@@ -122,6 +123,15 @@ public:
         return totalAttributes;
     }
     
+    float dealSpecialPhysicalDamage(float superAttack) {
+        float damage = currentAttributes.physicalAttack + (currentAttributes.physicalAttack * superAttack);
+        return damage;   
+    }
+    float dealSpecialMagicalDamage(float superAttack) {
+        float damage = currentAttributes.magicAttack + (correntAttributes.magicAttack * superAttack);
+        return damage;
+    }
+
 private:
     void stopTemporaryAttributesJob() {
         temporaryAttributesJob.store(false);
@@ -133,7 +143,5 @@ private:
         total->magicDefense += add.magicDefense;
         total->physicalAttack += add.physicalAttack;
         total->physicalDefense += add.physicalDefense;
-    }
-
-
-};
+    };
+}

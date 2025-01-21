@@ -5,14 +5,6 @@
 class Necromancer : public Jobs {
 public:
     Necromancer() {
-        Attributes necromancerAttributes = {
-            .hp = 70.0f,
-            .magicAttack = 50.0f,
-            .physicalAttack = 5.0f,
-            .magicDefense = 20.0f,
-            .physicalDefense = 10.0f
-        };
-
         Attributes necromancerModifiers = {
             .hp = 0.7f,
             .magicAttack = 1.7f,
@@ -24,15 +16,21 @@ public:
         Job necromancer = {
             .occupation = Classes::NECROMANCER,
             .description = "A master of death magic, capable of raising undead minions and cursing foes.",
-            .attributes = necromancerAttributes,
             .modifiers = necromancerModifiers
         };
 
         setJob(necromancer);
     }
 
-protected:
-    void setJobSpecialTrait() override {
+    void skill(Attributes* buff, int* tempo, lvl) override { //cast self
+
+        buff.hp *= lvl;
+        buff.magicAttack *= lvl;
+        buff.magicDefense *= lvl;
+        buff.physicalAttack = 0;
+        buff.physicalDefense = 0;
+        tempo = 12; 
+
         std::cout << "Necromancer: Your dark magic allows you to control death itself.";
     }
 };

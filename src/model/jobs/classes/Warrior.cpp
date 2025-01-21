@@ -5,14 +5,6 @@
 class Warrior : public Jobs {
 public:
     Warrior() {
-        Attributes warriorAttributes = {
-            .hp = 150.0f,
-            .magicAttack = 10.0f,
-            .physicalAttack = 30.0f,
-            .magicDefense = 15.0f,
-            .physicalDefense = 25.0f
-        };
-
         Attributes warriorModifiers = {
             .hp = 1.3f,
             .magicAttack = 0.8f,
@@ -24,15 +16,14 @@ public:
         Job warrior = {
             .occupation = Classes::WARRIOR,
             .description = "A strong melee combatant excelling in physical attacks and defense.",
-            .attributes = warriorAttributes,
             .modifiers = warriorModifiers
         };
 
         setJob(warrior);
     }
 
-protected:
-    void setJobSpecialTrait() override {
+    void skill(float* damage, level) override {
+        damage = damage*(level*5);
         std::cout << "Warrior: You excel in physical combat and defense, making you a frontline fighter.\n";
     }
 };
