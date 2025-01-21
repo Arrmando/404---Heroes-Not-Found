@@ -5,6 +5,8 @@
 
 class Jobs : public JobInterface {
 public:
+    Job job;
+
     Jobs() = default;
 
     Job getJob() const {

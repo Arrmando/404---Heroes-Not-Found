@@ -5,7 +5,6 @@
 
 class JobInterface {
 public:
-    Job job;
 
     virtual ~JobInterface() = default;
 
