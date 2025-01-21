@@ -39,11 +39,11 @@ public:
     }
 
     void calculateTotalAttributes() {
-        totalAttributes.hp = job.attributes.hp + race.attributes.hp;
-        totalAttributes.magicAttack = job.attributes.magicAttack + race.attributes.magicAttack;
-        totalAttributes.magicDefense = job.attributes.magicDefense + race.attributes.magicDefense;
-        totalAttributes.physicalAttack = job.attributes.physicalAttack + race.attributes.physicalAttack;
-        totalAttributes.physicalDefense = job.attributes.physicalDefense + race.attributes.physicalDefense;
+        totalAttributes.hp = modifiersProcessor.getHpModifier(AttributesType::JOB) + race.attributes.hp;
+        totalAttributes.magicAttack = modifiersProcessor.getMagicAttackModifier(AttributesType::JOB) + race.attributes.magicAttack;
+        totalAttributes.magicDefense = modifiersProcessor.getMagicDefenseModifier(AttributesType::JOB) + race.attributes.magicDefense;
+        totalAttributes.physicalAttack = modifiersProcessor.getPhysicalAttackModifier(AttributesType::JOB) + race.attributes.physicalAttack;
+        totalAttributes.physicalDefense = modifiersProcessor.getPhysicalDefenseModifier(AttributesType::JOB)  + race.attributes.physicalDefense;
     }
 
     void setCurrentAttributes() {
@@ -75,7 +75,7 @@ public:
         std::cout << "Current HP: " << currentAttributes.hp << "/" << totalAttributes.hp << std::endl;
     }
 
-    void levelUp(unsigned int* level) {
+    void levelUp(const unsigned int* level) {
         level++;
         updateRaceAttributes(*level);
         calculateTotalAttributes();
