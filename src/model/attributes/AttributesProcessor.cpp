@@ -46,7 +46,7 @@ public:
         totalAttributes.physicalDefense = job.attributes.physicalDefense + race.attributes.physicalDefense;
     }
 
-    void setCurrentAttributes() {*=
+    void setCurrentAttributes() {
         currentAttributes = totalAttributes;
     }
    
@@ -78,7 +78,6 @@ public:
     void levelUp(unsigned int* level) {
         level++;
         updateRaceAttributes(*level);
-        updateJobAttributes(*level);
         calculateTotalAttributes();
         setCurrentAttributes();
         std::cout << "Leveled up! New level: " << level << std::endl;
@@ -119,8 +118,9 @@ public:
         float damage = currentAttributes.physicalAttack + (currentAttributes.physicalAttack * superAttack);
         return damage;   
     }
+
     float dealSpecialMagicalDamage(float superAttack) {
-        float damage = currentAttributes.magicAttack + (correntAttributes.magicAttack * superAttack);
+        float damage = currentAttributes.magicAttack + (currentAttributes.magicAttack * superAttack);
         return damage;
     }
 
@@ -136,4 +136,4 @@ private:
         total->physicalAttack += add.physicalAttack;
         total->physicalDefense += add.physicalDefense;
     };
-}
+};
