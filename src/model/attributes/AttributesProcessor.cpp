@@ -38,14 +38,6 @@ public:
         race.attributes.physicalDefense += race.attributes.physicalDefense * modifiersProcessor.getPhysicalDefenseModifier(AttributesType::RACE)*level;
     }
 
-    void updateJobAttributes(const unsigned int level) {
-        job.attributes.hp += race.attributes.hp * modifiersProcessor.getHpModifier(AttributesType::JOB)*level;
-        job.attributes.magicAttack += race.attributes.magicAttack * modifiersProcessor.getMagicAttackModifier(AttributesType::JOB)*level;
-        job.attributes.magicDefense += race.attributes.magicDefense * modifiersProcessor.getMagicDefenseModifier(AttributesType::JOB)*level;
-        job.attributes.physicalAttack += race.attributes.physicalAttack * modifiersProcessor.getPhysicalAttackModifier(AttributesType::JOB)*level;
-        job.attributes.physicalDefense += race.attributes.physicalDefense * modifiersProcessor.getPhysicalDefenseModifier(AttributesType::JOB)*level;
-    }
-
     void calculateTotalAttributes() {
         totalAttributes.hp = job.attributes.hp + race.attributes.hp;
         totalAttributes.magicAttack = job.attributes.magicAttack + race.attributes.magicAttack;
