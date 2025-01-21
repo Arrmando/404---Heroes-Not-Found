@@ -4,13 +4,14 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Mage : public Jobs {
 public:
     Mage();
 
 protected:
-    void setJobSpecialTrait() override;
+    void skill(AttributesProcessor& attributesProcessor, const int level) override;
 };
 
 #endif

@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Mage : public Jobs {
 public:
@@ -22,9 +23,11 @@ public:
         setJob(mage);
     }
 
-    void skill() override {
-        void skill(float* damage, level) override {
-        damage = damage*(level*5);
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
+        currentAttributes.magicAttack *= (level*5); 
+        attributesProcessor.dealSpecialMagicalDamage(currentAttributes.magicAttack);
+
         std::cout << "Mage: You wield powerful magic, capable of devastating enemies and aiding allies.\n";
 
     }
