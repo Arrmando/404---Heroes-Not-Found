@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Paladin : public Jobs {
 public:
@@ -22,14 +23,21 @@ public:
         setJob(paladin);
     }
 
-    void skill(Attributes* buff, int* tempo, lvl) override { //cast all
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
 
-        buff.hp *= (lvl/3);
-        buff.magicAttack *= (lvl/3);
-        buff.magicDefense *= (lvl/2);
-        buff.physicalAttack *= (lvl/3);
-        buff.physicalDefense *= (lvl/2);
-        tempo = 6; 
+        Attributes buff{
+            .hp = currentAttributes.hp * (level/3),
+            .magicAttack = currentAttributes.magicAttack * (level/3),
+            .physicalAttack = currentAttributes.physicalAttack * (level/3),
+            .magicDefense = currentAttributes.magicDefense * (level/2),
+            .physicalDefense = currentAttributes.physicalDefense * (level/2),
+        };
+
+        int timer = 6;
+
+        attributesProcessor.setModifiersEffect(timer, buff);
+ 
         std::cout << "Paladin: You combine holy magic with martial prowess to shield and support your allies.\n";
     }
 };
