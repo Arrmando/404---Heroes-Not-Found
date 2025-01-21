@@ -41,14 +41,17 @@ void Cidade::handleEvents() {
             sf::Vector2i mousePos = sf::Mouse::getPosition(telaCidade);
 
             if (irMenu->isClicked(mousePos)) {
+              telaCidade.close();
               viewModel->mudarParaMenu();
             }
     
             if (irBar->isClicked(mousePos)) {
+              telaCidade.close();
               viewModel->mudarParaBar();
             }
 
             if (irCombate->isClicked(mousePos)) {
+              telaCidade.close();
               viewModel->mudarParaCombate();
             }
         }

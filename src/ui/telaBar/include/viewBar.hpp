@@ -21,6 +21,7 @@ private:
     sf::Clock gameClock;              // Relógio para calcular o deltaTime
 
     std::unique_ptr<Button> comprarMercenario;
+    std::unique_ptr<Button> retornar;
     sf::RenderWindow telaBar;
     sf::Font font;
     sf::Texture barTexture;

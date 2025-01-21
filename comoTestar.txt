@@ -5,7 +5,7 @@ executar:  ./testeViewBar
 
 Testar viewCidade
 
-compilar: g++ src/ui/telaCidade/testeViewCidade.cpp src/ui/components/Button.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaCidade/viewModelCidade.cpp -o testeViewCidade -I src/ui/telaCidade/include -I include -lsfml-graphics -lsfml-window -lsfml-systemexecutar:  ./testeViewBar
+compilar: g++ src/ui/telaCidade/testeViewCidade.cpp src/ui/components/Button.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaCidade/viewModelCidade.cpp -o testeViewCidade -I src/ui/telaCidade/include -I include -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./testeViewCidade
 
 Testar viewCombate

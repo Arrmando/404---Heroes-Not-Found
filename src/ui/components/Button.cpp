@@ -37,6 +37,7 @@ void Button::draw(sf::RenderWindow& window) {
 
 bool Button::isClicked(const sf::Vector2i& mousePos) {
     return shape.getGlobalBounds().contains(mousePos.x, mousePos.y);
+    
 }
 
 bool Button::isHover(const sf::Vector2i& mousePos) const {

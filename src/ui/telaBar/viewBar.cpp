@@ -1,5 +1,6 @@
 #include "./include/viewBar.hpp"
 #include "./include/viewModel.hpp"
+#include "../telaCidade/include/viewCidade.hpp"
 
 Bar::Bar()
     : telaBar(sf::VideoMode(900, 600), "Bar"),
@@ -20,7 +21,7 @@ Bar::Bar()
     barSprite.setScale(0.6f, 0.6f);
 
     comprarMercenario = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar", font, 30);
-
+    retornar = std::make_unique<Button>(50, 50, 100, 100, sf::Color::White, "Return", font, 20);
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
     moneyText.setFillColor(sf::Color::White);
@@ -53,6 +54,12 @@ void Bar::handleEvents() {
             if (comprarMercenario->isClicked(mousePos) && money >= precoMecenario) {
                 updateMoneyText(); // Atualiza o texto do contador
             }
+            if (retornar->isClicked(mousePos)) {
+                telaBar.close();
+                Cidade cidade;
+                cidade.run();
+                // Atualiza o texto do contador
+            }
         }
     }
 }
@@ -76,6 +83,7 @@ void Bar::render() {
     telaBar.clear();
     telaBar.draw(barSprite);// Exibe o texto do dinheiro
     comprarMercenario->draw(telaBar);
+    retornar->draw(telaBar);
     timer.draw(telaBar);
     telaBar.draw(moneyText);
     telaBar.draw(mercenarioText);

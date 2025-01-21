@@ -17,3 +17,4 @@ void ViewModelCidade :: mudarParaCombate(){
     CombatScreen combatScreen;
     combatScreen.run();
 }
+
