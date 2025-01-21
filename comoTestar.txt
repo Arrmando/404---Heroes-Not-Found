@@ -1,0 +1,22 @@
+Testar viewBar
+
+compilar:  g++ src/ui/telaBar/testeViewBar.cpp src/ui/telaBar/viewBar.cpp src/ui/telaBar/viewModel.cpp -o testeViewBar -I src/ui/telaBar/include -I include -lsfml-graphics -lsfml-window -lsfml-system
+executar:  ./testeViewBar
+
+Testar viewCidade
+
+compilar: g++ src/ui/telaCidade/testeViewCidade.cpp src/ui/components/Button.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaCidade/viewModelCidade.cpp -o testeViewCidade -I src/ui/telaCidade/include -I include -lsfml-graphics -lsfml-window -lsfml-systemexecutar:  ./testeViewBar
+executar: ./testeViewCidade
+
+Testar viewCombate
+
+compilar: g++ -o combatScreen src/ui/telaCombate/testeViewCombate.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/Button.cpp src/ui/components/lifeBar.cpp -I./src/ui/telaCombate -I./src/ui/components -lsfml-graphics -lsfml-window -lsfml-system
+executar: ./combatScreen 
+
+Testar viewMenu
+
+compilar: g++ -o menu src/ui/telaMenu/testeMenu.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp -lsfml-graphics -lsfml-window -lsfml-system
+executar: ./menu
+
+compilar tudo: g++ -o cidade src/ui/telaCidade/testeViewCidade.cpp src/ui/telaBar/viewBar.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp src/ui/components/timer.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/lifeBar.cpp src/ui/telaCidade/viewModelCidade.cpp -lsfml-graphics -lsfml-window -lsfml-system
+executar: ./cidade
