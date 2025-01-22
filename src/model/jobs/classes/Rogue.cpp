@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Rogue : public Jobs {
 public:
@@ -22,14 +23,21 @@ public:
         setJob(rogue);
     }
 
-     void skill(Attributes* buff, int* tempo, lvl) override { //cast self
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
 
-        buff.hp = 0;
-        buff.magicAttack *= 2;
-        buff.magicDefense = 0;
-        buff.physicalAttack *= 3;
-        buff.physicalDefense = 0;
-        tempo = 3;    
+        Attributes buff{
+            .hp = 0,
+            .magicAttack = currentAttributes.magicAttack * 2,
+            .physicalAttack = currentAttributes.physicalAttack * 3,
+            .magicDefense = 0,
+            .physicalDefense = 0,
+        };
+
+        int timer = 3;
+
+        attributesProcessor.setModifiersEffect(timer, buff);
+
         std::cout << "Rogue: Your agility and cunning make you a deadly and elusive opponent.\n";
     }
 };
