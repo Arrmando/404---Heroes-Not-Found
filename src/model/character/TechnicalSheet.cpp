@@ -8,7 +8,7 @@
 
 class TechnicalSheet {
 private:
-    std::unique_ptr<AttributesProcessor> attributesProcessor;
+    std::shared_ptr<AttributesProcessor> attributesProcessor;
     std::unique_ptr<JobInterface> job;
     std::unique_ptr<RaceInterface> race;
     float totalExp, currentExp;
@@ -29,13 +29,11 @@ public:
     ): name(name), level(level), species(species_), classes(classes_) {
         race = RaceIncubator::createRace(species);
         job = JobIncubator::createJob(classes);
-        attributesProcessor = std::make_unique<AttributesProcessor>(race->getRace(), job->getJob());
+        attributesProcessor = std::make_shared<AttributesProcessor>(race->getRace(), job->getJob());
     }
 
     void useJobSkill() {
-        switch(classes){
-            //TODO 
-        }
+        job->skill(*attributesProcessor, level);
     }
 
     void physicalAttack() {

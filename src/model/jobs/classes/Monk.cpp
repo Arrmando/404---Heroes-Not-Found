@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Monk : public Jobs {
 public:
@@ -22,16 +23,20 @@ public:
         setJob(monk);
     }
 
-    void skill() override {
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
 
-        void skill(Attributes* buff, int* tempo, lvl) override { //cast self
+        Attributes buff{
+            .hp = 0,
+            .magicAttack = 0,
+            .physicalAttack = currentAttributes.physicalAttack * level,
+            .magicDefense = currentAttributes.magicDefense * level,
+            .physicalDefense = currentAttributes.physicalDefense * level,
+        };
 
-        buff.hp = 0;
-        buff.magicAttack = 0;
-        buff.magicDefense *= lvl;
-        buff.physicalAttack *= lvl;
-        buff.physicalDefense *= lvl;
-        tempo = 12; 
+        int timer = 12;
+
+        attributesProcessor.setModifiersEffect(timer, buff);
 
         std::cout << "Monk: Your discipline and spiritual energy make you a master of martial arts.";
     }

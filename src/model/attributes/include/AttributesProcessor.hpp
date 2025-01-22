@@ -26,7 +26,6 @@ private:
     ModifiersProcessor modifiersProcessor;
     std::atomic<bool> temporaryAttributesJob{false};
 
-
 public:
     AttributesProcessor(
         Race& race_,
@@ -56,6 +55,10 @@ public:
     Attributes getCurrentAttributes();
     
     Attributes getTotalAttributes();
+
+    float dealSpecialPhysicalDamage(float superAttack);
+
+    float dealSpecialMagicalDamage(float superAttack);
     
 private:
 

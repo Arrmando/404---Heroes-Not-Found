@@ -22,14 +22,20 @@ public:
         setJob(necromancer);
     }
 
-    void skill(Attributes* buff, int* tempo, lvl) override { //cast self
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
 
-        buff.hp *= lvl;
-        buff.magicAttack *= lvl;
-        buff.magicDefense *= lvl;
-        buff.physicalAttack = 0;
-        buff.physicalDefense = 0;
-        tempo = 12; 
+        Attributes buff{
+            .hp = currentAttributes.hp * level,
+            .magicAttack = currentAttributes.magicAttack * level,
+            .physicalAttack = 0,
+            .magicDefense = currentAttributes.magicDefense * level,
+            .physicalDefense = 0,
+        };
+
+        int timer = 12;
+
+        attributesProcessor.setModifiersEffect(timer, buff);
 
         std::cout << "Necromancer: Your dark magic allows you to control death itself.";
     }
