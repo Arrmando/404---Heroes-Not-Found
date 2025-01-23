@@ -52,20 +52,16 @@ void Menu::handleEvents() {
         if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
             if (isPlayButtonHovered(mousePos)) {
                 Cidade cidade;
-                  cidade.run();
-                
+                cidade.run();
                 window.close();
-                
             }
 
             if (isAboutButtonHovered(mousePos)) {
-
-               
+                handleAboutButtonClick();
             }
 
             if (isQuitButtonHovered(mousePos)) {
-                //handleQuitButtonClick();
-                //window.close();
+                window.close();
             }
         }
     }
@@ -83,6 +79,17 @@ bool Menu::isQuitButtonHovered(const sf::Vector2i& mousePos) const {
     return quitButton->isHover(mousePos);
 }
 
+void Menu::handlePlayButtonClick() {
+    std::cout << "Jogar clicado!\n"; 
+}
+
+void Menu::handleAboutButtonClick() {
+    std::cout << "Sobre clicado!\n"; 
+}
+
+void Menu::handleQuitButtonClick() {
+    std::cout << "Sair clicado!\n"; 
+}
 
 void Menu::render() {
     window.clear();

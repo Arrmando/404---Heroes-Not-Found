@@ -40,6 +40,11 @@ void Cidade::handleEvents() {
         if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePos = sf::Mouse::getPosition(telaCidade);
 
+            if (irLoja->isClicked(mousePos)) {
+              telaCidade.close();
+              viewModel->mudarParaLoja();
+            }
+
             if (irMenu->isClicked(mousePos)) {
               telaCidade.close();
               viewModel->mudarParaMenu();
