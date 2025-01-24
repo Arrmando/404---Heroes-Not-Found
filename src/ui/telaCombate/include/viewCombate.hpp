@@ -19,11 +19,22 @@ public:
 private:
     sf::RenderWindow window;
     sf::Font font;
-    ViewModelCombate* viewModel;  
+
+    ViewModelCombate* viewModel;
+
     Button* attackButton;  
-    Button* specialButton; 
+    Button* specialButton1; 
+    Button* specialButton2;
+    Button* specialButton3;
+    Button* escapeButton;
+
     lifeBar* lifeBossBar;  
     lifeBar* lifePlayerBar;
+
+    lifeBar* lifeAliado1;
+    lifeBar* lifeAliado2;
+    lifeBar* lifeAliado3;
+
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
 
@@ -38,6 +49,9 @@ private:
 
     sf::Text bossName;
     sf::Text playerName;
+    sf::Text aliadoName1;
+    sf::Text aliadoName2;
+    sf::Text aliadoName3;
 };
 
 #endif

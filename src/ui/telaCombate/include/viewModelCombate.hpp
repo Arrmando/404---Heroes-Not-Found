@@ -19,6 +19,15 @@ public:
     float getHealthPlayer();    
     void setHealthPlayer(float newHealth);  
 
+    float getHealthAliado1();
+    void setHealthAliado1(float newHealth);
+
+    float getHealthAliado2();
+    void setHealthAliado2(float newHealth);
+
+    float getHealthAliado3();
+    void setHealthAliado3(float newHealth);
+
 private:
 
     sf::Clock attackClock;

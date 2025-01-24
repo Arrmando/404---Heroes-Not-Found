@@ -54,6 +54,7 @@ void Menu::handleEvents() {
             }
 
             if (aboutButton->isHover(mousePos)) {
+                window.close();
                 viewModel->handleAboutButtonClick();
             }
 

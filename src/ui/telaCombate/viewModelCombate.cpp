@@ -26,6 +26,18 @@ void ViewModelCombate::setHealthPlayer(float newHealth) {
     healthPlayer = newHealth;
 }
 
+void ViewModelCombate::setHealthAliado1(float newHealth) {
+    healthBoss = newHealth;
+}
+
+void ViewModelCombate::setHealthAliado2(float newHealth) {
+    healthBoss = newHealth;
+}
+
+void ViewModelCombate::setHealthAliado3(float newHealth) {
+    healthBoss = newHealth;
+}
+
 void ViewModelCombate::handleAttack() {
     healthBoss -= damagePlayer;  
     if (healthBoss < 0) {
