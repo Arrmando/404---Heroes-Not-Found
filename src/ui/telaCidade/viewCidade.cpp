@@ -1,4 +1,5 @@
 #include "./include/viewCidade.hpp"
+#include "./include/viewModelCidade.hpp"
 
 Cidade::Cidade()
     : telaCidade(sf::VideoMode(700, 700), "Cidade"){

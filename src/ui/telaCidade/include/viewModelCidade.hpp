@@ -12,8 +12,6 @@ void mudarParaMenu();
 void mudarParaCombate();
 void mudarParaBar();
 void mudarParaLoja();
-
-void fecharJanelaAtual();
 };
 
 #endif // VIEW_MODEL_HPP

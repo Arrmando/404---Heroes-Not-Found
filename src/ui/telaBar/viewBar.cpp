@@ -1,11 +1,14 @@
 #include "./include/viewBar.hpp"
-#include "./include/viewModel.hpp"
-#include "../telaCidade/include/viewCidade.hpp"
+#include "./include/viewModelBar.hpp"
+
 
 Bar::Bar()
     : telaBar(sf::VideoMode(900, 600), "Bar"),
     timer(font, 350, 250, 50){
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
+        throw std::runtime_error("Erro ao carregar a fonte!");
+    }
+    if (!fontSetas.loadFromFile("assets/fonts/setas.ttf")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
     if (!barTexture.loadFromFile("assets/images/bar.jpg")) {
@@ -14,14 +17,16 @@ Bar::Bar()
     
     
     timer.start(120); // Inicia o timer com 2 minutos
-
+    
+    viewModel = new ViewModelBar();
+    
     sf::Clock clock;
 
     barSprite.setTexture(barTexture);
     barSprite.setScale(0.6f, 0.6f);
 
     comprarMercenario = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar", font, 30);
-    retornar = std::make_unique<Button>(50, 50, 100, 100, sf::Color::White, "Return", font, 20);
+    retornar = std::make_unique<Button>(50, 50, 100, 50, sf::Color::White, "9", fontSetas, 20 );
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
     moneyText.setFillColor(sf::Color::White);
@@ -56,8 +61,7 @@ void Bar::handleEvents() {
             }
             if (retornar->isClicked(mousePos)) {
                 telaBar.close();
-                Cidade cidade;
-                cidade.run();
+                viewModel->mudarParaCidade();
                 // Atualiza o texto do contador
             }
         }

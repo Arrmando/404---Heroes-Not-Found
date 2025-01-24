@@ -1,7 +1,7 @@
-#ifndef VIEWMODEL_HPP
-#define VIEWMODEL_HPP
+#ifndef VIEWMODELBAR_HPP
+#define VIEWMODELBAR_HPP
 
-class ViewModel {
+class ViewModelBar {
 public:
     
     int getMoney() const;
@@ -9,6 +9,7 @@ public:
     int getQuantidadeMercenarios() const;
     bool podeComprarMercenario() const;
     void comprarMercenario();
+    void mudarParaCidade();
 
 private:
 
