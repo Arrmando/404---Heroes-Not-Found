@@ -122,4 +122,14 @@ SST significa que cada pedaço de dados deve ter uma única fonte autoritativa n
 2. **InterfaceGráfica**:  https://lucid.app/lucidchart/9cb1650a-1c5e-443c-a44b-0280fa08f1da/edit?view_items=xjFJOcZq0O16&invitationId=inv_edcb17ae-dbe9-4af1-80ba-9172aa813db7
 3. **Combate**:  https://lucid.app/lucidchart/7b504578-92c7-4290-8840-85f5eeef0bce/edit?viewport_loc=-2401%2C143%2C4490%2C2199%2C0_0&invitationId=inv_61148b24-fc1f-4a19-897c-9a5da20b8ef2
 
+
+### Instruções para compilar:
+
+Esse projeto faz uso de bibliotecas de terceiros para determinadas situações, assim, deve-se adicionar essas como submódulos do projeto para torná-lo funcional:
+
+``` bash
+git submodule add https://github.com/andreasbuhr/cppcoro.git libs/cppcoro
+git submodule update --init --recursive
+```
+
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
