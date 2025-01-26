@@ -9,7 +9,9 @@ enum class Species {
     GIANT,
     ORC,
     DRACONIC,
-    UNDEAD
+    UNDEAD,
+    INFERNAL,
+    VAMPIRE,
 };
 
 #endif
