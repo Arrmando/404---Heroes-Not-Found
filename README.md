@@ -127,9 +127,14 @@ SST significa que cada pedaço de dados deve ter uma única fonte autoritativa n
 
 Esse projeto faz uso de bibliotecas de terceiros para determinadas situações, assim, deve-se adicionar essas como submódulos do projeto para torná-lo funcional:
 
+**Compilando o cppcoro manualmente**
 ``` bash
 git submodule add https://github.com/andreasbuhr/cppcoro.git libs/cppcoro
 git submodule update --init --recursive
+cd libs/cppcoro/
+mkdir build && cd build
+cmake ..
+make
 ```
 
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
