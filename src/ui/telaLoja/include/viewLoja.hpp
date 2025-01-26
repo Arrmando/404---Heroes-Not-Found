@@ -31,10 +31,18 @@ private:
     sf::Text moneyText;
     sf::Text armaText;
     sf::Text armaduraText;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 7ae47cc01ff71a13231a93e101df0927ef436e45
 
     void updateMoneyText();
     void updateArmaText();
     void updateArmaduraText();
 };
 
+<<<<<<< HEAD
 #endif
+=======
+#endif
+>>>>>>> 7ae47cc01ff71a13231a93e101df0927ef436e45

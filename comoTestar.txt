@@ -13,6 +13,7 @@ Testar viewLoja
 compilar: g++ src/ui/telaLoja/testeViewLoja.cpp src/ui/telaLoja/viewLoja.cpp src/ui/telaLoja/viewModelLoja.cpp -o testeViewLoja -I src/ui/telaLoja/include src/ui/components/Button.cpp -I./src/ui/components -I include -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./testeViewLoja
 
+Testar viewCombate
 
 compilar: g++ -o combatScreen src/ui/telaCombate/testeViewCombate.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/components/Button.cpp src/ui/components/lifeBar.cpp -I./src/ui/telaCombate -I./src/ui/components -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./combatScreen 
@@ -22,5 +23,9 @@ Testar viewMenu
 compilar: g++ -o menu src/ui/telaMenu/testeMenu.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/components/Button.cpp -lsfml-graphics -lsfml-window -lsfml-system
 executar: ./menu
 
-compilar tudo: g++ -o cidade src/ui/telaCidade/testeViewCidade.cpp src/ui/telaBar/viewBar.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/telaLoja/viewLoja.cpp src/ui/telaLoja/viewModelLoja.cpp src/ui/components/Button.cpp src/ui/components/timer.cpp src/ui/components/lifeBar.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/telaCidade/viewModelCidade.cpp -I./src/ui/telaCidade/include -I./src/ui/telaBar/include -I./src/ui/telaCombate/include -I./src/ui/telaMenu/include -I./src/ui/telaLoja/include -I./src/ui/components -I./include -lsfml-graphics -lsfml-window -lsfml-system
-executar: ./cidade
+COMO COMPILAR A MAIN:
+
+g++ -o build/main src/main.cpp src/ui/telaBar/viewBar.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/telaLoja/viewLoja.cpp src/ui/telaLoja/viewModelLoja.cpp src/ui/components/Button.cpp src/ui/components/timer.cpp src/ui/components/lifeBar.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/telaCidade/viewModelCidade.cpp src/ui/telaBar/viewModelBar.cpp src/ui/telaSobre/viewSobre.cpp src/ui/telaSobre/viewModelSobre.cpp -I./src/ui/telaSobre/include -I./src/ui/telaCidade/include -I./src/ui/telaBar/include -I./src/ui/telaCombate/include -I./src/ui/telaMenu/include -I./src/ui/telaLoja/include -I./src/ui/components -I./include -lsfml-graphics -lsfml-window -lsfml-system
+
+
+executar: ./build/main

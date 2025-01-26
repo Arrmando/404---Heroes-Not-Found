@@ -18,4 +18,8 @@ private:
 
 };
 
+<<<<<<< HEAD
 #endif // VIEWMODEL_HPP
+=======
+#endif // VIEWMODEL_HPP
+>>>>>>> 7ae47cc01ff71a13231a93e101df0927ef436e45

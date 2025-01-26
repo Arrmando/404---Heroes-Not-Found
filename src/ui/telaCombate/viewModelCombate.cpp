@@ -1,4 +1,6 @@
 #include "./include/viewModelCombate.hpp"
+#include "./include/viewModelCombate.hpp"
+#include "../telaCidade/include/viewCidade.hpp"
 #include <iostream>
 
 ViewModelCombate::ViewModelCombate() {
@@ -24,6 +26,18 @@ void ViewModelCombate::setHealthBoss(float newHealth) {
 
 void ViewModelCombate::setHealthPlayer(float newHealth) {
     healthPlayer = newHealth;
+}
+
+void ViewModelCombate::setHealthAliado1(float newHealth) {
+    healthBoss = newHealth;
+}
+
+void ViewModelCombate::setHealthAliado2(float newHealth) {
+    healthBoss = newHealth;
+}
+
+void ViewModelCombate::setHealthAliado3(float newHealth) {
+    healthBoss = newHealth;
 }
 
 void ViewModelCombate::handleAttack() {
@@ -59,4 +73,9 @@ void ViewModelCombate::handleAttackSpeed() {
 
 void ViewModelCombate::handleSpecial() {
     std::cout << "Ação Especial Executada!" << std::endl;
+}
+
+void ViewModelCombate::handleEscapeButton() {
+    Cidade cidade;
+    cidade.run();
 }
