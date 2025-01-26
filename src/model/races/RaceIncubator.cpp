@@ -8,6 +8,8 @@
 #include "Races.hpp"
 #include "Orc.hpp"
 #include "Undead.hpp"
+#include "Infernal.hpp"
+#include "Vampire.hpp"
 #include <memory>
 #include <string>
 
@@ -32,6 +34,10 @@ public:
                 return std::make_unique<Orc>();
             case Species::UNDEAD:
                 return std::make_unique<Undead>();
+            case Species::INFERNAL:
+                return std::make_unique<Infernal>();
+            case Species::VAMPIRE:
+                return std::make_unique<Vampire>();
             default:
                 throw std::invalid_argument("Invalid species type provided to RaceIncubator.");
         }

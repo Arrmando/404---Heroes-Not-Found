@@ -5,6 +5,8 @@
 #include "Human.hpp"
 #include "Elf.hpp"
 #include "Demihuman.hpp"
+#include "Infernal.hpp"
+#include "Vampire.hpp"
 #include "Fairy.hpp"
 #include "Draconic.hpp"
 #include "Giant.hpp"
