@@ -1,5 +1,5 @@
-#ifndef CLASSES_H
-#define CLASSES_H
+#ifndef CLASSES_HPP
+#define CLASSES_HPP
 
 enum class Classes {
     WARRIOR,

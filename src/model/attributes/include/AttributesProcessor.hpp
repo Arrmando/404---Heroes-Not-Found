@@ -1,5 +1,5 @@
-#ifndef ATTRIBUTES_PROCESSOR_H
-#define ATTRIBUTES_PROCESSOR_H
+#ifndef ATTRIBUTES_PROCESSOR_HPP
+#define ATTRIBUTES_PROCESSOR_HPP
 
 #include <iostream>
 #include <algorithm>

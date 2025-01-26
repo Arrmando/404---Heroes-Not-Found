@@ -1,5 +1,5 @@
-#ifndef JOBS_H
-#define JOBS_H
+#ifndef JOBS_HPP
+#define JOBS_HPP
 
 #include <iostream>
 #include <string>

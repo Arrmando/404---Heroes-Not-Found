@@ -1,5 +1,5 @@
-#ifndef RACE_INTERFACE_H
-#define RACE_INTERFACE_H
+#ifndef RACE_INTERFACE_HPP
+#define RACE_INTERFACE_HPP
 
 #include "utils/include/Race.hpp"
 #include <string>

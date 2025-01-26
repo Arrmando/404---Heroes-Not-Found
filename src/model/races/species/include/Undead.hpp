@@ -1,5 +1,5 @@
-#ifndef UNDEAD_H
-#define UNDEAD_H
+#ifndef UNDEAD_HPP
+#define UNDEAD_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

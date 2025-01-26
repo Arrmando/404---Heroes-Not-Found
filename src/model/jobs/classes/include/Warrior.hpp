@@ -1,5 +1,5 @@
-#ifndef WARRIOR_h
-#define WARRIOR_h
+#ifndef WARRIOR_HPP
+#define WARRIOR_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

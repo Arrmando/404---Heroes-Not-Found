@@ -1,5 +1,5 @@
-#ifndef MODIFIERS_PROCESSOR_H
-#define MODIFIERS_PROCESSOR_H
+#ifndef MODIFIERS_PROCESSOR_HPP
+#define MODIFIERS_PROCESSOR_HPP
 
 #include "Attributes.hpp"
 #include <cppcoro/task.hpp>

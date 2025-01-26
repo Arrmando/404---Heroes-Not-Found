@@ -1,9 +1,9 @@
-#ifndef ATTRIBUTES_TYPE_H
-#define ATTRIBUTES_TYPE_H
+#ifndef ATTRIBUTES_TYPE_HPP
+#define ATTRIBUTES_TYPE_HPP
  
 enum class AttributesType {
     RACE,
     JOB
 };
 
-#endif // !ATTRIBUTES_TYPE_H
+#endif // !ATTRIBUTES_TYPE_HPP

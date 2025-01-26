@@ -1,5 +1,5 @@
-#ifndef SORCERER_h
-#define SORCERER_h
+#ifndef SORCERER_HPP
+#define SORCERER_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

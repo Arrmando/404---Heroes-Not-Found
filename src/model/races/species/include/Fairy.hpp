@@ -1,5 +1,5 @@
-#ifndef FAIRY_H
-#define FAIRY_H
+#ifndef FAIRY_HPP
+#define FAIRY_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

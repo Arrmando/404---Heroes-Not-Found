@@ -1,5 +1,5 @@
-#ifndef BARBARIAN_H
-#define BARBARIAN_H
+#ifndef BARBARIAN_HPP
+#define BARBARIAN_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"
