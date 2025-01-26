@@ -64,9 +64,9 @@ CombatScreen::CombatScreen() {
 
     // botões
     attackButton = new Button(0.0f, 100.0f, 760.0f, 620.0f, sf::Color::Transparent, "", font, 0);
-    specialButton1 = new Button(1060.0f, 140.0f, 75.0f, 50.0f, sf::Color::Black, "X", font, 30);
-    specialButton2 = new Button(1060.0f, 250.0f, 75.0f, 50.0f, sf::Color::Black, "X", font, 30);
-    specialButton3 = new Button(1060.0f, 360.0f, 75.0f, 50.0f, sf::Color::Black, "X", font, 30);
+    specialButton1 = new Button(1060.0f, 140.0f, 75.0f, 50.0f, sf::Color::Black, "X", font, 30, true, 2);
+    specialButton2 = new Button(1060.0f, 250.0f, 75.0f, 50.0f, sf::Color::Black, "X", font, 30, true, 2);
+    specialButton3 = new Button(1060.0f, 360.0f, 75.0f, 50.0f, sf::Color::Black, "X", font, 30, true, 2);
     escapeButton = new Button(785.0f, 595.0f, 350.0f, 100.0f, sf::Color::Red, "FUGIR", font, 30);
 
     bossInitialLife = viewModel->getHealthBoss();
@@ -137,6 +137,7 @@ void CombatScreen::handleEvents() {
             }
             if (escapeButton->isClicked(sf::Mouse::getPosition(window))) {
                 window.close();
+                viewModel->handleEscapeButton();
             }
 
         }

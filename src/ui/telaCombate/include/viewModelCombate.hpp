@@ -12,6 +12,8 @@ public:
     void handleSpecial();    
 
     void handleAttackSpeed(); 
+
+    void handleEscapeButton();
     
     float getHealthBoss();    
     void setHealthBoss(float newHealth);  

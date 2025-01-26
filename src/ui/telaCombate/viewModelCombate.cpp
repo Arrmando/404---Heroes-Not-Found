@@ -1,4 +1,6 @@
 #include "./include/viewModelCombate.hpp"
+#include "./include/viewModelCombate.hpp"
+#include "../telaCidade/include/viewCidade.hpp"
 #include <iostream>
 
 ViewModelCombate::ViewModelCombate() {
@@ -71,4 +73,9 @@ void ViewModelCombate::handleAttackSpeed() {
 
 void ViewModelCombate::handleSpecial() {
     std::cout << "Ação Especial Executada!" << std::endl;
+}
+
+void ViewModelCombate::handleEscapeButton() {
+    Cidade cidade;
+    cidade.run();
 }
