@@ -5,6 +5,8 @@
 
 class Races : public RaceInterface {
 public:
+    Race race;
+
     Races() = default;
 
     Race getRace() const {

@@ -23,7 +23,7 @@ Bar::Bar()
     sf::Clock clock;
 
     barSprite.setTexture(barTexture);
-    barSprite.setScale(0.6f, 0.6f);
+    barSprite.setScale(1.5f, 1.8f);
 
     comprarMercenario = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar", font, 30, true, 2.0);
     retornar = std::make_unique<Button>(50, 50, 75, 50, sf::Color::White, "9", fontSetas, 20, true );

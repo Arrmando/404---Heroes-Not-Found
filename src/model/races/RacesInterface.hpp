@@ -6,7 +6,6 @@
 
 class RaceInterface {
 public:
-    Race race;
 
     virtual ~RaceInterface() = default;
 

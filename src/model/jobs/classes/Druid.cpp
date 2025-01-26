@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Druid : public Jobs {
 public:
@@ -22,9 +23,12 @@ public:
         setJob(druid);
     }
 
-    void skill(int* hp, int level) override { //Necessário que hp seja igual ao HP máximo do druida; //cast all
-        hp = hp*(0.1+(0.01*level));
-        job.skill(&hp);
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes totalAttributes = attributesProcessor.getTotalAttributes();
+
+        totalAttributes.hp *= (0.1+(0.1*level));
+        attributesProcessor.restoreHealth(totalAttributes.hp);
+
         std::cout << "Druid: Your connection to nature grants you unique powers and versatility.";
     }
 };

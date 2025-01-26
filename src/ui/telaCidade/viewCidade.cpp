@@ -51,6 +51,10 @@ void Cidade::handleEvents() {
               viewModel->mudarParaMenu();
             }
     
+            if (irLoja->isClicked(mousePos)) {
+              viewModel->mudarParaLoja();
+            }
+
             if (irBar->isClicked(mousePos)) {
               telaCidade.close();
               viewModel->mudarParaBar();

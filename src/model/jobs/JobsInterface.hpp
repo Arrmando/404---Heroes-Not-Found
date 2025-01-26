@@ -2,10 +2,10 @@
 #define JOBS_INTERFACE_H
 
 #include "Job.hpp"
+#include "AttributesProcessor.hpp"
 
 class JobInterface {
 public:
-    Job job;
 
     virtual ~JobInterface() = default;
 
@@ -13,9 +13,9 @@ public:
     
     virtual std::string getJobSpecialTrait() const = 0;
 
-protected:
-    virtual void skill() = 0;
-    
+    virtual void skill(AttributesProcessor& attributesProcessor, const int level) = 0;
+
+protected:    
     virtual void setJob(const Job& selectedJob) = 0;
 
 };

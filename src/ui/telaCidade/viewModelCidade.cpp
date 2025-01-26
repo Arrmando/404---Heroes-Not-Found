@@ -19,6 +19,11 @@ void ViewModelCidade :: mudarParaMenu(){
     menu.run();
 }
 
+void ViewModelCidade :: mudarParaLoja(){
+    Loja loja;
+    loja.run();
+}
+
 void ViewModelCidade :: mudarParaCombate(){
     CombatScreen combatScreen;
     combatScreen.run();

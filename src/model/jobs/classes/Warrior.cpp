@@ -1,6 +1,7 @@
 #include "Jobs.hpp"
 #include "Attributes.hpp"
 #include <iostream>
+#include "AttributesProcessor.hpp"
 
 class Warrior : public Jobs {
 public:
@@ -22,8 +23,11 @@ public:
         setJob(warrior);
     }
 
-    void skill(float* damage, level) override {
-        damage = damage*(level*5);
+    void skill(AttributesProcessor& attributesProcessor, const int level) override {
+        Attributes currentAttributes = attributesProcessor.getCurrentAttributes();
+        currentAttributes.physicalAttack *= (level*5); 
+        attributesProcessor.dealSpecialPhysicalDamage(currentAttributes.physicalAttack);
+
         std::cout << "Warrior: You excel in physical combat and defense, making you a frontline fighter.\n";
     }
 };
