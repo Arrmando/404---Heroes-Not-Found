@@ -1,37 +1,32 @@
 #include "./include/Button.hpp"
 
-Button::Button(float x, float y, float width, float height, const sf::Color& color, const std::string& label, sf::Font& font, float fontSize, bool isCircle) {
+Button::Button(float x, float y, float width, float height, const sf::Color& color, const std::string& label, sf::Font& font, float fontSize, bool isCircle, float borderThickness) {
     if (isCircle) {
-        circleShape.setRadius(width / 2.f); // Faz o botão circular, com raio baseado na largura
-        circleShape.setPosition(x + width / 2.f, y + height / 2.f); // Centraliza a forma
+        // Configura o botão circular
+        float radius = width / 2.f; // Calcula o raio com base na largura
+        circleShape.setRadius(radius);
+        circleShape.setOrigin(radius, radius); // Define a origem no centro
+        circleShape.setPosition(x + width / 2.f, y + height / 2.f); // Centraliza o círculo no ponto correto
         circleShape.setFillColor(color);
-
-        text.setFont(font);
-        text.setString(label);
-        text.setCharacterSize(fontSize);
-        text.setFillColor(sf::Color::Black);
-
-        // Centraliza o texto no botão circular
-        text.setPosition(
-            x + (width - text.getGlobalBounds().width) / 2.f,
-            y + (height - text.getGlobalBounds().height) / 2.f - text.getLocalBounds().top
-        );
+        circleShape.setOutlineThickness(borderThickness); // Define a grossura da borda
+        circleShape.setOutlineColor(sf::Color::Black); // Define a cor padrão da borda
     } else {
+        // Configura o botão retangular
         shape.setPosition(x, y);
         shape.setSize(sf::Vector2f(width, height));
         shape.setFillColor(color);
-
-        text.setFont(font);
-        text.setString(label);
-        text.setCharacterSize(fontSize);
-        text.setFillColor(sf::Color::Black);
-
-        // Centraliza o texto no botão retangular
-        text.setPosition(
-            x + (width - text.getGlobalBounds().width) / 2.f,
-            y + (height - text.getGlobalBounds().height) / 2.f - text.getLocalBounds().top
-        );
+        shape.setOutlineThickness(borderThickness); // Define a grossura da borda
+        shape.setOutlineColor(sf::Color::Black); // Define a cor padrão da borda
     }
+
+    // Configura o texto (comum para ambos os tipos)
+    text.setFont(font);
+    text.setString(label);
+    text.setCharacterSize(fontSize);
+    text.setFillColor(sf::Color::Black);
+
+    // Centraliza o texto no botão
+    recalculateTextPosition();
 }
 
 void Button::setColor(const sf::Color& color) {
@@ -39,6 +34,14 @@ void Button::setColor(const sf::Color& color) {
         circleShape.setFillColor(color);  
     } else {
         shape.setFillColor(color);  
+    }
+}
+
+void Button::setBorderColor(const sf::Color& borderColor) {
+    if (circleShape.getRadius() > 0) {
+        circleShape.setOutlineColor(borderColor);
+    } else {
+        shape.setOutlineColor(borderColor);
     }
 }
 
@@ -64,7 +67,7 @@ bool Button::isClicked(const sf::Vector2i& mousePos) {
     if (circleShape.getRadius() > 0) {
         return circleShape.getGlobalBounds().contains(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
     } else {
-        return shape.getGlobalBounds().contains(mousePos.x, mousePos.y);
+        return shape.getGlobalBounds().contains(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
     }
 }
 
@@ -78,14 +81,18 @@ bool Button::isHover(const sf::Vector2i& mousePos) const {
 
 void Button::setText(const std::string& label) {
     text.setString(label);
+    recalculateTextPosition(); // Recalcula a posição do texto
+}
 
-    // Recalcula a posição para centralizar o texto no botão
+void Button::recalculateTextPosition() {
     if (circleShape.getRadius() > 0) {
+        // Centraliza o texto no botão circular
         text.setPosition(
-            circleShape.getPosition().x + (circleShape.getRadius() - text.getGlobalBounds().width) / 2.f,
-            circleShape.getPosition().y + (circleShape.getRadius() - text.getGlobalBounds().height) / 2.f - text.getLocalBounds().top
+            circleShape.getPosition().x - text.getGlobalBounds().width / 2.f,
+            circleShape.getPosition().y - text.getGlobalBounds().height / 2.f - text.getLocalBounds().top
         );
     } else {
+        // Centraliza o texto no botão retangular
         text.setPosition(
             shape.getPosition().x + (shape.getSize().x - text.getGlobalBounds().width) / 2.f,
             shape.getPosition().y + (shape.getSize().y - text.getGlobalBounds().height) / 2.f - text.getLocalBounds().top
