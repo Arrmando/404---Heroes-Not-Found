@@ -125,16 +125,76 @@ SST significa que cada pedaço de dados deve ter uma única fonte autoritativa n
 
 ### Instruções para compilar:
 
-Esse projeto faz uso de bibliotecas de terceiros para determinadas situações, assim, deve-se adicionar essas como submódulos do projeto para torná-lo funcional:
+Este projeto utiliza bibliotecas de terceiros para funcionalidades específicas. Para garantir que tudo funcione corretamente, é necessário adicionar e compilar essas bibliotecas como submódulos do projeto.
 
-**Compilando o cppcoro manualmente**
-``` bash
+**Adicionando e compilando o `cppcoro`**
+
+```bash
+# Adiciona o repositório do cppcoro como submódulo
 git submodule add https://github.com/andreasbuhr/cppcoro.git libs/cppcoro
+
+# Inicializa e atualiza os submódulos
 git submodule update --init --recursive
+
+# Compila o cppcoro
 cd libs/cppcoro/
 mkdir build && cd build
 cmake ..
 make
+```
+
+**Configurando o VSCode para Trabalhar com `cppcoro`**
+
+Se você estiver usando o VSCode e encontrar erros de dependência relacionados ao cppcoro, siga as etapas abaixo:
+
+1. Abra o arquivo .vscode/c_cpp_properties.json e adicione os caminhos de inclusão necessários:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/model",
+                "${workspaceFolder}/src/model/attributes/include",
+                "${workspaceFolder}/src/model/character/include",
+                "${workspaceFolder}/src/model/jobs/include",
+                "${workspaceFolder}/src/model/modifiers/include",
+                "${workspaceFolder}/src/model/names",
+                "${workspaceFolder}/src/model/races/include",
+                "${workspaceFolder}/src/model/races/species",
+                "${workspaceFolder}/src/ui",
+                "${workspaceFolder}/utils",
+                "${workspaceFolder}/utils/include",
+                "${workspaceFolder}/libs",
+                "${workspaceFolder}/libs/cppcoro/include/cppcoro",
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceFolder}/libs/cppcoro/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/libs/cppcoro/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
+```
+
+2. Reinicie o VSCode e force uma reanálise do workspace:
+
+    Pressione `Ctrl + Shift + P` e digite "C/C++: Rescan Workspace".
+
+3. Limpe e recompile o projeto, se necessário:
+
+```bash
+rm -rf build/*
+cmake -S . -B build
+cmake --build build
 ```
 
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
