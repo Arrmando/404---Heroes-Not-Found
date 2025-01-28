@@ -1,7 +1,7 @@
 #include "./include/viewModelCombate.hpp"
 #include "./include/viewModelCombate.hpp"
 #include "../telaCidade/include/viewCidade.hpp"
-#include "../../model/character/include/TecnicalSheet.hpp"
+#include "../../model/character/include/TechnicalSheet.hpp"
 #include <iostream>
 
 ViewModelCombate::ViewModelCombate() {
@@ -49,14 +49,12 @@ void ViewModelCombate::handleAttack() {
 
     std::cout << "Ataque! Dano causado: " << damagePlayer << std::endl;
     std::cout << "Vida do Boss: " << healthBoss << std::endl;
-
 }
 
 void ViewModelCombate::handleBossAttack() {
     healthPlayer -= damageBoss;  
     if (healthPlayer < 0) {
         healthPlayer = 0;
-
     }
     std::cout << "Ataque do Boss! Dano causado: " << damageBoss << std::endl;
     std::cout << "Vida do Jogador: " << healthPlayer << std::endl;
@@ -68,8 +66,7 @@ void ViewModelCombate::handleAttackSpeed() {
     if (elapsedTime >= attackCooldown) {
         attackClock.restart();
         handleBossAttack();
-}
-    
+    }
 }
 
 void ViewModelCombate::handleSpecial() {

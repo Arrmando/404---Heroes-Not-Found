@@ -7,7 +7,6 @@
 #include <memory>
 #include "../../components/include/Button.hpp"
 
-
 class Loja{
 public:
     Loja();
@@ -17,7 +16,6 @@ public:
     void render();
 
 private:
-
     std::unique_ptr<Button> comprarArma;
     std::unique_ptr<Button> comprarArmadura;
     sf::RenderWindow telaLoja;
@@ -31,18 +29,10 @@ private:
     sf::Text moneyText;
     sf::Text armaText;
     sf::Text armaduraText;
-<<<<<<< HEAD
-    
-=======
->>>>>>> 7ae47cc01ff71a13231a93e101df0927ef436e45
 
     void updateMoneyText();
     void updateArmaText();
     void updateArmaduraText();
 };
 
-<<<<<<< HEAD
-#endif
-=======
-#endif
->>>>>>> 7ae47cc01ff71a13231a93e101df0927ef436e45
+#endif // LOJA_HPP
