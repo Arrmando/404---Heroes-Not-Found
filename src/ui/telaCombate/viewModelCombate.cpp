@@ -1,7 +1,7 @@
 #include "./include/viewModelCombate.hpp"
 #include "./include/viewModelCombate.hpp"
 #include "../telaCidade/include/viewCidade.hpp"
-#include "../../model/caracter/include/"
+#include "../../model/character/include/TecnicalSheet.hpp"
 #include <iostream>
 
 ViewModelCombate::ViewModelCombate() {
