@@ -1,5 +1,5 @@
-#ifndef RACEINCUBATOR_H
-#define RACEINCUBATOR_H
+#ifndef RACEINCUBATOR_HPP
+#define RACEINCUBATOR_HPP
 
 #include "RacesInterface.hpp"
 #include "Human.hpp"

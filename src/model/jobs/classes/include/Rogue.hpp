@@ -1,5 +1,5 @@
-#ifndef ROGUE_h
-#define ROGUE_h
+#ifndef ROGUE_HPP
+#define ROGUE_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

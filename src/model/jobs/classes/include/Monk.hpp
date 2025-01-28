@@ -1,5 +1,5 @@
-#ifndef MONK_H
-#define MONK_H
+#ifndef MONK_HPP
+#define MONK_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

@@ -52,7 +52,7 @@ public:
             Corroutines corroutines;
         
             if(!temporaryModifierJob.load())
-                co_return
+                co_return;
 
             co_await corroutines.delay(timerSeconds);
             std::cout << "Temporary modifiers expired after " << timerSeconds << " seconds.\n";

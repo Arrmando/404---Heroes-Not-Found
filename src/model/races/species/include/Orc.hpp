@@ -1,5 +1,5 @@
-#ifndef ORC_H
-#define ORC_H
+#ifndef ORC_HPP
+#define ORC_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

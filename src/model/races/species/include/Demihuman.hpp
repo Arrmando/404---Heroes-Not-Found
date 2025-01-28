@@ -1,5 +1,5 @@
-#ifndef DEMIHUMAN_H
-#define DEMIHUMAN_H
+#ifndef DEMIHUMAN_HPP
+#define DEMIHUMAN_HPP
 
 #include "Races.hpp"
 

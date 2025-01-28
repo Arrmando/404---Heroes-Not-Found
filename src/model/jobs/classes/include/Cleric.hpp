@@ -1,5 +1,5 @@
-#ifndef CLERIC_H
-#define CLERIC_H
+#ifndef CLERIC_HPP
+#define CLERIC_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

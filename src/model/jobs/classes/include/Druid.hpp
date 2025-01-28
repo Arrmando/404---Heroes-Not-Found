@@ -1,5 +1,5 @@
-#ifndef DRUID_H
-#define DRUID_H
+#ifndef DRUID_HPP
+#define DRUID_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

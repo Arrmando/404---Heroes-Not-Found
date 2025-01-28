@@ -1,5 +1,5 @@
-#ifndef RANGER_H
-#define RANGER_H
+#ifndef RANGER_HPP
+#define RANGER_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

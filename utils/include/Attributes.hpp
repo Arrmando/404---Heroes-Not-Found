@@ -1,5 +1,5 @@
-#ifndef ATTRIBUTES_H
-#define ATTRIBUTES_H
+#ifndef ATTRIBUTES_HPP
+#define ATTRIBUTES_HPP
 
 struct Attributes {
     float hp; 

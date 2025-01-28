@@ -1,5 +1,5 @@
-#ifndef RACE_H
-#define RACE_H
+#ifndef RACE_HPP
+#define RACE_HPP
 
 #include <string>
 #include "Attributes.hpp"

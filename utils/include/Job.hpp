@@ -1,5 +1,5 @@
-#ifndef JOB_H
-#define JOB_H
+#ifndef JOB_HPP
+#define JOB_HPP
 
 #include <string>
 #include "Attributes.hpp"

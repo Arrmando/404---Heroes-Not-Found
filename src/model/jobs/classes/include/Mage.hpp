@@ -1,5 +1,5 @@
-#ifndef MAGE_H
-#define MAGE_H
+#ifndef MAGE_HPP
+#define MAGE_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"

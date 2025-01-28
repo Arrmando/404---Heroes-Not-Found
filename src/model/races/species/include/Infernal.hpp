@@ -1,5 +1,5 @@
-#ifndef INFERNAL_H
-#define INFERNAL_H
+#ifndef INFERNAL_HPP
+#define INFERNAL_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

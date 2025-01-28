@@ -36,12 +36,12 @@ public:
         job->skill(*attributesProcessor, level);
     }
 
-    void physicalAttack() {
-        //TODO
+    float physicalAttack() {
+        return attributesProcessor->getCurrentAttributes().physicalAttack;
     }
 
-    void magicalAttack() {
-        //TODO
+    float magicalAttack() {
+        return attributesProcessor->getCurrentAttributes().magicAttack;
     }
 
     void showCharacterAttributes() {

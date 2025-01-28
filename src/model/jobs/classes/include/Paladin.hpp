@@ -1,5 +1,5 @@
-#ifndef PALADIN_H
-#define PALADIN_H
+#ifndef PALADIN_HPP
+#define PALADIN_HPP
 
 #include "Jobs.hpp"
 #include "Attributes.hpp"
