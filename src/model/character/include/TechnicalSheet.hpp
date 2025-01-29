@@ -3,9 +3,9 @@
 
 #include <string>
 #include <memory>
-#include "RacesInterface.hpp"
-#include "JobsInterface.hpp"
-#include "RaceIncubator.hpp"
+#include "../races/RacesInterface.hpp"
+#include "../jobs/JobsInterface.hpp"
+#include "../races/include/RaceIncubator.hpp"
 #include "JobIncubator.hpp"
 #include "AttributesProcessor.hpp"
 

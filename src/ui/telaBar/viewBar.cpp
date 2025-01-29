@@ -1,10 +1,11 @@
 #include "./include/viewBar.hpp"
 #include "./include/viewModelBar.hpp"
 
-
-Bar::Bar()
+Bar::Bar(TechnicalSheet* character)
     : telaBar(sf::VideoMode(900, 600), "Bar"),
-    timer(font, 350, 250, 50){
+      timer(font, 350, 250, 50),
+      viewModel(std::make_unique<ViewModelBar>(character)) // Inicializa o ViewModelBar com o personagem
+{
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
@@ -14,39 +15,37 @@ Bar::Bar()
     if (!barTexture.loadFromFile("assets/images/bar.jpg")) {
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
-    
-    
-    timer.start(120); // Inicia o timer com 2 minutos
-    
-    viewModel = new ViewModelBar();
-    
-    sf::Clock clock;
 
+    timer.start(120); // Inicia o timer com 2 minutos
     barSprite.setTexture(barTexture);
     barSprite.setScale(1.5f, 1.8f);
 
     comprarMercenario = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar", font, 30, true, 2.0);
-    retornar = std::make_unique<Button>(50, 50, 75, 50, sf::Color::White, "9", fontSetas, 20, true );
+    retornar = std::make_unique<Button>(50, 50, 75, 50, sf::Color::White, "9", fontSetas, 20, true);
+
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
     moneyText.setFillColor(sf::Color::White);
     moneyText.setPosition(10, 10);
 
-    updateMoneyText(); // Atualiza o texto do contador
- }
- void Bar::update() {
-    sf::Time deltaTime = gameClock.restart();  // Obtém o tempo passado desde o último quadro
-    timer.update(deltaTime);  // Passa o deltaTime para atualizar o timer
-    updateMoneyText();  // Atualiza o texto do dinheiro
-    updateMercenarioText();  // Atualiza o texto do mercenário
+    updateMoneyText(); // Atualiza o texto inicial do dinheiro
+}
+
+void Bar::update() {
+    sf::Time deltaTime = gameClock.restart();
+    timer.update(deltaTime);
+    updateMoneyText();
+    updateMercenarioText();
+}
+
+void Bar::updateMoneyText() {
+    moneyText.setString("Dinheiro: " + std::to_string(viewModel->getMoney()) + " R$");
 }
 
 void Bar::updateMercenarioText() {
     mercenarioText.setString("ORK Guerreiro level: 15");
 }
-void Bar::updateMoneyText() {                                                                                                                                     
-    moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
-}
+
 void Bar::handleEvents() {
     sf::Event event;
     while (telaBar.pollEvent(event)) {
@@ -56,13 +55,13 @@ void Bar::handleEvents() {
         if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePos = sf::Mouse::getPosition(telaBar);
 
-            if (comprarMercenario->isClicked(mousePos) && money >= precoMecenario) {
-                updateMoneyText(); // Atualiza o texto do contador
+            if (comprarMercenario->isClicked(mousePos) && viewModel->getMoney() >= precoMecenario) {
+                viewModel->comprarMercenario(precoMecenario);
+                updateMoneyText();
             }
             if (retornar->isClicked(mousePos)) {
                 telaBar.close();
                 viewModel->mudarParaCidade();
-                // Atualiza o texto do contador
             }
         }
     }
@@ -71,21 +70,14 @@ void Bar::handleEvents() {
 void Bar::run() {
     while (telaBar.isOpen()) {
         handleEvents();
-        render();
         update();
+        render();
     }
 }
 
 void Bar::render() {
-    sf::Color hoverColor = sf::Color(200, 200, 200); // Example hover color
-    sf::Color defaultColor = sf::Color(128, 128, 128); // Default color
-    sf::Color attackColor = sf::Color(200, 200, 200, 10);
-
-    // Update button colors based on hover state
-    comprarMercenario->setColorHover(hoverColor, defaultColor, telaBar);
-
     telaBar.clear();
-    telaBar.draw(barSprite);// Exibe o texto do dinheiro
+    telaBar.draw(barSprite);
     comprarMercenario->draw(telaBar);
     retornar->draw(telaBar);
     timer.draw(telaBar);

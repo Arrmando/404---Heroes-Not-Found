@@ -1,10 +1,10 @@
 #include <string>
 #include <memory>
-#include "RacesInterface.hpp"
-#include "JobsInterface.hpp"
-#include "RaceIncubator.hpp"
-#include "JobIncubator.hpp"
-#include "AttributesProcessor.hpp"
+#include "../races/include/Races.hpp"
+#include "../jobs/include/Jobs.hpp"
+#include "../races/include/RaceIncubator.hpp"
+#include "../jobs/include/JobIncubator.hpp"
+#include "../attributes/include/AttributesProcessor.hpp"
 
 class TechnicalSheet {
 private:
