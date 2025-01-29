@@ -76,6 +76,15 @@ void Cidade::run() {
 }
 
 void Cidade::render() {
+
+    sf::Color hoverColor = sf::Color(255, 165, 0); 
+    sf::Color attackColor = sf::Color(128, 128, 128, 50);
+
+    irMenu->setColorHover(hoverColor, sf::Color(128, 128, 128), telaCidade);
+    irBar->setColorHover(hoverColor, sf::Color(128, 128, 128), telaCidade);
+    irLoja->setColorHover(hoverColor, sf::Color(128, 128, 128), telaCidade);
+    irCombate->setColorHover(hoverColor, sf::Color(128, 128, 128), telaCidade);
+
     telaCidade.clear();
     telaCidade.draw(cidadeSprite); // Exibe o texto do dinheiro
     irCombate->draw(telaCidade);
