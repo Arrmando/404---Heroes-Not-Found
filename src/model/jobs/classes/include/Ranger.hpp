@@ -1,10 +1,10 @@
 #ifndef RANGER_HPP
 #define RANGER_HPP
 
-#include "Jobs.hpp"
-#include "Attributes.hpp"
+#include "../model/jobs/include/Jobs.hpp"
+#include "../utils/include/Attributes.hpp"
 #include <iostream>
-#include "AttributesProcessor.hpp"
+#include "../model/attributes/include/AttributesProcessor.hpp"
 
 class Ranger : public Jobs {
 public:

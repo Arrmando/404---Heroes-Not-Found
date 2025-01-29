@@ -3,19 +3,19 @@
 
 #include <iostream>
 #include <algorithm>
-#include "Attributes.hpp"
-#include "Race.hpp"
-#include "Job.hpp"
-#include "ModifiersProcessor.hpp"
 #include <memory>
-#include "AttibutesType.hpp"
 #include <cppcoro/task.hpp>
 #include <cppcoro/sync_wait.hpp>
 #include <chrono>
 #include <thread>
 #include <atomic>
-#include "Corroutines.hpp"
 #include <cppcoro/io_service.hpp>
+#include "../utils/include/Attributes.hpp"
+#include "../utils/include/Race.hpp"
+#include "../utils/include/Job.hpp"
+#include "../model/modifiers/include/ModifiersProcessor.hpp"
+#include "../utils/include/AttibutesType.hpp"
+#include "../utils/include/Corroutines.hpp"
 
 class AttributesProcessor {
 private:

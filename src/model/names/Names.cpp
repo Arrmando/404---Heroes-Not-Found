@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <random>
-
+#include "../utils/include/Species.hpp"
 
 std::string randomName(Species type) {
 
