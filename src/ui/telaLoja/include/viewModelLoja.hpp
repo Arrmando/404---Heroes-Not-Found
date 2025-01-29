@@ -13,6 +13,7 @@ public:
     bool podeComprarArmadura() const;
     void comprarArma();
     void comprarArmadura();
+    void mudarParaCidade();
 
 private:
 

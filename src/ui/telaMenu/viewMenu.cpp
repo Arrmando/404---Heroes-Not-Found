@@ -3,24 +3,40 @@
 #include <iostream>
 
 Menu::Menu()
+<<<<<<< HEAD
+    : window(sf::VideoMode(800, 600), "Heroes not found"), 
+      font(), 
+      viewModel(std::make_unique<MenuViewModel>(font)) { // Initialize viewModel
+    if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
+=======
     : window(sf::VideoMode(800, 600), "Heroes not found"),
       font(),
       viewModel(std::make_unique<MenuViewModel>(font)) {
     if (!font.loadFromFile("assets/fonts/CongresoDePerros.TTF")) {
+>>>>>>> origin/main
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
 
     titleText.setFont(font);
     titleText.setString("Heroes not found");
+<<<<<<< HEAD
+    titleText.setCharacterSize(50); 
+=======
     titleText.setCharacterSize(100);
+>>>>>>> origin/main
     titleText.setFillColor(sf::Color::Black);
 
     sf::FloatRect textBounds = titleText.getLocalBounds();
     titleText.setOrigin(textBounds.width / 2, textBounds.height / 2);
     titleText.setPosition(300, 20);
 
+<<<<<<< HEAD
+    if (!backgroundTexture.loadFromFile("assets/images/menu.jpg")) { 
+        throw std::runtime_error("Erro ao carregar o arquivo SVG de fundo!");
+=======
     if (!backgroundTexture.loadFromFile("assets/images/menu.jpg")) {
         throw std::runtime_error("Erro ao carregar a textura de fundo!");
+>>>>>>> origin/main
     }
     backgroundSprite.setTexture(backgroundTexture);
 

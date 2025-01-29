@@ -6,7 +6,7 @@
 #include <string>
 #include <memory>
 #include "../../components/include/Button.hpp"
-
+#include "viewModelLoja.hpp"
 
 class Loja{
 public:
@@ -21,7 +21,9 @@ private:
     std::unique_ptr<Button> comprarArma;
     std::unique_ptr<Button> comprarArmadura;
     sf::RenderWindow telaLoja;
+    std::unique_ptr<Button> retornar;
     sf::Font font;
+    sf::Font fontSetas;
     sf::Texture lojaTexture;
     sf::Sprite lojaSprite;
 
@@ -31,7 +33,7 @@ private:
     sf::Text moneyText;
     sf::Text armaText;
     sf::Text armaduraText;
-
+    ViewModelLoja* viewModel;
     void updateMoneyText();
     void updateArmaText();
     void updateArmaduraText();
