@@ -13,11 +13,11 @@ ViewModelCombate::ViewModelCombate() {/*
     attackCooldown = 0.1f;
     */
    //trocar por função usada de exemplo no whatsapp
-   
+   TechnicalSheet jogador = playerHolder.getPlayerConst();
 }
 
 float ViewModelCombate::getHealthPlayer() {
-    return healthPlayer;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
+    return jogador.hp;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
 }
 
 float ViewModelCombate::getHealthBoss() {
