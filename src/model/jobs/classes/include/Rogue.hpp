@@ -1,10 +1,10 @@
 #ifndef ROGUE_h
 #define ROGUE_h
 
-#include "Jobs.hpp"
-#include "Attributes.hpp"
+#include "../model/jobs/include/Jobs.hpp"
+#include "../utils/include/Attributes.hpp"
 #include <iostream>
-#include "AttributesProcessor.hpp"
+#include "../model/attributes/include/AttributesProcessor.hpp"
 
 class Rogue : public Jobs {
 public:

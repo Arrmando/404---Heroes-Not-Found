@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "RacesInterface.hpp"
+#include "../model/races/RacesInterface.hpp"
 
 class Races : public RaceInterface {
 public:

@@ -1,10 +1,10 @@
 #ifndef CLERIC_H
 #define CLERIC_H
 
-#include "Jobs.hpp"
-#include "Attributes.hpp"
+#include "../model/jobs/include/Jobs.hpp"
+#include "../utils/include/Attributes.hpp"
 #include <iostream>
-#include "AttributesProcessor.hpp"
+#include "../model/attributes/include/AttributesProcessor.hpp"
 
 class Cleric : public Jobs {
 public:

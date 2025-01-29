@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "JobsInterface.hpp"
+#include "../model/jobs/JobsInterface.hpp"
 
 class Jobs : public JobInterface {
 public:

@@ -1,8 +1,8 @@
 #ifndef JOBS_INTERFACE_H
 #define JOBS_INTERFACE_H
 
-#include "Job.hpp"
-#include "AttributesProcessor.hpp"
+#include "../utils/include/Job.hpp"
+#include "../model/attributes/include/AttributesProcessor.hpp"
 
 class JobInterface {
 public:

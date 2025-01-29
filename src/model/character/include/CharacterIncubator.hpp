@@ -3,9 +3,9 @@
 
 #include <memory>
 #include <string>
-#include "TechnicalSheet.hpp"
-#include "Species.hpp"
-#include "Classes.hpp"
+#include "../model/character/include/TechnicalSheet.hpp"
+#include "../utils/include/Species.hpp"
+#include "../utils/include/Classes.hpp"
 
 class CharacterIncubator {
 public:
