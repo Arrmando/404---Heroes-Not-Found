@@ -12,7 +12,8 @@ private:
     sf::RenderWindow window;
     sf::Font font;
     sf::Text titleText;
-    sf::Text nomeText;
+    sf::Text nomeText1;
+    sf::Text nomeText2;
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
 

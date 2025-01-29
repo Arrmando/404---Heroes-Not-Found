@@ -20,11 +20,18 @@ Sobre::Sobre()
     titleText.setPosition(300, 100); // Centered title
 
     // Adding developer names
-    nomeText.setFont(font);
-    nomeText.setString("   FrontEnd\n1. Guilherme Fachinelli\n2. Rafael Campello Soares\n3. Gustavo Silvestre Barroso");
-    nomeText.setCharacterSize(40);
-    nomeText.setFillColor(sf::Color::Black);
-    nomeText.setPosition(100, 230); 
+    nomeText1.setFont(font);
+    nomeText1.setString("   FrontEnd\n1. Guilherme Fachinelli\n2. Rafael Campello\n3. Gustavo Silvestre");
+    nomeText1.setCharacterSize(40);
+    nomeText1.setFillColor(sf::Color::Black);
+    nomeText1.setPosition(60, 230); 
+
+        // Adding developer names
+    nomeText2.setFont(font);
+    nomeText2.setString("   BackEnd\n1. Arthur Rafael\n2. Pedro Armando\n3. Elias Siqueira");
+    nomeText2.setCharacterSize(40);
+    nomeText2.setFillColor(sf::Color::Black);
+    nomeText2.setPosition(400, 230); 
 
     if (!backgroundTexture.loadFromFile("assets/images/Sobre.png")) {
         throw std::runtime_error("Erro ao carregar a textura de fundo!");
@@ -63,7 +70,8 @@ void Sobre::render() {
     window.clear();
     window.draw(backgroundSprite);
     window.draw(titleText);
-    window.draw(nomeText); // Draw developer names
+    window.draw(nomeText1); 
+    window.draw(nomeText2); 
     returnButton->draw(window);
     window.display();
 }
