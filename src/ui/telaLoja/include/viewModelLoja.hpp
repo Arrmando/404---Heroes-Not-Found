@@ -12,6 +12,10 @@ public:
     bool podeComprarArmadura() const;
     void comprarArma();
     void comprarArmadura();
+    void mudarParaCidade();
+
+private:
+
 };
 
-#endif // VIEWMODELLOJA_HPP
+#endif // VIEWMODEL_HPP

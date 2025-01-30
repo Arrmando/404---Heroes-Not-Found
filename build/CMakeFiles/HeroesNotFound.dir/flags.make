@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/404---Heroes-Not-Found/libs/cppcoro/include
+CXX_INCLUDES = -I/home/rafael/404---Heroes-Not-Found-1/libs/cppcoro/include
 
 CXX_FLAGS = -std=gnu++20
 

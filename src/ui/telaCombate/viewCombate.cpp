@@ -22,7 +22,7 @@ CombatScreen::CombatScreen() {
     bossName.setPosition(25.0f, 25.0f);
     bossName.setCharacterSize(20);
     bossName.setFillColor(sf::Color::Black);
-    bossName.setString("DRAGÃO BRABO Lv: 400");
+    bossName.setString("LARGATIXA COMUNA Lv: 1313");
 
     playerName.setFont(font);
     playerName.setPosition(785.0f, 25.0f);
@@ -34,19 +34,19 @@ CombatScreen::CombatScreen() {
     aliadoName1.setPosition(785.0f, 135.0f);
     aliadoName1.setCharacterSize(20);
     aliadoName1.setFillColor(sf::Color::Black);
-    aliadoName1.setString("Fachinelli Jr. Lv: 500");
+    aliadoName1.setString("Barrosao Lv: 500");
 
     aliadoName2.setFont(font);
     aliadoName2.setPosition(785.0f, 245.0f);
     aliadoName2.setCharacterSize(20);
     aliadoName2.setFillColor(sf::Color::Black);
-    aliadoName2.setString("Fachinelli III Lv: 200");
+    aliadoName2.setString("Armando Lv: 200");
 
     aliadoName3.setFont(font);
     aliadoName3.setPosition(785.0f, 355.0f);
     aliadoName3.setCharacterSize(20);
     aliadoName3.setFillColor(sf::Color::Black);
-    aliadoName3.setString("Fachinelli IV Lv: 100");
+    aliadoName3.setString("Campello Lv: 100");
 
     
     // Imagem de Fundo

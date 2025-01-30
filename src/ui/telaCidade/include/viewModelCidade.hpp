@@ -6,11 +6,11 @@
 
 class ViewModelCidade{
 public:
-    void mudarParaMenu();
-    void mudarParaCombate();
-    void mudarParaBar();
-    void mudarParaLoja();
-    void fecharJanelaAtual();
+
+void mudarParaMenu();
+void mudarParaCombate();
+void mudarParaBar();
+void mudarParaLoja();
 };
 
 #endif // VIEW_MODELCIDADE_HPP

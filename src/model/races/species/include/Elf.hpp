@@ -1,5 +1,5 @@
-#ifndef ELF_H
-#define ELF_H
+#ifndef ELF_HPP
+#define ELF_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

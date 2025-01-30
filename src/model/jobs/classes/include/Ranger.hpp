@@ -1,9 +1,9 @@
-#ifndef RANGER_H
-#define RANGER_H
+#ifndef RANGER_HPP
+#define RANGER_HPP
 
+#include <iostream>
 #include "Jobs.hpp"
 #include "Attributes.hpp"
-#include <iostream>
 #include "AttributesProcessor.hpp"
 
 class Ranger : public Jobs {

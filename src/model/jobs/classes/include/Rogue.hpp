@@ -1,9 +1,9 @@
-#ifndef ROGUE_h
-#define ROGUE_h
+#ifndef ROGUE_HPP
+#define ROGUE_HPP
 
+#include <iostream>
 #include "Jobs.hpp"
 #include "Attributes.hpp"
-#include <iostream>
 #include "AttributesProcessor.hpp"
 
 class Rogue : public Jobs {

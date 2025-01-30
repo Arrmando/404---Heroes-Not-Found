@@ -1,5 +1,5 @@
-#ifndef JOBS_H
-#define JOBS_H
+#ifndef JOBS_HPP
+#define JOBS_HPP
 
 #include <iostream>
 #include <string>
@@ -10,7 +10,7 @@ class Jobs : public JobInterface {
 public:
     Job job;
 
-    Jobs() = default;
+    Jobs();
 
     Job getJob() const;
     

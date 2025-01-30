@@ -1,9 +1,9 @@
-#ifndef JOB_H
-#define JOB_H
+#ifndef JOB_HPP
+#define JOB_HPP
 
 #include <string>
-#include "Attributes.hpp"
-#include "Classes.hpp"
+#include "../../utils/include/Attributes.hpp"
+#include "../../utils/include/Classes.hpp"
 
 struct Job{
     Classes occupation;

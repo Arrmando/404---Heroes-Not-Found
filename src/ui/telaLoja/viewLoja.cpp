@@ -6,15 +6,19 @@ Loja::Loja()
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
+    if (!fontSetas.loadFromFile("assets/fonts/setas.ttf")) {
+        throw std::runtime_error("Erro ao carregar a fonte!");
+    }
     if (!lojaTexture.loadFromFile("assets/images/loja.jpg")) {
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
-
+    viewModel = new ViewModelLoja();
     lojaSprite.setTexture(lojaTexture);
     lojaSprite.setScale(0.8f, 0.7f);
 
-    comprarArma = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar Arma", font, 30);
-    comprarArmadura = std::make_unique<Button>(350, 300, 200, 100, sf::Color::Yellow, "Comprar Armadura", font, 30);
+    comprarArma = std::make_unique<Button>(350, 400, 400, 50, sf::Color::Yellow, "Comprar Arma", font, 30);
+    comprarArmadura = std::make_unique<Button>(350, 300, 400, 50, sf::Color::Yellow, "Comprar Armadura", font, 30);
+    retornar = std::make_unique<Button>(50, 50, 75, 50, sf::Color::White, "9", fontSetas, 20, true );
 
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
@@ -59,6 +63,10 @@ void Loja::handleEvents() {
                 money -= precoArmadura;
                 updateMoneyText();
             }
+            if (retornar->isClicked(mousePos)) {
+                telaLoja.close();
+                viewModel->mudarParaCidade();
+            }
         }
     }
 }
@@ -83,6 +91,7 @@ void Loja::render() {
     telaLoja.draw(lojaSprite);
     comprarArma->draw(telaLoja);
     comprarArmadura->draw(telaLoja);
+    retornar->draw(telaLoja);
     telaLoja.draw(moneyText);
     telaLoja.draw(armaText);
     telaLoja.draw(armaduraText);

@@ -1,5 +1,5 @@
-#ifndef GIANT_H
-#define GIANT_H
+#ifndef GIANT_HPP
+#define GIANT_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

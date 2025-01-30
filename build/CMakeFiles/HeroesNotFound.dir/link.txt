@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/HeroesNotFound.dir/src/main.cpp.o -o HeroesNotFound   -L/root/404---Heroes-Not-Found/libs/cppcoro/build/lib  -Wl,-rpath,/root/404---Heroes-Not-Found/libs/cppcoro/build/lib -lcppcoro 
+/usr/bin/c++ CMakeFiles/HeroesNotFound.dir/src/main.cpp.o -o HeroesNotFound   -L/home/rafael/404---Heroes-Not-Found-1/libs/cppcoro/build/lib  -Wl,-rpath,/home/rafael/404---Heroes-Not-Found-1/libs/cppcoro/build/lib -lcppcoro 

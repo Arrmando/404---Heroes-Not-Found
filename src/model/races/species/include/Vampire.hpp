@@ -1,5 +1,5 @@
-#ifndef VAMPIRE_H
-#define VAMPIRE_H
+#ifndef VAMPIRE_HPP
+#define VAMPIRE_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

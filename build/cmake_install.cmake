@@ -1,4 +1,4 @@
-# Install script for directory: /root/404---Heroes-Not-Found
+# Install script for directory: /home/rafael/404---Heroes-Not-Found-1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/404---Heroes-Not-Found/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rafael/404---Heroes-Not-Found-1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

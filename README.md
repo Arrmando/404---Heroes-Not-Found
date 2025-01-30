@@ -122,4 +122,114 @@ SST significa que cada pedaço de dados deve ter uma única fonte autoritativa n
 2. **InterfaceGráfica**:  https://lucid.app/lucidchart/9cb1650a-1c5e-443c-a44b-0280fa08f1da/edit?view_items=xjFJOcZq0O16&invitationId=inv_edcb17ae-dbe9-4af1-80ba-9172aa813db7
 3. **Combate**:  https://lucid.app/lucidchart/7b504578-92c7-4290-8840-85f5eeef0bce/edit?viewport_loc=-2401%2C143%2C4490%2C2199%2C0_0&invitationId=inv_61148b24-fc1f-4a19-897c-9a5da20b8ef2
 
+
+### Instruções para compilar:
+
+Este projeto utiliza bibliotecas de terceiros para funcionalidades específicas. Para garantir que tudo funcione corretamente, é necessário adicionar e compilar essas bibliotecas como submódulos do projeto.
+
+**Adicionando e compilando o `cppcoro`**
+
+```bash
+# Adiciona o repositório do cppcoro como submódulo
+git submodule add https://github.com/andreasbuhr/cppcoro.git libs/cppcoro
+
+# Inicializa e atualiza os submódulos
+git submodule update --init --recursive
+
+# Compila o cppcoro
+cd libs/cppcoro/
+mkdir build && cd build
+cmake ..
+make
+```
+
+**Configurando o VSCode para Trabalhar com `cppcoro`**
+
+Se você estiver usando o VSCode e encontrar erros de dependência relacionados ao cppcoro, siga as etapas abaixo:
+
+1. Abra o arquivo .vscode/c_cpp_properties.json e adicione os caminhos de inclusão necessários:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/model",
+                "${workspaceFolder}/src/model/attributes/include",
+                "${workspaceFolder}/src/model/character/include",
+                "${workspaceFolder}/src/model/jobs/include",
+                "${workspaceFolder}/src/model/modifiers/include",
+                "${workspaceFolder}/src/model/names",
+                "${workspaceFolder}/src/model/races/include",
+                "${workspaceFolder}/src/model/races/species",
+                "${workspaceFolder}/src/ui",
+                "${workspaceFolder}/utils",
+                "${workspaceFolder}/utils/include",
+                "${workspaceFolder}/libs",
+                "${workspaceFolder}/libs/cppcoro/include/cppcoro",
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceFolder}/libs/cppcoro/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/libs/cppcoro/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
+```
+
+2. Reinicie o VSCode e force uma reanálise do workspace:
+
+    Pressione `Ctrl + Shift + P` e digite "C/C++: Rescan Workspace".
+
+3. Limpe e recompile o projeto, se necessário:
+
+```bash
+rm -rf build/*
+cmake -S . -B build
+cmake --build build
+```
+
+**Compilando o model com `CMake`**
+
+```bash
+cd build
+cmake ..
+make
+```
+
+**A biblioteca `SFML`**
+
+Este projeto utiliza a SFML (Simple and Fast Multimedia Library) para fornecer funcionalidades gráficas, de áudio e de entrada. A SFML é uma biblioteca simples e eficiente, amplamente utilizada no desenvolvimento de jogos e aplicações multimídia.
+
+**Instalação da `SFML`**
+
+Se você deseja compilar o projeto localmente, é necessário ter a SFML instalada no seu sistema. Siga as instruções abaixo para instalar a SFML:
+
+```bash 
+
+Ubuntu:
+sudo apt-get install libsfml-dev
+
+MacOS:
+brew install sfml
+
+```
+Windows:
+Baixe os arquivos de instalação no site oficial da SFML e siga o guia de instalação para o seu compilador.
+
+Link para a SFML
+Site oficial da SFML: https://www.sfml-dev.org/
+
+A SFML foi escolhida por sua facilidade de uso e pela boa documentação, que facilita o desenvolvimento de jogos 2D de forma rápida e eficiente.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.

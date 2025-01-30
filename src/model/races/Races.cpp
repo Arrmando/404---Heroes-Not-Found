@@ -1,22 +1,15 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "RacesInterface.hpp"
+#include "../../model/races/include/RacesInterface.hpp"
+#include "Races.hpp" 
 
-class Races : public RaceInterface {
-public:
-    Race race;
+Races::Races() = default;
 
-    Races() = default;
+Race Races::getRace() const {
+    return race;
+}
 
-    Race getRace() const {
-        return race;
-    }
-    
-protected:
-
-    void setRace(const Race& selectedRace) {
-        race = selectedRace;
-    };
-
-};
+void Races::setRace(const Race& selectedRace) {
+    race = selectedRace;
+}

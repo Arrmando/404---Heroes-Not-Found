@@ -1,5 +1,5 @@
-#ifndef JOB_INCUBATOR_H
-#define JOB_INCUBATOR_H
+#ifndef JOB_INCUBATOR_HPP
+#define JOB_INCUBATOR_HPP
 
 #include <memory>
 #include <string>

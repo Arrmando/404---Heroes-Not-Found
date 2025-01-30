@@ -1,9 +1,9 @@
-#ifndef SORCERER_h
-#define SORCERER_h
+#ifndef SORCERER_HPP
+#define SORCERER_HPP
 
+#include <iostream>
 #include "Jobs.hpp"
 #include "Attributes.hpp"
-#include <iostream>
 #include "AttributesProcessor.hpp"
 
 class Sorcerer : public Jobs {

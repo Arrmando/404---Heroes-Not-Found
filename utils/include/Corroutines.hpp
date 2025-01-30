@@ -1,5 +1,5 @@
-#ifndef CORROUTINES_H
-#define CORROUTINES_H
+#ifndef CORROUTINES_HPP
+#define CORROUTINES_HPP
 
 #include <cppcoro/task.hpp>
 #include <chrono>

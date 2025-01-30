@@ -11,8 +11,8 @@ class CharacterIncubator {
 public:
 
     static std::unique_ptr<TechnicalSheet> createCharacter(
-        std::string characterName, 
         int characterLevel, 
+        std::string characterName, 
         Species characterSpecies, 
         Classes characterClasses
     );

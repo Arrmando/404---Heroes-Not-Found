@@ -1,5 +1,5 @@
-#ifndef RACES_H
-#define RACES_H
+#ifndef RACES_HPP
+#define RACES_HPP
 
 #include <iostream>
 #include <string>
@@ -10,7 +10,7 @@ class Races : public RaceInterface {
 public:
     Race race;
 
-    Races() = default;
+    Races();
 
     Race getRace() const;
     

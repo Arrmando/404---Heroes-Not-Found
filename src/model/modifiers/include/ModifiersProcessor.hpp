@@ -1,15 +1,16 @@
-#ifndef MODIFIERS_PROCESSOR_H
-#define MODIFIERS_PROCESSOR_H
+#ifndef MODIFIERS_PROCESSOR_HPP
+#define MODIFIERS_PROCESSOR_HPP
 
-#include "Attributes.hpp"
 #include <cppcoro/task.hpp>
 #include <cppcoro/sync_wait.hpp>
 #include <chrono>
 #include <thread>
 #include <atomic>
 #include <iostream>
-#include "Corroutines.hpp"
 #include <cppcoro/io_service.hpp>
+#include <functional>
+#include "Attributes.hpp"
+#include "Corroutines.hpp"
 #include "AttibutesType.hpp"
 
 class ModifiersProcessor {
@@ -34,11 +35,11 @@ public:
 
     cppcoro::task<void> setTemporaryModifiersByTime(int timerSeconds, const Attributes& tempModifier);
 
-        float getHpModifier(const AttributesType type) const;
+    float getHpModifier(const AttributesType type) const;
 
     float getMagicAttackModifier(const AttributesType type) const;
 
-    float getPhysicalAttackModifier(const AttributesType type);
+    float getPhysicalAttackModifier(const AttributesType type) const;
 
     float getMagicDefenseModifier(const AttributesType type) const;
 

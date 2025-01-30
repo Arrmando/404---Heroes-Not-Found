@@ -1,5 +1,5 @@
-#ifndef HUMAN_H
-#define HUMAN_H
+#ifndef HUMAN_HPP
+#define HUMAN_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"

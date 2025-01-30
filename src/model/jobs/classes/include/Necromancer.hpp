@@ -1,9 +1,9 @@
-#ifndef NECROMANCER_H
-#define NECROMANCER_H
+#ifndef NECROMANCER_HPP
+#define NECROMANCER_HPP
 
+#include <iostream>
 #include "Jobs.hpp"
 #include "Attributes.hpp"
-#include <iostream>
 #include "AttributesProcessor.hpp"
 
 class Necromancer : public Jobs {

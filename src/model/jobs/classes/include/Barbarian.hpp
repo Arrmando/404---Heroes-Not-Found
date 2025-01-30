@@ -1,9 +1,9 @@
-#ifndef BARBARIAN_H
-#define BARBARIAN_H
+#ifndef BARBARIAN_HPP
+#define BARBARIAN_HPP
 
+#include <iostream>
 #include "Jobs.hpp"
 #include "Attributes.hpp"
-#include <iostream>
 #include "AttributesProcessor.hpp"
 
 class Barbarian : public Jobs {

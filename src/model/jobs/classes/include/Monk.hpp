@@ -1,9 +1,9 @@
-#ifndef MONK_H
-#define MONK_H
+#ifndef MONK_HPP
+#define MONK_HPP
 
+#include <iostream>
 #include "Jobs.hpp"
 #include "Attributes.hpp"
-#include <iostream>
 #include "AttributesProcessor.hpp"
 
 class Monk : public Jobs {

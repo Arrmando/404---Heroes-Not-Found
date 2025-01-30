@@ -1,21 +1,21 @@
-#ifndef ATTRIBUTES_PROCESSOR_H
-#define ATTRIBUTES_PROCESSOR_H
+#ifndef ATTRIBUTES_PROCESSOR_HPP
+#define ATTRIBUTES_PROCESSOR_HPP
 
 #include <iostream>
 #include <algorithm>
-#include "Attributes.hpp"
-#include "Race.hpp"
-#include "Job.hpp"
-#include "ModifiersProcessor.hpp"
 #include <memory>
-#include "AttibutesType.hpp"
 #include <cppcoro/task.hpp>
 #include <cppcoro/sync_wait.hpp>
 #include <chrono>
 #include <thread>
 #include <atomic>
-#include "Corroutines.hpp"
 #include <cppcoro/io_service.hpp>
+#include "Attributes.hpp"
+#include "Race.hpp"
+#include "Job.hpp"
+#include "AttibutesType.hpp"
+#include "Corroutines.hpp"
+#include "ModifiersProcessor.hpp"
 
 class AttributesProcessor {
 private:
@@ -28,8 +28,8 @@ private:
 
 public:
     AttributesProcessor(
-        Race& race_,
-        Job& job_
+        Race race_,
+        Job job_
     );
 
     void updateRaceAttributes(const unsigned int level);
@@ -40,9 +40,9 @@ public:
 
     void setCurrentAttributes();
 
-    float takePhysicalDamage(float damage);
+    void takePhysicalDamage(float damage);
 
-    float takeMagicDamage(float damage);
+    void takeMagicDamage(float damage);
 
     void restoreHealth(float amount);
 
@@ -52,9 +52,9 @@ public:
 
     void setModifiersEffect(int timer, Attributes& attributes);
     
-    Attributes getCurrentAttributes();
+    Attributes getCurrentAttributes() const;
     
-    Attributes getTotalAttributes();
+    Attributes getTotalAttributes() const;
 
     float dealSpecialPhysicalDamage(float superAttack);
 

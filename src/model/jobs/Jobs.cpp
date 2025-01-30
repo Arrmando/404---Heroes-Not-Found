@@ -1,22 +1,21 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "JobsInterface.hpp"
+#include "../../model/jobs/include/JobsInterface.hpp"
+#include "Jobs.hpp"
 
-class Jobs : public JobInterface {
-public:
-    Job job;
+Jobs::Jobs() = default;
 
-    Jobs() = default;
+Job Jobs::getJob() const {
+    return job;
+}
 
-    Job getJob() const {
-        return job;
-    }
-    
-protected:
-
-    void setJob(const Job& selectedJob) {
-        job = selectedJob;
-    };
-
-};
+/**
+ * Sets the character's job to the specified job.
+ * This method is protected and can only be called by derived classes.
+ *
+ * @param selectedJob The job to set for the character.
+ */
+void Jobs::setJob(const Job& selectedJob) {
+    job = selectedJob;
+}

@@ -1,14 +1,11 @@
-#include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 #include <random>
+#include "../utils/include/Species.hpp"
+#include "NameGenerator.hpp"
 
-
-std::string randomName(Species type) {
-
-    // List of names and species
-
-    std::vector<std::pair<std::Species, std::vector<std::string>>> species = {
+NameGenerator::NameGenerator() : gen(rd()) {
+    speciesNames = {
         {Species::DEMIHUMAN, {"Yimi Claws", "Hoya Fangs", "Mihra Paw", "Tadrel Vox", "Horver Razor", "Derrick Aquos", "Marie Sting", "Vim Tegri"}},
         {Species::DRACONIC, {"Trodhri", "Sriasho", "Trukthax", "Sthealdroz", "Medgut", "Iasniash", "Naergosoz", "Sthiokthilaz", "Holecdo", "Ozisthu"}},
         {Species::ELF, {"Horith Wysajeon", "Eldrin Aena", "Artin Kristris", "Aire Craphyra", "Nuovis Zumlamin", "Merellien Dordithas", "Larrel Ianxidor", "Navarre Trisdi", "Katar Vara", "Kelvhan Phirel"}},
@@ -20,29 +17,20 @@ std::string randomName(Species type) {
         {Species::VAMPIRE, {"Ishmael, The Vampire", "Thaddeus, The Vampire", "Obediah, The Vampire", "Sin, The Vampire", "Barnabas, The Vampire", "Cassandra, The Vampire", "Carmilla, The Vampire", "Lyllith, The Vampire", "Kiara, The Vampire", "Tempesta, The Vampire"}},
         {Species::INFERNAL, {"Ralgalad", "Zogloth", "Thogdruth", "Koth'tis", "Sug'thaxon", "Zallmumoth", "Gorzon", "Bongrin", "Thostren", "Thogdral"}}
     };
+}
 
-
-    // Search species on the list
-
-    bool founded = false;
+std::string NameGenerator::randomName(Species type) {
     std::vector<std::string> choosedNames;
-    for (type : species) {
-        if (species.first == choosedSpecie) {
+
+    for (const auto& species : speciesNames) {
+        if (species.first == type) {
             choosedNames = species.second;
-            founded = true;
             break;
         }
     }
 
-
-
-    // Giveway random name
-    std::random_device rd;
-    std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(0, choosedNames.size() - 1);
-
     int randomIndex = dis(gen);
-    std::cout << "Creature name: " << choosedNames[randomIndex] << std::endl;
 
     return choosedNames[randomIndex];
 }

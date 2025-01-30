@@ -1,5 +1,5 @@
-#ifndef DRACONIC_H
-#define DRACONIC_H
+#ifndef DRACONIC_HPP
+#define DRACONIC_HPP
 
 #include "Races.hpp"
 #include "Attributes.hpp"
