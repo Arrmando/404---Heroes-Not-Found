@@ -3,20 +3,15 @@
 
 Bar::Bar()
     : telaBar(sf::VideoMode(900, 600), "Bar"),
-      timer(font, 800, 20, 30),
-      money(10),
-      precoMecenario(5)
+      timer(font, 800, 20, 30)
 {
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
-        throw std::runtime_error("Erro ao carregar a fonte!");
-    }
-    if (!fontSetas.loadFromFile("assets/fonts/setas.ttf")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
     if (!barTexture.loadFromFile("assets/images/bar.jpg")) {
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
-    
+
     timer.start(120);
     viewModel = new ViewModelBar();
     
@@ -24,7 +19,6 @@ Bar::Bar()
     barSprite.setScale(1.5f, 1.8f);
 
     comprarMercenario = std::make_unique<Button>(350, 300, 400, 50, sf::Color::Yellow, "Comprar Mercenario", font, 30);
-
     retornar = std::make_unique<Button>(20, 20, 200, 60, sf::Color(128, 128, 128), "Voltar", font, 50);
 
     moneyText.setFont(font);
@@ -42,7 +36,7 @@ void Bar::update() {
 }
 
 void Bar::updateMoneyText() {
-    moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
+    moneyText.setString("Dinheiro: " + std::to_string(money) + " Dracmas");
 }
 
 void Bar::handleEvents() {
