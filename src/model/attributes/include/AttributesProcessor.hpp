@@ -10,12 +10,12 @@
 #include <thread>
 #include <atomic>
 #include <cppcoro/io_service.hpp>
-#include "../utils/include/Attributes.hpp"
-#include "../utils/include/Race.hpp"
-#include "../utils/include/Job.hpp"
-#include "../model/modifiers/include/ModifiersProcessor.hpp"
-#include "../utils/include/AttibutesType.hpp"
-#include "../utils/include/Corroutines.hpp"
+#include "Attributes.hpp"
+#include "Race.hpp"
+#include "Job.hpp"
+#include "AttibutesType.hpp"
+#include "Corroutines.hpp"
+#include "ModifiersProcessor.hpp"
 
 class AttributesProcessor {
 private:

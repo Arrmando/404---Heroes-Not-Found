@@ -3,16 +3,16 @@
 
 #include <memory>
 #include <string>
-#include "../model/character/include/TechnicalSheet.hpp"
-#include "../utils/include/Species.hpp"
-#include "../utils/include/Classes.hpp"
+#include "TechnicalSheet.hpp"
+#include "Species.hpp"
+#include "Classes.hpp"
 
 class CharacterIncubator {
 public:
 
     static std::unique_ptr<TechnicalSheet> createCharacter(
-        std::string characterName, 
         int characterLevel, 
+        std::string characterName, 
         Species characterSpecies, 
         Classes characterClasses
     );

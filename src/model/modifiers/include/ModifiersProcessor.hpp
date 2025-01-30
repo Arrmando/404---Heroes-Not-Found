@@ -1,17 +1,17 @@
 #ifndef MODIFIERS_PROCESSOR_HPP
 #define MODIFIERS_PROCESSOR_HPP
 
-#include "../utils/include/Attributes.hpp"
 #include <cppcoro/task.hpp>
 #include <cppcoro/sync_wait.hpp>
 #include <chrono>
 #include <thread>
 #include <atomic>
 #include <iostream>
-#include "../utils/include/Corroutines.hpp"
 #include <cppcoro/io_service.hpp>
-#include "../utils/include/AttibutesType.hpp"
 #include <functional>
+#include "Attributes.hpp"
+#include "Corroutines.hpp"
+#include "AttibutesType.hpp"
 
 class ModifiersProcessor {
 private:

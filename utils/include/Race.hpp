@@ -2,8 +2,8 @@
 #define RACE_HPP
 
 #include <string>
-#include "../utils/include/Attributes.hpp"
-#include "../utils/include/Species.hpp"
+#include "./Attributes.hpp"
+#include "./Species.hpp"
 
 struct Race{
     Species species;
