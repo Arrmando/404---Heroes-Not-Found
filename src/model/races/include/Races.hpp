@@ -10,7 +10,7 @@ class Races : public RaceInterface {
 public:
     Race race;
 
-    Races() = default;
+    Races();
 
     Race getRace() const;
     

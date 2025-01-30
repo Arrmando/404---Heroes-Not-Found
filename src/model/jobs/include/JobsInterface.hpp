@@ -7,14 +7,14 @@
 class JobInterface {
 public:
 
-    virtual ~JobInterface() = default;
+    virtual ~JobInterface();
 
-    virtual Job getJob() const = 0;
+    virtual Job getJob() const;
     
-    virtual void skill(AttributesProcessor& attributesProcessor, const int level) = 0;
+    virtual void skill(AttributesProcessor& attributesProcessor, const int level);
 
 protected:    
-    virtual void setJob(const Job& selectedJob) = 0;
+    virtual void setJob(const Job& selectedJob);
 
 };
 

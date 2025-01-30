@@ -10,7 +10,7 @@ class Jobs : public JobInterface {
 public:
     Job job;
 
-    Jobs() = default;
+    Jobs();
 
     Job getJob() const;
     
