@@ -205,4 +205,31 @@ cmake ..
 make
 ```
 
+**A biblioteca `SFML`**
+
+Este projeto utiliza a SFML (Simple and Fast Multimedia Library) para fornecer funcionalidades gráficas, de áudio e de entrada. A SFML é uma biblioteca simples e eficiente, amplamente utilizada no desenvolvimento de jogos e aplicações multimídia.
+
+**Instalação da `SFML`**
+
+Se você deseja compilar o projeto localmente, é necessário ter a SFML instalada no seu sistema. Siga as instruções abaixo para instalar a SFML:
+
+```bash 
+
+Ubuntu:
+sudo apt-get install libsfml-dev
+
+MacOS:
+brew install sfml
+
+```
+Windows:
+Baixe os arquivos de instalação no site oficial da SFML e siga o guia de instalação para o seu compilador.
+
+Link para a SFML
+Site oficial da SFML: https://www.sfml-dev.org/
+
+A SFML foi escolhida por sua facilidade de uso e pela boa documentação, que facilita o desenvolvimento de jogos 2D de forma rápida e eficiente.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
