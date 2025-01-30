@@ -2,7 +2,11 @@
 #include "./include/viewModelCombate.hpp"
 #include "../telaCidade/include/viewCidade.hpp"
 #include "../../model/character/include/TechnicalSheet.hpp"
+#include "../../model/character/include/PlayerSheetHolder.hpp"
+#include "../../model/character/include/RandomSheetGenerator.hpp"
+#include "../../model/character/include/AlliesSheetHolder.hpp"
 #include <iostream>
+#include <vector>
 
 ViewModelCombate::ViewModelCombate() {/*
     healthPlayer = 5000.0f;
@@ -13,11 +17,31 @@ ViewModelCombate::ViewModelCombate() {/*
     attackCooldown = 0.1f;
     */
    //trocar por função usada de exemplo no whatsapp
-   TechnicalSheet jogador = playerHolder.getPlayerConst();
+    TechnicalSheet jogador = playerHolder.getPlayerConst(); // copia ficha do jogador
+    
+    AlliesSheetHolder holder;
+    int indice = holder.getNumAllies();
+    if (indice != 0) {
+    std::vector<TechnicalSheet> allies = holder.getAllies(); //copa ficha dos alidos
+    }
 }
 
 float ViewModelCombate::getHealthPlayer() {
+
+     allies[0].atacar();
     return jogador.hp;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
+
+
+    // Chamando um método diretamente do primeiro aliado
+    allies[0].physicalAttack();  // Chama o método physicalAttack() de ally1
+
+
+
+
+
+
+
+
 }
 
 float ViewModelCombate::getHealthBoss() {
