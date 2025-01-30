@@ -12,26 +12,27 @@ Loja::Loja()
     if (!lojaTexture.loadFromFile("assets/images/loja.jpg")) {
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
+    
     viewModel = new ViewModelLoja();
     lojaSprite.setTexture(lojaTexture);
     lojaSprite.setScale(0.8f, 0.7f);
 
     comprarArma = std::make_unique<Button>(350, 400, 400, 50, sf::Color::Yellow, "Comprar Arma", font, 30);
     comprarArmadura = std::make_unique<Button>(350, 300, 400, 50, sf::Color::Yellow, "Comprar Armadura", font, 30);
-    retornar = std::make_unique<Button>(50, 50, 75, 50, sf::Color::White, "9", fontSetas, 20, true );
+    retornar = std::make_unique<Button>(20, 20, 200, 60, sf::Color(128, 128, 128), "Voltar", font, 50);
 
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
     moneyText.setFillColor(sf::Color::White);
-    moneyText.setPosition(10, 10);
+    moneyText.setPosition(20, 90);
 
-    updateMoneyText(); // Atualiza o texto do contador
+    updateMoneyText();
 }
 
 void Loja::update() { 
-    updateMoneyText();  // Atualiza o texto do dinheiro
-    updateArmaText();  // Atualiza o texto da arma
-    updateArmaduraText(); // Atualiza o texto da armadura
+    updateMoneyText();
+    updateArmaText();
+    updateArmaduraText();
 }
 
 void Loja::updateArmaText() {
@@ -42,7 +43,7 @@ void Loja::updateArmaduraText() {
     armaduraText.setString("Armadura de Diamante");
 }
 
-void Loja::updateMoneyText() {                                                                                                                                     
+void Loja::updateMoneyText() {
     moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
 }
 
@@ -80,12 +81,12 @@ void Loja::run() {
 }
 
 void Loja::render() {
-    sf::Color hoverColor = sf::Color(200, 200, 200); // Example hover color
-    sf::Color defaultColor = sf::Color(128, 128, 128); // Default color
+    sf::Color hoverColor = sf::Color(200, 200, 200);
+    sf::Color defaultColor = sf::Color(128, 128, 128);
 
-    // Update button colors based on hover state
     comprarArma->setColorHover(hoverColor, defaultColor, telaLoja);
     comprarArmadura->setColorHover(hoverColor, defaultColor, telaLoja);
+    retornar->setColorHover(sf::Color(255, 165, 0), sf::Color(128, 128, 128), telaLoja);
 
     telaLoja.clear();
     telaLoja.draw(lojaSprite);

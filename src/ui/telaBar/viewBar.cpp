@@ -1,10 +1,12 @@
 #include "./include/viewBar.hpp"
 #include "./include/viewModelBar.hpp"
 
-
 Bar::Bar()
     : telaBar(sf::VideoMode(900, 600), "Bar"),
-    timer(font, 350, 250, 50){
+      timer(font, 800, 20, 30),
+      money(10),
+      precoMecenario(5)
+{
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
@@ -15,38 +17,34 @@ Bar::Bar()
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
     
-    
-    timer.start(120); // Inicia o timer com 2 minutos
-    
+    timer.start(120);
     viewModel = new ViewModelBar();
     
-    sf::Clock clock;
-
     barSprite.setTexture(barTexture);
     barSprite.setScale(1.5f, 1.8f);
 
-    comprarMercenario = std::make_unique<Button>(350, 400, 200, 100, sf::Color::Yellow, "Comprar", font, 30, true, 2.0);
-    retornar = std::make_unique<Button>(50, 50, 75, 50, sf::Color::White, "9", fontSetas, 20, true );
+    comprarMercenario = std::make_unique<Button>(350, 300, 400, 50, sf::Color::Yellow, "Comprar Mercenario", font, 30);
+
+    retornar = std::make_unique<Button>(20, 20, 200, 60, sf::Color(128, 128, 128), "Voltar", font, 50);
+
     moneyText.setFont(font);
     moneyText.setCharacterSize(24);
     moneyText.setFillColor(sf::Color::White);
-    moneyText.setPosition(10, 10);
+    moneyText.setPosition(20, 90);
 
-    updateMoneyText(); // Atualiza o texto do contador
- }
- void Bar::update() {
-    sf::Time deltaTime = gameClock.restart();  // Obtém o tempo passado desde o último quadro
-    timer.update(deltaTime);  // Passa o deltaTime para atualizar o timer
-    updateMoneyText();  // Atualiza o texto do dinheiro
-    updateMercenarioText();  // Atualiza o texto do mercenário
+    updateMoneyText();
 }
 
-void Bar::updateMercenarioText() {
-    mercenarioText.setString("ORK Guerreiro level: 15");
+void Bar::update() {
+    sf::Time deltaTime = gameClock.restart();
+    timer.update(deltaTime);
+    updateMoneyText();
 }
-void Bar::updateMoneyText() {                                                                                                                                     
+
+void Bar::updateMoneyText() {
     moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
 }
+
 void Bar::handleEvents() {
     sf::Event event;
     while (telaBar.pollEvent(event)) {
@@ -57,12 +55,12 @@ void Bar::handleEvents() {
             sf::Vector2i mousePos = sf::Mouse::getPosition(telaBar);
 
             if (comprarMercenario->isClicked(mousePos) && money >= precoMecenario) {
-                updateMoneyText(); // Atualiza o texto do contador
+                money -= precoMecenario;
+                updateMoneyText();
             }
             if (retornar->isClicked(mousePos)) {
                 telaBar.close();
                 viewModel->mudarParaCidade();
-                // Atualiza o texto do contador
             }
         }
     }
@@ -77,19 +75,17 @@ void Bar::run() {
 }
 
 void Bar::render() {
-    sf::Color hoverColor = sf::Color(200, 200, 200); // Example hover color
-    sf::Color defaultColor = sf::Color(128, 128, 128); // Default color
-    sf::Color attackColor = sf::Color(200, 200, 200, 10);
+    sf::Color hoverColor = sf::Color(200, 200, 200);
+    sf::Color defaultColor = sf::Color(128, 128, 128);
 
-    // Update button colors based on hover state
     comprarMercenario->setColorHover(hoverColor, defaultColor, telaBar);
+    retornar->setColorHover(sf::Color(255, 165, 0), sf::Color(128, 128, 128), telaBar);
 
     telaBar.clear();
-    telaBar.draw(barSprite);// Exibe o texto do dinheiro
+    telaBar.draw(barSprite);
     comprarMercenario->draw(telaBar);
     retornar->draw(telaBar);
     timer.draw(telaBar);
     telaBar.draw(moneyText);
-    telaBar.draw(mercenarioText);
     telaBar.display();
 }
