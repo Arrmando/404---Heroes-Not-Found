@@ -3,15 +3,15 @@
 
 #include <string>
 #include <memory>
-#include "../model/races/RacesInterface.hpp"
-#include "../model/jobs/JobsInterface.hpp"
-#include "../model/races/include/RaceIncubator.hpp"
-#include "../model/jobs/include/JobIncubator.hpp"
-#include "../model/attributes/include/AttributesProcessor.hpp"
+#include "RacesInterface.hpp"
+#include "JobsInterface.hpp"
+#include "RaceIncubator.hpp"
+#include "JobIncubator.hpp"
+#include "AttributesProcessor.hpp"
 
 class TechnicalSheet {
 private:
-    std::unique_ptr<AttributesProcessor> attributesProcessor;
+    std::shared_ptr<AttributesProcessor> attributesProcessor;
     std::unique_ptr<JobInterface> job;
     std::unique_ptr<RaceInterface> race;
     float totalExp, currentExp;
@@ -33,9 +33,9 @@ public:
 
     void useJobSkill();
 
-    void physicalAttack();
+    float physicalAttack();
 
-    void magicalAttack();
+    float magicalAttack();
 
     void showCharacterAttributes();
 
@@ -49,7 +49,7 @@ public:
 
     void increaseDracmas(float amount);
 
-    void reduceIncrease(float amount);
+    void reduceDracmas(float amount);
 
     void increaseExp(float expReceived);
 

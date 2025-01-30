@@ -4,13 +4,13 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "../model/races/RacesInterface.hpp"
+#include "RacesInterface.hpp"
 
 class Races : public RaceInterface {
 public:
     Race race;
 
-    Races() = default;
+    Races();
 
     Race getRace() const;
     

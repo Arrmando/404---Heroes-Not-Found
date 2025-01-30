@@ -10,12 +10,12 @@
 #include <thread>
 #include <atomic>
 #include <cppcoro/io_service.hpp>
-#include "../utils/include/Attributes.hpp"
-#include "../utils/include/Race.hpp"
-#include "../utils/include/Job.hpp"
-#include "../model/modifiers/include/ModifiersProcessor.hpp"
-#include "../utils/include/AttibutesType.hpp"
-#include "../utils/include/Corroutines.hpp"
+#include "Attributes.hpp"
+#include "Race.hpp"
+#include "Job.hpp"
+#include "AttibutesType.hpp"
+#include "Corroutines.hpp"
+#include "ModifiersProcessor.hpp"
 
 class AttributesProcessor {
 private:
@@ -28,8 +28,8 @@ private:
 
 public:
     AttributesProcessor(
-        Race& race_,
-        Job& job_
+        Race race_,
+        Job job_
     );
 
     void updateRaceAttributes(const unsigned int level);
@@ -40,9 +40,9 @@ public:
 
     void setCurrentAttributes();
 
-    float takePhysicalDamage(float damage);
+    void takePhysicalDamage(float damage);
 
-    float takeMagicDamage(float damage);
+    void takeMagicDamage(float damage);
 
     void restoreHealth(float amount);
 
@@ -52,9 +52,9 @@ public:
 
     void setModifiersEffect(int timer, Attributes& attributes);
     
-    Attributes getCurrentAttributes();
+    Attributes getCurrentAttributes() const;
     
-    Attributes getTotalAttributes();
+    Attributes getTotalAttributes() const;
 
     float dealSpecialPhysicalDamage(float superAttack);
 

@@ -197,6 +197,13 @@ cmake -S . -B build
 cmake --build build
 ```
 
+**Compilando o model com `CMake`**
+
+```bash
+cd build
+cmake ..
+make
+```
 
 **A biblioteca `SFML`**
 

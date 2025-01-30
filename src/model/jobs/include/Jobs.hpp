@@ -4,13 +4,13 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "../model/jobs/JobsInterface.hpp"
+#include "JobsInterface.hpp"
 
 class Jobs : public JobInterface {
 public:
     Job job;
 
-    Jobs() = default;
+    Jobs();
 
     Job getJob() const;
     
