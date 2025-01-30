@@ -3,8 +3,7 @@
 
 Bar::Bar()
     : telaBar(sf::VideoMode(900, 600), "Bar"),
-      timer(font, 800, 20, 30)
-{
+      timer(font, 800, 20, 30) {
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
@@ -29,14 +28,8 @@ Bar::Bar()
     updateMoneyText();
 }
 
-void Bar::update() {
-    sf::Time deltaTime = gameClock.restart();
-    timer.update(deltaTime);
-    updateMoneyText();
-}
-
 void Bar::updateMoneyText() {
-    moneyText.setString("Dinheiro: " + std::to_string(money) + " Dracmas");
+    moneyText.setString("Dracmas: " + std::to_string(Dracmas::getQuantidade()));
 }
 
 void Bar::handleEvents() {
@@ -48,8 +41,8 @@ void Bar::handleEvents() {
         if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePos = sf::Mouse::getPosition(telaBar);
 
-            if (comprarMercenario->isClicked(mousePos) && money >= precoMecenario) {
-                money -= precoMecenario;
+            if (comprarMercenario->isClicked(mousePos) && Dracmas::getQuantidade() >= precoMecenario) {
+                Dracmas::subtrair(precoMecenario);
                 updateMoneyText();
             }
             if (retornar->isClicked(mousePos)) {
@@ -63,9 +56,16 @@ void Bar::handleEvents() {
 void Bar::run() {
     while (telaBar.isOpen()) {
         handleEvents();
-        render();
         update();
+        render();
     }
+}
+
+
+void Bar::update() {
+    sf::Time deltaTime = gameClock.restart();
+    timer.update(deltaTime);
+    updateMoneyText(); // Atualiza o texto do dinheiro
 }
 
 void Bar::render() {

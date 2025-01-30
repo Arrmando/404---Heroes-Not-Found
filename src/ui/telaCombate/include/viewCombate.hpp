@@ -6,52 +6,58 @@
 #include "../../components/include/Button.hpp"
 #include "../../components/include/lifeBar.hpp"
 #include "viewModelCombate.hpp"
+#include "../../components/include/Dracmas.hpp"
+#include "viewCidade.hpp"
 
 class CombatScreen {
 public:
-    CombatScreen();  // Construtor
-    ~CombatScreen(); // Destrutor
+    CombatScreen();
+    ~CombatScreen();
 
-    void run();    
+    void run();
     void handleEvents();
-    void render();   
+    void render();
 
 private:
+    void checkBossDefeat();
+    void updateLifeBars();
+
     sf::RenderWindow window;
     sf::Font font;
-
     ViewModelCombate* viewModel;
 
-    Button* attackButton;  
-    Button* specialButton1; 
+    // Elementos de UI
+    Button* attackButton;
+    Button* specialButton1;
     Button* specialButton2;
     Button* specialButton3;
     Button* escapeButton;
 
-    lifeBar* lifeBossBar;  
+    // Barras de vida
+    lifeBar* lifeBossBar;
     lifeBar* lifePlayerBar;
-
     lifeBar* lifeAliado1;
     lifeBar* lifeAliado2;
     lifeBar* lifeAliado3;
 
+    // Elementos gráficos
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
+    sf::RectangleShape area;
+    sf::RectangleShape areaTop;
 
-    float bossInitialLife; 
-    float playerInitialLife;
-
-    sf::VideoMode desktop;
-    int posX, posY, windowWidth, windowHeight;
-    
-    sf::RectangleShape area;    
-    sf::RectangleShape areaTop; 
-
+    // Textos
     sf::Text bossName;
     sf::Text playerName;
     sf::Text aliadoName1;
     sf::Text aliadoName2;
     sf::Text aliadoName3;
+
+    // Estado do jogo
+    float bossInitialLife;
+    float playerInitialLife;
+    sf::VideoMode desktop;
+    int posX, posY, windowWidth, windowHeight;
 };
 
 #endif

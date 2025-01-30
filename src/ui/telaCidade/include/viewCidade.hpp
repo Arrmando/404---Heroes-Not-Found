@@ -2,11 +2,10 @@
 #define CIDADE_HPP
 
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include <string>
 #include <memory>
 #include "viewModelCidade.hpp"
 #include "../../components/include/Button.hpp"
+#include "../../components/include/Dracmas.hpp"
 
 class Cidade {
 public:
@@ -15,7 +14,7 @@ public:
     void handleEvents();
     void update();
     void render();
-    
+
 private:
     std::unique_ptr<Button> irLoja;
     std::unique_ptr<Button> irBar;
@@ -25,12 +24,10 @@ private:
     sf::Font font;
     sf::Texture cidadeTexture;
     sf::Sprite cidadeSprite;
-    ViewModelCidade* viewModel;  
-    
-    int money = 10;
+    ViewModelCidade* viewModel;
+
     sf::Text moneyText;
 
     void updateMoneyText();
 };
-
 #endif

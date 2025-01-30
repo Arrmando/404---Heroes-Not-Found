@@ -6,14 +6,10 @@ Loja::Loja()
     if (!font.loadFromFile("assets/fonts/PIXEARG_.TTF")) {
         throw std::runtime_error("Erro ao carregar a fonte!");
     }
-    if (!fontSetas.loadFromFile("assets/fonts/setas.ttf")) {
-        throw std::runtime_error("Erro ao carregar a fonte!");
-    }
     if (!lojaTexture.loadFromFile("assets/images/loja.jpg")) {
         throw std::runtime_error("Erro ao carregar a imagem de fundo!");
     }
-    
-    viewModel = new ViewModelLoja();
+
     lojaSprite.setTexture(lojaTexture);
     lojaSprite.setScale(0.8f, 0.7f);
 
@@ -26,25 +22,12 @@ Loja::Loja()
     moneyText.setFillColor(sf::Color::White);
     moneyText.setPosition(20, 90);
 
+    viewModel = new ViewModelLoja();
     updateMoneyText();
-}
-
-void Loja::update() { 
-    updateMoneyText();
-    updateArmaText();
-    updateArmaduraText();
-}
-
-void Loja::updateArmaText() {
-    armaText.setString("Espada de Fogo");
-}
-
-void Loja::updateArmaduraText() {
-    armaduraText.setString("Armadura de Diamante");
 }
 
 void Loja::updateMoneyText() {
-    moneyText.setString("Dinheiro: " + std::to_string(money) + " R$");
+    moneyText.setString("Dracmas: " + std::to_string(Dracmas::getQuantidade()));
 }
 
 void Loja::handleEvents() {
@@ -56,12 +39,12 @@ void Loja::handleEvents() {
         if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePos = sf::Mouse::getPosition(telaLoja);
 
-            if (comprarArma->isClicked(mousePos) && money >= precoArma) {
-                money -= precoArma;
+            if (comprarArma->isClicked(mousePos) && Dracmas::getQuantidade() >= precoArma) {
+                Dracmas::subtrair(precoArma);
                 updateMoneyText();
             }
-            if (comprarArmadura->isClicked(mousePos) && money >= precoArmadura) {
-                money -= precoArmadura;
+            if (comprarArmadura->isClicked(mousePos) && Dracmas::getQuantidade() >= precoArmadura) {
+                Dracmas::subtrair(precoArmadura);
                 updateMoneyText();
             }
             if (retornar->isClicked(mousePos)) {
@@ -80,6 +63,10 @@ void Loja::run() {
     }
 }
 
+void Loja::update() {
+    updateMoneyText();   // Atualiza apenas o dinheiro
+}
+
 void Loja::render() {
     sf::Color hoverColor = sf::Color(200, 200, 200);
     sf::Color defaultColor = sf::Color(128, 128, 128);
@@ -94,7 +81,5 @@ void Loja::render() {
     comprarArmadura->draw(telaLoja);
     retornar->draw(telaLoja);
     telaLoja.draw(moneyText);
-    telaLoja.draw(armaText);
-    telaLoja.draw(armaduraText);
     telaLoja.display();
 }

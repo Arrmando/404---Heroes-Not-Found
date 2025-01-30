@@ -2,12 +2,11 @@
 #define BAR_HPP
 
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include <string>
 #include <memory>
 #include "../../components/include/Button.hpp"
 #include "../../components/include/timer.hpp"
 #include "viewModelBar.hpp"
+#include "../../components/include/Dracmas.hpp"
 
 class Bar {
 public:
@@ -18,25 +17,20 @@ public:
     void render();
 
 private:
-    Timer timer;                      // Timer como atributo da classe
-    sf::Clock gameClock;              // Relógio para calcular o deltaTime
+    Timer timer;
+    sf::Clock gameClock;
 
     std::unique_ptr<Button> comprarMercenario;
     std::unique_ptr<Button> retornar;
     sf::RenderWindow telaBar;
     sf::Font font;
-    sf::Font fontSetas;
     sf::Texture barTexture;
     sf::Sprite barSprite;
 
-    int money = 10;
-    int precoMecenario = 3;
+    const int precoMecenario = 3; // Preço fixo do mercenário
     sf::Text moneyText;
-    sf::Text mercenarioText;
     ViewModelBar* viewModel;
 
     void updateMoneyText();
-    void updateMercenarioText();
 };
-
 #endif
