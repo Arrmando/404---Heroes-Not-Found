@@ -35,11 +35,11 @@ public:
 
     cppcoro::task<void> setTemporaryModifiersByTime(int timerSeconds, const Attributes& tempModifier);
 
-        float getHpModifier(const AttributesType type) const;
+    float getHpModifier(const AttributesType type) const;
 
     float getMagicAttackModifier(const AttributesType type) const;
 
-    float getPhysicalAttackModifier(const AttributesType type);
+    float getPhysicalAttackModifier(const AttributesType type) const;
 
     float getMagicDefenseModifier(const AttributesType type) const;
 
