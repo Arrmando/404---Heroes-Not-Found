@@ -197,4 +197,12 @@ cmake -S . -B build
 cmake --build build
 ```
 
+**Compilando o model com `CMake`**
+
+```bash
+cd build
+cmake ..
+make
+```
+
 Este README fornece uma explicação abrangente do sistema de arquivos, arquitetura e princípios de design do projeto. Consulte a documentação do código para obter informações mais detalhadas.
