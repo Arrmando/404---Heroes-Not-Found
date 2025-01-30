@@ -37,6 +37,7 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/utils/Job.cpp
     ${CMAKE_SOURCE_DIR}/utils/Race.cpp
     ${CMAKE_SOURCE_DIR}/utils/Species.cpp
+    ${CMAKE_SOURCE_DIR}/utils/NameGenerator.cpp
 
     # Arquivos de races
     ${CMAKE_SOURCE_DIR}/src/model/races/RacesInterface.cpp
