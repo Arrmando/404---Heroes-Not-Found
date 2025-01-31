@@ -8,69 +8,64 @@
 #include <iostream>
 #include <vector>
 
-ViewModelCombate::ViewModelCombate() {/*
-    healthPlayer = 5000.0f;
-    healthBoss = 1000.0f;   
-    damagePlayer = 100.0f; 
-    damageBoss = 1.0f;
-    attackSpeed = 0.1f;
-    attackCooldown = 0.1f;
-    */
-   //trocar por função usada de exemplo no whatsapp
+
+//função para pegar imagem de acordo com raça GUILHERME
+
+
+
+ViewModelCombate::ViewModelCombate() { //inicializar 
+
     TechnicalSheet jogador = playerHolder.getPlayerConst(); // copia ficha do jogador
     
     AlliesSheetHolder holder;
     int indice = holder.getNumAllies();
     if (indice != 0) {
-    std::vector<TechnicalSheet> allies = holder.getAllies(); //copa ficha dos alidos
+    std::vector<TechnicalSheet> allies = holder.getAllies(); //copia ficha dos alidos
+
+    TechnicalSheet enemy;
     }
 }
 
-float ViewModelCombate::getHealthPlayer() {
+ViewModelCombate::generateEnemy(){
+
+    enemy = RandomSheetGenerator(0 ,0);
+
+}
+
+float ViewModelCombate::getHealthPlayer() { // status atual de vida    //fazer uma igual para status total de vida
 
      allies[0].atacar();
     return jogador.hp;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
 
 
     // Chamando um método diretamente do primeiro aliado
-    allies[0].physicalAttack();  // Chama o método physicalAttack() de ally1
-
-
-
-
-
-
+    allies[0].physicalAttack();  // Chama o método physicalAttack() de ally1  
 
 
 }
 
-float ViewModelCombate::getHealthBoss() {
+
+
+float ViewModelCombate::getHealthBoss() {   //fazer uma igual para status total de vida
     return healthBoss;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
 }
 
-void ViewModelCombate::setHealthBoss(float newHealth) {
+void ViewModelCombate::getCurrentHealthBoss() { // status atual de vida 
     healthBoss = newHealth;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
 }
 
-void ViewModelCombate::setHealthPlayer(float newHealth) {
-    healthPlayer = newHealth;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
-}
 
-void ViewModelCombate::setHealthAliado1(float newHealth) {
+
+void ViewModelCombate::HealthAliado(int index) { // status atual de vida    //fazer uma igual para status total de vida
+
+     allies[0].atacar();
     healthBoss = newHealth;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
 }
 
-void ViewModelCombate::setHealthAliado2(float newHealth) {
-    healthBoss = newHealth;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
-}
 
-void ViewModelCombate::setHealthAliado3(float newHealth) {
-    healthBoss = newHealth;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
-}
-
-void ViewModelCombate::handleAttack() {
-    //int damage = getbossphiscalatack()
-    //player.hp = receivePhysicalDamage(damage)
+void ViewModelCombate::handleAttack() {  //outra para player
+    //int damage = getplayerphiscalatack()
+    //boss.hp = receivePhysicalDamage(damage)
     healthBoss -= damagePlayer;  // alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
     if (healthBoss < 0) {
         healthBoss = 0;
@@ -90,19 +85,41 @@ void ViewModelCombate::handleBossAttack() {
 }
 
 // velocidade de ataque do boss usando ataque por segundo
-void ViewModelCombate::handleAttackSpeed() {
-    float elapsedTime = attackClock.getElapsedTime().asSeconds();// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
+void ViewModelCombate::handleAttackSpeedBoss() {
+    float elapsedTime = attackClock.getElapsedTime().asSeconds();
     if (elapsedTime >= attackCooldown) {
         attackClock.restart();
         handleBossAttack();
     }
 }
 
-void ViewModelCombate::handleSpecial() {
+
+
+void ViewModelCombate::handleAttackSpeedAllies() {
+    float elapsedTime = attackClock.getElapsedTime().asSeconds();
+    if (elapsedTime >= attackCooldown) {
+        attackClock.restart();
+        ();
+    }
+}
+
+void ViewModelCombate::handleSpecial() { // um para player// um para aliados (recebe indice)
     std::cout << "Ação Especial Executada!" << std::endl;
 }
 
 void ViewModelCombate::handleEscapeButton() {
     Cidade cidade;
     cidade.run();
+}
+// boss ataca quem tiver maior defesa
+
+// criar função que devolve indice
+
+// definir função quem usa especial em quem +++DIFICIL
+// função que devolve o nome aliado/jogador/boss
+// função get imagem
+
+
+if (hp <= 0){
+    chamar funçao morrer.
 }
