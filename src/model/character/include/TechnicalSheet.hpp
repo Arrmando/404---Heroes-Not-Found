@@ -37,7 +37,9 @@ public:
 
     float magicalAttack();
 
-    void showCharacterAttributes();
+    Attributes showCurrentCharacterAttributes();
+
+    Attributes showTotalCharacterAttributes();
 
     void receiveMagicalDamage(float damage);
     

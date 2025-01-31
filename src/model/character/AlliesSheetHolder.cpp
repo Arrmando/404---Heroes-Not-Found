@@ -5,7 +5,7 @@
 
 class AlliesSheetHolder {
 private:
-    const int maxAllies = 3;
+   const size_t maxAllies = 3;
     std::vector<TechnicalSheet> partyMembers;
 
 public:
@@ -20,23 +20,25 @@ public:
     }
 
     // Deletar ficha de aliado
-    void deleteAllies(int indice) {
-        if (indice >= 0 && indice < static_cast<int>(partyMembers.size())) {
+   void deleteAllies(size_t indice) {
+        if (indice < partyMembers.size()) {
             partyMembers.erase(partyMembers.begin() + indice);
+        } else {
+            throw std::out_of_range("Invalid index for deleting ally.");
         }
     }
 
     // Adicionar aliado
     void addAllies(const TechnicalSheet& newAllie) {
-        if (static_cast<int>(partyMembers.size()) < maxAllies) { 
+        if (partyMembers.size() < maxAllies) {
             partyMembers.push_back(newAllie);
+        } else {
+            throw std::runtime_error("Cannot add more allies; party is full.");
         }
     }
-
-    //bool hasAllies() const { //verifica se existe algum aliado
-    //return !partyMenbers.empty();  
-
-    size_t getNumAllies() const { //identifica quantos aliados foram contratados
+  
+    //verifica quantidade de aliados
+     size_t getNumAllies() const {
         return partyMembers.size();
     }
 }

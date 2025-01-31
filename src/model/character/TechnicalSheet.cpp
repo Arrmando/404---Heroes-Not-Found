@@ -47,6 +47,16 @@ float TechnicalSheet::magicalAttack() {
     return attributesProcessor->getCurrentAttributes().magicAttack;
 }
 
+void TechnicalSheet::showCurrentCharacterAttributes()
+{
+    return attributesProcessor->getCurrentAttributes();
+}
+
+void TechnicalSheet::showTotalCharacterAttributes()
+{
+    return attributesProcessor->getTotalAttributes();
+}
+
 /**
  * Applies magical damage to the character.
  * Delegates the damage calculation to the attributes processor.
@@ -58,6 +68,7 @@ void TechnicalSheet::receiveMagicalDamage(float damage) {
 }
 
 /**
+ * 
  * Applies physical damage to the character.
  * Delegates the damage calculation to the attributes processor.
  *

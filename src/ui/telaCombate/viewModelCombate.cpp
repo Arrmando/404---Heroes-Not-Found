@@ -11,36 +11,58 @@
 
 //função para pegar imagem de acordo com raça GUILHERME
 
+class ViewModelCombate{
 
 
-ViewModelCombate::ViewModelCombate() { //inicializar 
-
-    TechnicalSheet jogador = playerHolder.getPlayerConst(); // copia ficha do jogador
-    
-    AlliesSheetHolder holder;
-    int indice = holder.getNumAllies();
-    if (indice != 0) {
-    std::vector<TechnicalSheet> allies = holder.getAllies(); //copia ficha dos alidos
+private:
+    //INICIALIZAÇÃO DE FICHAS
 
     TechnicalSheet enemy;
+    TechnicalSheet jogador = playerHolder.getPlayerConst(); // copia ficha do jogador
+    AlliesSheetHolder holder; //define obeto para utilizar o vetor de aliados
+    int indice = holder.getNumAllies(); //verifica se existem aliados
+    if (indice != 0) {
+    std::vector<TechnicalSheet> allies = holder.getAllies(); //copia ficha dos alidos
     }
-}
+    
 
-ViewModelCombate::generateEnemy(){
+public:
+
+
+
+
+
+    void generateEnemy(){
 
     enemy = RandomSheetGenerator(0 ,0);
 
-}
+    }
 
-float ViewModelCombate::getHealthPlayer() { // status atual de vida    //fazer uma igual para status total de vida
-
-     allies[0].atacar();
-    return jogador.hp;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
+     allies[0].();
+    return showCahracterAtrributes().hp;// alterar por lógica utilizando metodos do TechnicalSheet.hpp   Elias e Armando
 
 
     // Chamando um método diretamente do primeiro aliado
     allies[0].physicalAttack();  // Chama o método physicalAttack() de ally1  
 
+
+}
+
+
+
+float getTotalHealthBoss() { //fazer uma igual para status total de vida
+
+      return enemy.showTotalCharacterAttributes().hp ;
+}
+
+
+float ViewModelCombate::getHealthPlayer() { // status atual de vida    //fazer uma igual para status total de vida
+
+     return player.showTotalCharacterAttributes().hp ;
+}
+
+    // Chamando um método diretamente do primeiro aliado
+    allies[0].physicalAttack();  // Chama o método physicalAttack() de ally1  
 
 }
 
