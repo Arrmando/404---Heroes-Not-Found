@@ -11,8 +11,8 @@
 #include <atomic>
 #include <cppcoro/io_service.hpp>
 #include "Attributes.hpp"
-#include "Race.hpp"
-#include "Job.hpp"
+#include "Races.hpp"
+#include "Jobs.hpp"
 #include "AttibutesType.hpp"
 #include "Corroutines.hpp"
 #include "ModifiersProcessor.hpp"

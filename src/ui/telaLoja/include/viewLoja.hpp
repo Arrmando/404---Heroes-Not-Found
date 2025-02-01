@@ -32,18 +32,16 @@ private:
     sf::Text moneyText;
     sf::Text armaText;
     sf::Text armaduraText;
-<<<<<<< HEAD
 
-=======
+
+
     ViewModelLoja* viewModel;
->>>>>>> origin/main
+
     void updateMoneyText();
     void updateArmaText();
     void updateArmaduraText();
 };
 
-<<<<<<< HEAD
-#endif // LOJA_HPP
-=======
-#endif
->>>>>>> origin/main
+
+#endif 
+

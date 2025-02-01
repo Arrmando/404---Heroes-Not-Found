@@ -2,7 +2,7 @@
 #define RACE_INTERFACE_HPP
 
 #include <string>
-#include "Race.hpp"
+#include "Races.hpp"
 
 class RaceInterface {
 public:

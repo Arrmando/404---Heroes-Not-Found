@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include "../../model/jobs/include/JobsInterface.hpp"
 #include "Jobs.hpp"
 
 Jobs::Jobs() = default;

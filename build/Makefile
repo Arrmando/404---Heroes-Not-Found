@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafael/404---Heroes-Not-Found-1
+CMAKE_SOURCE_DIR = /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafael/404---Heroes-Not-Found-1/build
+CMAKE_BINARY_DIR = /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafael/404---Heroes-Not-Found-1/build/CMakeFiles /home/rafael/404---Heroes-Not-Found-1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafael/404---Heroes-Not-Found-1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,1013 @@ HeroesNotFound/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/build
 .PHONY : HeroesNotFound/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/model/attributes/AttributesProcessor.o: src/model/attributes/AttributesProcessor.cpp.o
+.PHONY : src/model/attributes/AttributesProcessor.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/model/attributes/AttributesProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o
+.PHONY : src/model/attributes/AttributesProcessor.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/model/attributes/AttributesProcessor.i: src/model/attributes/AttributesProcessor.cpp.i
+.PHONY : src/model/attributes/AttributesProcessor.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/model/attributes/AttributesProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.i
+.PHONY : src/model/attributes/AttributesProcessor.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/model/attributes/AttributesProcessor.s: src/model/attributes/AttributesProcessor.cpp.s
+.PHONY : src/model/attributes/AttributesProcessor.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/model/attributes/AttributesProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.s
+.PHONY : src/model/attributes/AttributesProcessor.cpp.s
+
+src/model/character/CharacterIncubator.o: src/model/character/CharacterIncubator.cpp.o
+.PHONY : src/model/character/CharacterIncubator.o
+
+# target to build an object file
+src/model/character/CharacterIncubator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o
+.PHONY : src/model/character/CharacterIncubator.cpp.o
+
+src/model/character/CharacterIncubator.i: src/model/character/CharacterIncubator.cpp.i
+.PHONY : src/model/character/CharacterIncubator.i
+
+# target to preprocess a source file
+src/model/character/CharacterIncubator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.i
+.PHONY : src/model/character/CharacterIncubator.cpp.i
+
+src/model/character/CharacterIncubator.s: src/model/character/CharacterIncubator.cpp.s
+.PHONY : src/model/character/CharacterIncubator.s
+
+# target to generate assembly for a file
+src/model/character/CharacterIncubator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.s
+.PHONY : src/model/character/CharacterIncubator.cpp.s
+
+src/model/character/CharacterProcessor.o: src/model/character/CharacterProcessor.cpp.o
+.PHONY : src/model/character/CharacterProcessor.o
+
+# target to build an object file
+src/model/character/CharacterProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o
+.PHONY : src/model/character/CharacterProcessor.cpp.o
+
+src/model/character/CharacterProcessor.i: src/model/character/CharacterProcessor.cpp.i
+.PHONY : src/model/character/CharacterProcessor.i
+
+# target to preprocess a source file
+src/model/character/CharacterProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.i
+.PHONY : src/model/character/CharacterProcessor.cpp.i
+
+src/model/character/CharacterProcessor.s: src/model/character/CharacterProcessor.cpp.s
+.PHONY : src/model/character/CharacterProcessor.s
+
+# target to generate assembly for a file
+src/model/character/CharacterProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.s
+.PHONY : src/model/character/CharacterProcessor.cpp.s
+
+src/model/character/TechnicalSheet.o: src/model/character/TechnicalSheet.cpp.o
+.PHONY : src/model/character/TechnicalSheet.o
+
+# target to build an object file
+src/model/character/TechnicalSheet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o
+.PHONY : src/model/character/TechnicalSheet.cpp.o
+
+src/model/character/TechnicalSheet.i: src/model/character/TechnicalSheet.cpp.i
+.PHONY : src/model/character/TechnicalSheet.i
+
+# target to preprocess a source file
+src/model/character/TechnicalSheet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.i
+.PHONY : src/model/character/TechnicalSheet.cpp.i
+
+src/model/character/TechnicalSheet.s: src/model/character/TechnicalSheet.cpp.s
+.PHONY : src/model/character/TechnicalSheet.s
+
+# target to generate assembly for a file
+src/model/character/TechnicalSheet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.s
+.PHONY : src/model/character/TechnicalSheet.cpp.s
+
+src/model/jobs/JobIncubator.o: src/model/jobs/JobIncubator.cpp.o
+.PHONY : src/model/jobs/JobIncubator.o
+
+# target to build an object file
+src/model/jobs/JobIncubator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o
+.PHONY : src/model/jobs/JobIncubator.cpp.o
+
+src/model/jobs/JobIncubator.i: src/model/jobs/JobIncubator.cpp.i
+.PHONY : src/model/jobs/JobIncubator.i
+
+# target to preprocess a source file
+src/model/jobs/JobIncubator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.i
+.PHONY : src/model/jobs/JobIncubator.cpp.i
+
+src/model/jobs/JobIncubator.s: src/model/jobs/JobIncubator.cpp.s
+.PHONY : src/model/jobs/JobIncubator.s
+
+# target to generate assembly for a file
+src/model/jobs/JobIncubator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.s
+.PHONY : src/model/jobs/JobIncubator.cpp.s
+
+src/model/jobs/Jobs.o: src/model/jobs/Jobs.cpp.o
+.PHONY : src/model/jobs/Jobs.o
+
+# target to build an object file
+src/model/jobs/Jobs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o
+.PHONY : src/model/jobs/Jobs.cpp.o
+
+src/model/jobs/Jobs.i: src/model/jobs/Jobs.cpp.i
+.PHONY : src/model/jobs/Jobs.i
+
+# target to preprocess a source file
+src/model/jobs/Jobs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.i
+.PHONY : src/model/jobs/Jobs.cpp.i
+
+src/model/jobs/Jobs.s: src/model/jobs/Jobs.cpp.s
+.PHONY : src/model/jobs/Jobs.s
+
+# target to generate assembly for a file
+src/model/jobs/Jobs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.s
+.PHONY : src/model/jobs/Jobs.cpp.s
+
+src/model/jobs/JobsInterface.o: src/model/jobs/JobsInterface.cpp.o
+.PHONY : src/model/jobs/JobsInterface.o
+
+# target to build an object file
+src/model/jobs/JobsInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o
+.PHONY : src/model/jobs/JobsInterface.cpp.o
+
+src/model/jobs/JobsInterface.i: src/model/jobs/JobsInterface.cpp.i
+.PHONY : src/model/jobs/JobsInterface.i
+
+# target to preprocess a source file
+src/model/jobs/JobsInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.i
+.PHONY : src/model/jobs/JobsInterface.cpp.i
+
+src/model/jobs/JobsInterface.s: src/model/jobs/JobsInterface.cpp.s
+.PHONY : src/model/jobs/JobsInterface.s
+
+# target to generate assembly for a file
+src/model/jobs/JobsInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.s
+.PHONY : src/model/jobs/JobsInterface.cpp.s
+
+src/model/jobs/classes/Barbarian.o: src/model/jobs/classes/Barbarian.cpp.o
+.PHONY : src/model/jobs/classes/Barbarian.o
+
+# target to build an object file
+src/model/jobs/classes/Barbarian.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o
+.PHONY : src/model/jobs/classes/Barbarian.cpp.o
+
+src/model/jobs/classes/Barbarian.i: src/model/jobs/classes/Barbarian.cpp.i
+.PHONY : src/model/jobs/classes/Barbarian.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Barbarian.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.i
+.PHONY : src/model/jobs/classes/Barbarian.cpp.i
+
+src/model/jobs/classes/Barbarian.s: src/model/jobs/classes/Barbarian.cpp.s
+.PHONY : src/model/jobs/classes/Barbarian.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Barbarian.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.s
+.PHONY : src/model/jobs/classes/Barbarian.cpp.s
+
+src/model/jobs/classes/Bard.o: src/model/jobs/classes/Bard.cpp.o
+.PHONY : src/model/jobs/classes/Bard.o
+
+# target to build an object file
+src/model/jobs/classes/Bard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o
+.PHONY : src/model/jobs/classes/Bard.cpp.o
+
+src/model/jobs/classes/Bard.i: src/model/jobs/classes/Bard.cpp.i
+.PHONY : src/model/jobs/classes/Bard.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Bard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.i
+.PHONY : src/model/jobs/classes/Bard.cpp.i
+
+src/model/jobs/classes/Bard.s: src/model/jobs/classes/Bard.cpp.s
+.PHONY : src/model/jobs/classes/Bard.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Bard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.s
+.PHONY : src/model/jobs/classes/Bard.cpp.s
+
+src/model/jobs/classes/Cleric.o: src/model/jobs/classes/Cleric.cpp.o
+.PHONY : src/model/jobs/classes/Cleric.o
+
+# target to build an object file
+src/model/jobs/classes/Cleric.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o
+.PHONY : src/model/jobs/classes/Cleric.cpp.o
+
+src/model/jobs/classes/Cleric.i: src/model/jobs/classes/Cleric.cpp.i
+.PHONY : src/model/jobs/classes/Cleric.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Cleric.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.i
+.PHONY : src/model/jobs/classes/Cleric.cpp.i
+
+src/model/jobs/classes/Cleric.s: src/model/jobs/classes/Cleric.cpp.s
+.PHONY : src/model/jobs/classes/Cleric.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Cleric.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.s
+.PHONY : src/model/jobs/classes/Cleric.cpp.s
+
+src/model/jobs/classes/Druid.o: src/model/jobs/classes/Druid.cpp.o
+.PHONY : src/model/jobs/classes/Druid.o
+
+# target to build an object file
+src/model/jobs/classes/Druid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o
+.PHONY : src/model/jobs/classes/Druid.cpp.o
+
+src/model/jobs/classes/Druid.i: src/model/jobs/classes/Druid.cpp.i
+.PHONY : src/model/jobs/classes/Druid.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Druid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.i
+.PHONY : src/model/jobs/classes/Druid.cpp.i
+
+src/model/jobs/classes/Druid.s: src/model/jobs/classes/Druid.cpp.s
+.PHONY : src/model/jobs/classes/Druid.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Druid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.s
+.PHONY : src/model/jobs/classes/Druid.cpp.s
+
+src/model/jobs/classes/Mage.o: src/model/jobs/classes/Mage.cpp.o
+.PHONY : src/model/jobs/classes/Mage.o
+
+# target to build an object file
+src/model/jobs/classes/Mage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o
+.PHONY : src/model/jobs/classes/Mage.cpp.o
+
+src/model/jobs/classes/Mage.i: src/model/jobs/classes/Mage.cpp.i
+.PHONY : src/model/jobs/classes/Mage.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Mage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.i
+.PHONY : src/model/jobs/classes/Mage.cpp.i
+
+src/model/jobs/classes/Mage.s: src/model/jobs/classes/Mage.cpp.s
+.PHONY : src/model/jobs/classes/Mage.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Mage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.s
+.PHONY : src/model/jobs/classes/Mage.cpp.s
+
+src/model/jobs/classes/Monk.o: src/model/jobs/classes/Monk.cpp.o
+.PHONY : src/model/jobs/classes/Monk.o
+
+# target to build an object file
+src/model/jobs/classes/Monk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o
+.PHONY : src/model/jobs/classes/Monk.cpp.o
+
+src/model/jobs/classes/Monk.i: src/model/jobs/classes/Monk.cpp.i
+.PHONY : src/model/jobs/classes/Monk.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Monk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.i
+.PHONY : src/model/jobs/classes/Monk.cpp.i
+
+src/model/jobs/classes/Monk.s: src/model/jobs/classes/Monk.cpp.s
+.PHONY : src/model/jobs/classes/Monk.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Monk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.s
+.PHONY : src/model/jobs/classes/Monk.cpp.s
+
+src/model/jobs/classes/Necromancer.o: src/model/jobs/classes/Necromancer.cpp.o
+.PHONY : src/model/jobs/classes/Necromancer.o
+
+# target to build an object file
+src/model/jobs/classes/Necromancer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o
+.PHONY : src/model/jobs/classes/Necromancer.cpp.o
+
+src/model/jobs/classes/Necromancer.i: src/model/jobs/classes/Necromancer.cpp.i
+.PHONY : src/model/jobs/classes/Necromancer.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Necromancer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.i
+.PHONY : src/model/jobs/classes/Necromancer.cpp.i
+
+src/model/jobs/classes/Necromancer.s: src/model/jobs/classes/Necromancer.cpp.s
+.PHONY : src/model/jobs/classes/Necromancer.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Necromancer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.s
+.PHONY : src/model/jobs/classes/Necromancer.cpp.s
+
+src/model/jobs/classes/Paladin.o: src/model/jobs/classes/Paladin.cpp.o
+.PHONY : src/model/jobs/classes/Paladin.o
+
+# target to build an object file
+src/model/jobs/classes/Paladin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o
+.PHONY : src/model/jobs/classes/Paladin.cpp.o
+
+src/model/jobs/classes/Paladin.i: src/model/jobs/classes/Paladin.cpp.i
+.PHONY : src/model/jobs/classes/Paladin.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Paladin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.i
+.PHONY : src/model/jobs/classes/Paladin.cpp.i
+
+src/model/jobs/classes/Paladin.s: src/model/jobs/classes/Paladin.cpp.s
+.PHONY : src/model/jobs/classes/Paladin.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Paladin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.s
+.PHONY : src/model/jobs/classes/Paladin.cpp.s
+
+src/model/jobs/classes/Ranger.o: src/model/jobs/classes/Ranger.cpp.o
+.PHONY : src/model/jobs/classes/Ranger.o
+
+# target to build an object file
+src/model/jobs/classes/Ranger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o
+.PHONY : src/model/jobs/classes/Ranger.cpp.o
+
+src/model/jobs/classes/Ranger.i: src/model/jobs/classes/Ranger.cpp.i
+.PHONY : src/model/jobs/classes/Ranger.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Ranger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.i
+.PHONY : src/model/jobs/classes/Ranger.cpp.i
+
+src/model/jobs/classes/Ranger.s: src/model/jobs/classes/Ranger.cpp.s
+.PHONY : src/model/jobs/classes/Ranger.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Ranger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.s
+.PHONY : src/model/jobs/classes/Ranger.cpp.s
+
+src/model/jobs/classes/Rogue.o: src/model/jobs/classes/Rogue.cpp.o
+.PHONY : src/model/jobs/classes/Rogue.o
+
+# target to build an object file
+src/model/jobs/classes/Rogue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o
+.PHONY : src/model/jobs/classes/Rogue.cpp.o
+
+src/model/jobs/classes/Rogue.i: src/model/jobs/classes/Rogue.cpp.i
+.PHONY : src/model/jobs/classes/Rogue.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Rogue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.i
+.PHONY : src/model/jobs/classes/Rogue.cpp.i
+
+src/model/jobs/classes/Rogue.s: src/model/jobs/classes/Rogue.cpp.s
+.PHONY : src/model/jobs/classes/Rogue.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Rogue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.s
+.PHONY : src/model/jobs/classes/Rogue.cpp.s
+
+src/model/jobs/classes/Sorcerer.o: src/model/jobs/classes/Sorcerer.cpp.o
+.PHONY : src/model/jobs/classes/Sorcerer.o
+
+# target to build an object file
+src/model/jobs/classes/Sorcerer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o
+.PHONY : src/model/jobs/classes/Sorcerer.cpp.o
+
+src/model/jobs/classes/Sorcerer.i: src/model/jobs/classes/Sorcerer.cpp.i
+.PHONY : src/model/jobs/classes/Sorcerer.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Sorcerer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.i
+.PHONY : src/model/jobs/classes/Sorcerer.cpp.i
+
+src/model/jobs/classes/Sorcerer.s: src/model/jobs/classes/Sorcerer.cpp.s
+.PHONY : src/model/jobs/classes/Sorcerer.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Sorcerer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.s
+.PHONY : src/model/jobs/classes/Sorcerer.cpp.s
+
+src/model/jobs/classes/Warrior.o: src/model/jobs/classes/Warrior.cpp.o
+.PHONY : src/model/jobs/classes/Warrior.o
+
+# target to build an object file
+src/model/jobs/classes/Warrior.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o
+.PHONY : src/model/jobs/classes/Warrior.cpp.o
+
+src/model/jobs/classes/Warrior.i: src/model/jobs/classes/Warrior.cpp.i
+.PHONY : src/model/jobs/classes/Warrior.i
+
+# target to preprocess a source file
+src/model/jobs/classes/Warrior.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.i
+.PHONY : src/model/jobs/classes/Warrior.cpp.i
+
+src/model/jobs/classes/Warrior.s: src/model/jobs/classes/Warrior.cpp.s
+.PHONY : src/model/jobs/classes/Warrior.s
+
+# target to generate assembly for a file
+src/model/jobs/classes/Warrior.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.s
+.PHONY : src/model/jobs/classes/Warrior.cpp.s
+
+src/model/main.o: src/model/main.cpp.o
+.PHONY : src/model/main.o
+
+# target to build an object file
+src/model/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o
+.PHONY : src/model/main.cpp.o
+
+src/model/main.i: src/model/main.cpp.i
+.PHONY : src/model/main.i
+
+# target to preprocess a source file
+src/model/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.i
+.PHONY : src/model/main.cpp.i
+
+src/model/main.s: src/model/main.cpp.s
+.PHONY : src/model/main.s
+
+# target to generate assembly for a file
+src/model/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.s
+.PHONY : src/model/main.cpp.s
+
+src/model/modifiers/ModifiersProcessor.o: src/model/modifiers/ModifiersProcessor.cpp.o
+.PHONY : src/model/modifiers/ModifiersProcessor.o
+
+# target to build an object file
+src/model/modifiers/ModifiersProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o
+.PHONY : src/model/modifiers/ModifiersProcessor.cpp.o
+
+src/model/modifiers/ModifiersProcessor.i: src/model/modifiers/ModifiersProcessor.cpp.i
+.PHONY : src/model/modifiers/ModifiersProcessor.i
+
+# target to preprocess a source file
+src/model/modifiers/ModifiersProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.i
+.PHONY : src/model/modifiers/ModifiersProcessor.cpp.i
+
+src/model/modifiers/ModifiersProcessor.s: src/model/modifiers/ModifiersProcessor.cpp.s
+.PHONY : src/model/modifiers/ModifiersProcessor.s
+
+# target to generate assembly for a file
+src/model/modifiers/ModifiersProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.s
+.PHONY : src/model/modifiers/ModifiersProcessor.cpp.s
+
+src/model/races/RaceIncubator.o: src/model/races/RaceIncubator.cpp.o
+.PHONY : src/model/races/RaceIncubator.o
+
+# target to build an object file
+src/model/races/RaceIncubator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o
+.PHONY : src/model/races/RaceIncubator.cpp.o
+
+src/model/races/RaceIncubator.i: src/model/races/RaceIncubator.cpp.i
+.PHONY : src/model/races/RaceIncubator.i
+
+# target to preprocess a source file
+src/model/races/RaceIncubator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.i
+.PHONY : src/model/races/RaceIncubator.cpp.i
+
+src/model/races/RaceIncubator.s: src/model/races/RaceIncubator.cpp.s
+.PHONY : src/model/races/RaceIncubator.s
+
+# target to generate assembly for a file
+src/model/races/RaceIncubator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.s
+.PHONY : src/model/races/RaceIncubator.cpp.s
+
+src/model/races/Races.o: src/model/races/Races.cpp.o
+.PHONY : src/model/races/Races.o
+
+# target to build an object file
+src/model/races/Races.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o
+.PHONY : src/model/races/Races.cpp.o
+
+src/model/races/Races.i: src/model/races/Races.cpp.i
+.PHONY : src/model/races/Races.i
+
+# target to preprocess a source file
+src/model/races/Races.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.i
+.PHONY : src/model/races/Races.cpp.i
+
+src/model/races/Races.s: src/model/races/Races.cpp.s
+.PHONY : src/model/races/Races.s
+
+# target to generate assembly for a file
+src/model/races/Races.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.s
+.PHONY : src/model/races/Races.cpp.s
+
+src/model/races/RacesInterface.o: src/model/races/RacesInterface.cpp.o
+.PHONY : src/model/races/RacesInterface.o
+
+# target to build an object file
+src/model/races/RacesInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o
+.PHONY : src/model/races/RacesInterface.cpp.o
+
+src/model/races/RacesInterface.i: src/model/races/RacesInterface.cpp.i
+.PHONY : src/model/races/RacesInterface.i
+
+# target to preprocess a source file
+src/model/races/RacesInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.i
+.PHONY : src/model/races/RacesInterface.cpp.i
+
+src/model/races/RacesInterface.s: src/model/races/RacesInterface.cpp.s
+.PHONY : src/model/races/RacesInterface.s
+
+# target to generate assembly for a file
+src/model/races/RacesInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.s
+.PHONY : src/model/races/RacesInterface.cpp.s
+
+src/model/races/species/Demihuman.o: src/model/races/species/Demihuman.cpp.o
+.PHONY : src/model/races/species/Demihuman.o
+
+# target to build an object file
+src/model/races/species/Demihuman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o
+.PHONY : src/model/races/species/Demihuman.cpp.o
+
+src/model/races/species/Demihuman.i: src/model/races/species/Demihuman.cpp.i
+.PHONY : src/model/races/species/Demihuman.i
+
+# target to preprocess a source file
+src/model/races/species/Demihuman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.i
+.PHONY : src/model/races/species/Demihuman.cpp.i
+
+src/model/races/species/Demihuman.s: src/model/races/species/Demihuman.cpp.s
+.PHONY : src/model/races/species/Demihuman.s
+
+# target to generate assembly for a file
+src/model/races/species/Demihuman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.s
+.PHONY : src/model/races/species/Demihuman.cpp.s
+
+src/model/races/species/Draconic.o: src/model/races/species/Draconic.cpp.o
+.PHONY : src/model/races/species/Draconic.o
+
+# target to build an object file
+src/model/races/species/Draconic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o
+.PHONY : src/model/races/species/Draconic.cpp.o
+
+src/model/races/species/Draconic.i: src/model/races/species/Draconic.cpp.i
+.PHONY : src/model/races/species/Draconic.i
+
+# target to preprocess a source file
+src/model/races/species/Draconic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.i
+.PHONY : src/model/races/species/Draconic.cpp.i
+
+src/model/races/species/Draconic.s: src/model/races/species/Draconic.cpp.s
+.PHONY : src/model/races/species/Draconic.s
+
+# target to generate assembly for a file
+src/model/races/species/Draconic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.s
+.PHONY : src/model/races/species/Draconic.cpp.s
+
+src/model/races/species/Elf.o: src/model/races/species/Elf.cpp.o
+.PHONY : src/model/races/species/Elf.o
+
+# target to build an object file
+src/model/races/species/Elf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o
+.PHONY : src/model/races/species/Elf.cpp.o
+
+src/model/races/species/Elf.i: src/model/races/species/Elf.cpp.i
+.PHONY : src/model/races/species/Elf.i
+
+# target to preprocess a source file
+src/model/races/species/Elf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.i
+.PHONY : src/model/races/species/Elf.cpp.i
+
+src/model/races/species/Elf.s: src/model/races/species/Elf.cpp.s
+.PHONY : src/model/races/species/Elf.s
+
+# target to generate assembly for a file
+src/model/races/species/Elf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.s
+.PHONY : src/model/races/species/Elf.cpp.s
+
+src/model/races/species/Fairy.o: src/model/races/species/Fairy.cpp.o
+.PHONY : src/model/races/species/Fairy.o
+
+# target to build an object file
+src/model/races/species/Fairy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o
+.PHONY : src/model/races/species/Fairy.cpp.o
+
+src/model/races/species/Fairy.i: src/model/races/species/Fairy.cpp.i
+.PHONY : src/model/races/species/Fairy.i
+
+# target to preprocess a source file
+src/model/races/species/Fairy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.i
+.PHONY : src/model/races/species/Fairy.cpp.i
+
+src/model/races/species/Fairy.s: src/model/races/species/Fairy.cpp.s
+.PHONY : src/model/races/species/Fairy.s
+
+# target to generate assembly for a file
+src/model/races/species/Fairy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.s
+.PHONY : src/model/races/species/Fairy.cpp.s
+
+src/model/races/species/Giant.o: src/model/races/species/Giant.cpp.o
+.PHONY : src/model/races/species/Giant.o
+
+# target to build an object file
+src/model/races/species/Giant.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o
+.PHONY : src/model/races/species/Giant.cpp.o
+
+src/model/races/species/Giant.i: src/model/races/species/Giant.cpp.i
+.PHONY : src/model/races/species/Giant.i
+
+# target to preprocess a source file
+src/model/races/species/Giant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.i
+.PHONY : src/model/races/species/Giant.cpp.i
+
+src/model/races/species/Giant.s: src/model/races/species/Giant.cpp.s
+.PHONY : src/model/races/species/Giant.s
+
+# target to generate assembly for a file
+src/model/races/species/Giant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.s
+.PHONY : src/model/races/species/Giant.cpp.s
+
+src/model/races/species/Human.o: src/model/races/species/Human.cpp.o
+.PHONY : src/model/races/species/Human.o
+
+# target to build an object file
+src/model/races/species/Human.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o
+.PHONY : src/model/races/species/Human.cpp.o
+
+src/model/races/species/Human.i: src/model/races/species/Human.cpp.i
+.PHONY : src/model/races/species/Human.i
+
+# target to preprocess a source file
+src/model/races/species/Human.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.i
+.PHONY : src/model/races/species/Human.cpp.i
+
+src/model/races/species/Human.s: src/model/races/species/Human.cpp.s
+.PHONY : src/model/races/species/Human.s
+
+# target to generate assembly for a file
+src/model/races/species/Human.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.s
+.PHONY : src/model/races/species/Human.cpp.s
+
+src/model/races/species/Infernal.o: src/model/races/species/Infernal.cpp.o
+.PHONY : src/model/races/species/Infernal.o
+
+# target to build an object file
+src/model/races/species/Infernal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o
+.PHONY : src/model/races/species/Infernal.cpp.o
+
+src/model/races/species/Infernal.i: src/model/races/species/Infernal.cpp.i
+.PHONY : src/model/races/species/Infernal.i
+
+# target to preprocess a source file
+src/model/races/species/Infernal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.i
+.PHONY : src/model/races/species/Infernal.cpp.i
+
+src/model/races/species/Infernal.s: src/model/races/species/Infernal.cpp.s
+.PHONY : src/model/races/species/Infernal.s
+
+# target to generate assembly for a file
+src/model/races/species/Infernal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.s
+.PHONY : src/model/races/species/Infernal.cpp.s
+
+src/model/races/species/Orc.o: src/model/races/species/Orc.cpp.o
+.PHONY : src/model/races/species/Orc.o
+
+# target to build an object file
+src/model/races/species/Orc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o
+.PHONY : src/model/races/species/Orc.cpp.o
+
+src/model/races/species/Orc.i: src/model/races/species/Orc.cpp.i
+.PHONY : src/model/races/species/Orc.i
+
+# target to preprocess a source file
+src/model/races/species/Orc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.i
+.PHONY : src/model/races/species/Orc.cpp.i
+
+src/model/races/species/Orc.s: src/model/races/species/Orc.cpp.s
+.PHONY : src/model/races/species/Orc.s
+
+# target to generate assembly for a file
+src/model/races/species/Orc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.s
+.PHONY : src/model/races/species/Orc.cpp.s
+
+src/model/races/species/Undead.o: src/model/races/species/Undead.cpp.o
+.PHONY : src/model/races/species/Undead.o
+
+# target to build an object file
+src/model/races/species/Undead.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o
+.PHONY : src/model/races/species/Undead.cpp.o
+
+src/model/races/species/Undead.i: src/model/races/species/Undead.cpp.i
+.PHONY : src/model/races/species/Undead.i
+
+# target to preprocess a source file
+src/model/races/species/Undead.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.i
+.PHONY : src/model/races/species/Undead.cpp.i
+
+src/model/races/species/Undead.s: src/model/races/species/Undead.cpp.s
+.PHONY : src/model/races/species/Undead.s
+
+# target to generate assembly for a file
+src/model/races/species/Undead.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.s
+.PHONY : src/model/races/species/Undead.cpp.s
+
+src/model/races/species/Vampire.o: src/model/races/species/Vampire.cpp.o
+.PHONY : src/model/races/species/Vampire.o
+
+# target to build an object file
+src/model/races/species/Vampire.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o
+.PHONY : src/model/races/species/Vampire.cpp.o
+
+src/model/races/species/Vampire.i: src/model/races/species/Vampire.cpp.i
+.PHONY : src/model/races/species/Vampire.i
+
+# target to preprocess a source file
+src/model/races/species/Vampire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.i
+.PHONY : src/model/races/species/Vampire.cpp.i
+
+src/model/races/species/Vampire.s: src/model/races/species/Vampire.cpp.s
+.PHONY : src/model/races/species/Vampire.s
+
+# target to generate assembly for a file
+src/model/races/species/Vampire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.s
+.PHONY : src/model/races/species/Vampire.cpp.s
+
+utils/Attributes.o: utils/Attributes.cpp.o
+.PHONY : utils/Attributes.o
+
+# target to build an object file
+utils/Attributes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o
+.PHONY : utils/Attributes.cpp.o
+
+utils/Attributes.i: utils/Attributes.cpp.i
+.PHONY : utils/Attributes.i
+
+# target to preprocess a source file
+utils/Attributes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.i
+.PHONY : utils/Attributes.cpp.i
+
+utils/Attributes.s: utils/Attributes.cpp.s
+.PHONY : utils/Attributes.s
+
+# target to generate assembly for a file
+utils/Attributes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.s
+.PHONY : utils/Attributes.cpp.s
+
+utils/AttributesType.o: utils/AttributesType.cpp.o
+.PHONY : utils/AttributesType.o
+
+# target to build an object file
+utils/AttributesType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o
+.PHONY : utils/AttributesType.cpp.o
+
+utils/AttributesType.i: utils/AttributesType.cpp.i
+.PHONY : utils/AttributesType.i
+
+# target to preprocess a source file
+utils/AttributesType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.i
+.PHONY : utils/AttributesType.cpp.i
+
+utils/AttributesType.s: utils/AttributesType.cpp.s
+.PHONY : utils/AttributesType.s
+
+# target to generate assembly for a file
+utils/AttributesType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.s
+.PHONY : utils/AttributesType.cpp.s
+
+utils/Classes.o: utils/Classes.cpp.o
+.PHONY : utils/Classes.o
+
+# target to build an object file
+utils/Classes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o
+.PHONY : utils/Classes.cpp.o
+
+utils/Classes.i: utils/Classes.cpp.i
+.PHONY : utils/Classes.i
+
+# target to preprocess a source file
+utils/Classes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.i
+.PHONY : utils/Classes.cpp.i
+
+utils/Classes.s: utils/Classes.cpp.s
+.PHONY : utils/Classes.s
+
+# target to generate assembly for a file
+utils/Classes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.s
+.PHONY : utils/Classes.cpp.s
+
+utils/Corroutines.o: utils/Corroutines.cpp.o
+.PHONY : utils/Corroutines.o
+
+# target to build an object file
+utils/Corroutines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o
+.PHONY : utils/Corroutines.cpp.o
+
+utils/Corroutines.i: utils/Corroutines.cpp.i
+.PHONY : utils/Corroutines.i
+
+# target to preprocess a source file
+utils/Corroutines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.i
+.PHONY : utils/Corroutines.cpp.i
+
+utils/Corroutines.s: utils/Corroutines.cpp.s
+.PHONY : utils/Corroutines.s
+
+# target to generate assembly for a file
+utils/Corroutines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.s
+.PHONY : utils/Corroutines.cpp.s
+
+utils/Job.o: utils/Job.cpp.o
+.PHONY : utils/Job.o
+
+# target to build an object file
+utils/Job.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o
+.PHONY : utils/Job.cpp.o
+
+utils/Job.i: utils/Job.cpp.i
+.PHONY : utils/Job.i
+
+# target to preprocess a source file
+utils/Job.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.i
+.PHONY : utils/Job.cpp.i
+
+utils/Job.s: utils/Job.cpp.s
+.PHONY : utils/Job.s
+
+# target to generate assembly for a file
+utils/Job.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.s
+.PHONY : utils/Job.cpp.s
+
+utils/NameGenerator.o: utils/NameGenerator.cpp.o
+.PHONY : utils/NameGenerator.o
+
+# target to build an object file
+utils/NameGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o
+.PHONY : utils/NameGenerator.cpp.o
+
+utils/NameGenerator.i: utils/NameGenerator.cpp.i
+.PHONY : utils/NameGenerator.i
+
+# target to preprocess a source file
+utils/NameGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.i
+.PHONY : utils/NameGenerator.cpp.i
+
+utils/NameGenerator.s: utils/NameGenerator.cpp.s
+.PHONY : utils/NameGenerator.s
+
+# target to generate assembly for a file
+utils/NameGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.s
+.PHONY : utils/NameGenerator.cpp.s
+
+utils/Race.o: utils/Race.cpp.o
+.PHONY : utils/Race.o
+
+# target to build an object file
+utils/Race.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o
+.PHONY : utils/Race.cpp.o
+
+utils/Race.i: utils/Race.cpp.i
+.PHONY : utils/Race.i
+
+# target to preprocess a source file
+utils/Race.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.i
+.PHONY : utils/Race.cpp.i
+
+utils/Race.s: utils/Race.cpp.s
+.PHONY : utils/Race.s
+
+# target to generate assembly for a file
+utils/Race.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.s
+.PHONY : utils/Race.cpp.s
+
+utils/Species.o: utils/Species.cpp.o
+.PHONY : utils/Species.o
+
+# target to build an object file
+utils/Species.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o
+.PHONY : utils/Species.cpp.o
+
+utils/Species.i: utils/Species.cpp.i
+.PHONY : utils/Species.i
+
+# target to preprocess a source file
+utils/Species.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.i
+.PHONY : utils/Species.cpp.i
+
+utils/Species.s: utils/Species.cpp.s
+.PHONY : utils/Species.s
+
+# target to generate assembly for a file
+utils/Species.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HeroesNotFound.dir/build.make CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.s
+.PHONY : utils/Species.cpp.s
 
 # Help Target
 help:
@@ -162,9 +1146,132 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HeroesNotFound"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/model/attributes/AttributesProcessor.o"
+	@echo "... src/model/attributes/AttributesProcessor.i"
+	@echo "... src/model/attributes/AttributesProcessor.s"
+	@echo "... src/model/character/CharacterIncubator.o"
+	@echo "... src/model/character/CharacterIncubator.i"
+	@echo "... src/model/character/CharacterIncubator.s"
+	@echo "... src/model/character/CharacterProcessor.o"
+	@echo "... src/model/character/CharacterProcessor.i"
+	@echo "... src/model/character/CharacterProcessor.s"
+	@echo "... src/model/character/TechnicalSheet.o"
+	@echo "... src/model/character/TechnicalSheet.i"
+	@echo "... src/model/character/TechnicalSheet.s"
+	@echo "... src/model/jobs/JobIncubator.o"
+	@echo "... src/model/jobs/JobIncubator.i"
+	@echo "... src/model/jobs/JobIncubator.s"
+	@echo "... src/model/jobs/Jobs.o"
+	@echo "... src/model/jobs/Jobs.i"
+	@echo "... src/model/jobs/Jobs.s"
+	@echo "... src/model/jobs/JobsInterface.o"
+	@echo "... src/model/jobs/JobsInterface.i"
+	@echo "... src/model/jobs/JobsInterface.s"
+	@echo "... src/model/jobs/classes/Barbarian.o"
+	@echo "... src/model/jobs/classes/Barbarian.i"
+	@echo "... src/model/jobs/classes/Barbarian.s"
+	@echo "... src/model/jobs/classes/Bard.o"
+	@echo "... src/model/jobs/classes/Bard.i"
+	@echo "... src/model/jobs/classes/Bard.s"
+	@echo "... src/model/jobs/classes/Cleric.o"
+	@echo "... src/model/jobs/classes/Cleric.i"
+	@echo "... src/model/jobs/classes/Cleric.s"
+	@echo "... src/model/jobs/classes/Druid.o"
+	@echo "... src/model/jobs/classes/Druid.i"
+	@echo "... src/model/jobs/classes/Druid.s"
+	@echo "... src/model/jobs/classes/Mage.o"
+	@echo "... src/model/jobs/classes/Mage.i"
+	@echo "... src/model/jobs/classes/Mage.s"
+	@echo "... src/model/jobs/classes/Monk.o"
+	@echo "... src/model/jobs/classes/Monk.i"
+	@echo "... src/model/jobs/classes/Monk.s"
+	@echo "... src/model/jobs/classes/Necromancer.o"
+	@echo "... src/model/jobs/classes/Necromancer.i"
+	@echo "... src/model/jobs/classes/Necromancer.s"
+	@echo "... src/model/jobs/classes/Paladin.o"
+	@echo "... src/model/jobs/classes/Paladin.i"
+	@echo "... src/model/jobs/classes/Paladin.s"
+	@echo "... src/model/jobs/classes/Ranger.o"
+	@echo "... src/model/jobs/classes/Ranger.i"
+	@echo "... src/model/jobs/classes/Ranger.s"
+	@echo "... src/model/jobs/classes/Rogue.o"
+	@echo "... src/model/jobs/classes/Rogue.i"
+	@echo "... src/model/jobs/classes/Rogue.s"
+	@echo "... src/model/jobs/classes/Sorcerer.o"
+	@echo "... src/model/jobs/classes/Sorcerer.i"
+	@echo "... src/model/jobs/classes/Sorcerer.s"
+	@echo "... src/model/jobs/classes/Warrior.o"
+	@echo "... src/model/jobs/classes/Warrior.i"
+	@echo "... src/model/jobs/classes/Warrior.s"
+	@echo "... src/model/main.o"
+	@echo "... src/model/main.i"
+	@echo "... src/model/main.s"
+	@echo "... src/model/modifiers/ModifiersProcessor.o"
+	@echo "... src/model/modifiers/ModifiersProcessor.i"
+	@echo "... src/model/modifiers/ModifiersProcessor.s"
+	@echo "... src/model/races/RaceIncubator.o"
+	@echo "... src/model/races/RaceIncubator.i"
+	@echo "... src/model/races/RaceIncubator.s"
+	@echo "... src/model/races/Races.o"
+	@echo "... src/model/races/Races.i"
+	@echo "... src/model/races/Races.s"
+	@echo "... src/model/races/RacesInterface.o"
+	@echo "... src/model/races/RacesInterface.i"
+	@echo "... src/model/races/RacesInterface.s"
+	@echo "... src/model/races/species/Demihuman.o"
+	@echo "... src/model/races/species/Demihuman.i"
+	@echo "... src/model/races/species/Demihuman.s"
+	@echo "... src/model/races/species/Draconic.o"
+	@echo "... src/model/races/species/Draconic.i"
+	@echo "... src/model/races/species/Draconic.s"
+	@echo "... src/model/races/species/Elf.o"
+	@echo "... src/model/races/species/Elf.i"
+	@echo "... src/model/races/species/Elf.s"
+	@echo "... src/model/races/species/Fairy.o"
+	@echo "... src/model/races/species/Fairy.i"
+	@echo "... src/model/races/species/Fairy.s"
+	@echo "... src/model/races/species/Giant.o"
+	@echo "... src/model/races/species/Giant.i"
+	@echo "... src/model/races/species/Giant.s"
+	@echo "... src/model/races/species/Human.o"
+	@echo "... src/model/races/species/Human.i"
+	@echo "... src/model/races/species/Human.s"
+	@echo "... src/model/races/species/Infernal.o"
+	@echo "... src/model/races/species/Infernal.i"
+	@echo "... src/model/races/species/Infernal.s"
+	@echo "... src/model/races/species/Orc.o"
+	@echo "... src/model/races/species/Orc.i"
+	@echo "... src/model/races/species/Orc.s"
+	@echo "... src/model/races/species/Undead.o"
+	@echo "... src/model/races/species/Undead.i"
+	@echo "... src/model/races/species/Undead.s"
+	@echo "... src/model/races/species/Vampire.o"
+	@echo "... src/model/races/species/Vampire.i"
+	@echo "... src/model/races/species/Vampire.s"
+	@echo "... utils/Attributes.o"
+	@echo "... utils/Attributes.i"
+	@echo "... utils/Attributes.s"
+	@echo "... utils/AttributesType.o"
+	@echo "... utils/AttributesType.i"
+	@echo "... utils/AttributesType.s"
+	@echo "... utils/Classes.o"
+	@echo "... utils/Classes.i"
+	@echo "... utils/Classes.s"
+	@echo "... utils/Corroutines.o"
+	@echo "... utils/Corroutines.i"
+	@echo "... utils/Corroutines.s"
+	@echo "... utils/Job.o"
+	@echo "... utils/Job.i"
+	@echo "... utils/Job.s"
+	@echo "... utils/NameGenerator.o"
+	@echo "... utils/NameGenerator.i"
+	@echo "... utils/NameGenerator.s"
+	@echo "... utils/Race.o"
+	@echo "... utils/Race.i"
+	@echo "... utils/Race.s"
+	@echo "... utils/Species.o"
+	@echo "... utils/Species.i"
+	@echo "... utils/Species.s"
 .PHONY : help
 
 

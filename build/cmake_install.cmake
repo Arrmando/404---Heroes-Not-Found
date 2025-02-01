@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafael/404---Heroes-Not-Found-1
+# Install script for directory: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rafael/404---Heroes-Not-Found-1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

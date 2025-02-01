@@ -1,5 +1,3 @@
-#include "../../utils/include/Job.hpp"
-#include "../../model/attributes/include/AttributesProcessor.hpp"
 #include "JobsInterface.hpp"
 
 JobInterface::~JobInterface() = default;

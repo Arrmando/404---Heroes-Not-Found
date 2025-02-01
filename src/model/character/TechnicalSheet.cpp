@@ -1,10 +1,5 @@
 #include <string>
 #include <memory>
-#include "../../model/races/include/RacesInterface.hpp"
-#include "../../model/jobs/include/JobsInterface.hpp"
-#include "../../model/races/include/RaceIncubator.hpp"
-#include "../../model/jobs/include/JobIncubator.hpp"
-#include "../../model/attributes/include/AttributesProcessor.hpp"
 #include "TechnicalSheet.hpp"
 
 /**

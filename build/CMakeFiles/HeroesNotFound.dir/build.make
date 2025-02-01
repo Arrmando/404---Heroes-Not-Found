@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafael/404---Heroes-Not-Found-1
+CMAKE_SOURCE_DIR = /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafael/404---Heroes-Not-Found-1/build
+CMAKE_BINARY_DIR = /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HeroesNotFound.dir/depend.make
@@ -69,31 +69,687 @@ include CMakeFiles/HeroesNotFound.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HeroesNotFound.dir/flags.make
 
-CMakeFiles/HeroesNotFound.dir/src/main.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
-CMakeFiles/HeroesNotFound.dir/src/main.cpp.o: /home/rafael/404---Heroes-Not-Found-1/src/main.cpp
-CMakeFiles/HeroesNotFound.dir/src/main.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rafael/404---Heroes-Not-Found-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/main.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/main.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/main.cpp.o -c /home/rafael/404---Heroes-Not-Found-1/src/main.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Attributes.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Attributes.cpp
 
-CMakeFiles/HeroesNotFound.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafael/404---Heroes-Not-Found-1/src/main.cpp > CMakeFiles/HeroesNotFound.dir/src/main.cpp.i
+CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Attributes.cpp > CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.i
 
-CMakeFiles/HeroesNotFound.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafael/404---Heroes-Not-Found-1/src/main.cpp -o CMakeFiles/HeroesNotFound.dir/src/main.cpp.s
+CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Attributes.cpp -o CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/AttributesType.cpp
+CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/AttributesType.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/AttributesType.cpp > CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/AttributesType.cpp -o CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Classes.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Classes.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Classes.cpp > CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Classes.cpp -o CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Corroutines.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Corroutines.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Corroutines.cpp > CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Corroutines.cpp -o CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Job.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Job.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Job.cpp > CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Job.cpp -o CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Race.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Race.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Race.cpp > CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Race.cpp -o CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Species.cpp
+CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Species.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Species.cpp > CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/Species.cpp -o CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/NameGenerator.cpp
+CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o -MF CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/NameGenerator.cpp
+
+CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/NameGenerator.cpp > CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/utils/NameGenerator.cpp -o CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RacesInterface.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RacesInterface.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RacesInterface.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RacesInterface.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/Races.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/Races.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/Races.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/Races.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RaceIncubator.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RaceIncubator.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RaceIncubator.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/RaceIncubator.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Demihuman.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Demihuman.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Demihuman.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Demihuman.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Draconic.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Draconic.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Draconic.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Draconic.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Elf.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Elf.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Elf.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Elf.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Fairy.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Fairy.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Fairy.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Fairy.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Giant.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Giant.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Giant.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Giant.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Human.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Human.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Human.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Human.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Infernal.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Infernal.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Infernal.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Infernal.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Orc.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Orc.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Orc.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Orc.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Undead.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Undead.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Undead.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Undead.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Vampire.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Vampire.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Vampire.cpp > CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/races/species/Vampire.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/Jobs.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/Jobs.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/Jobs.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/Jobs.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobsInterface.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobsInterface.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobsInterface.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobsInterface.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobIncubator.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobIncubator.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobIncubator.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/JobIncubator.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Barbarian.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Barbarian.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Barbarian.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Barbarian.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Bard.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Bard.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Bard.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Bard.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Cleric.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Cleric.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Cleric.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Cleric.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Druid.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Druid.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Druid.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Druid.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Mage.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Mage.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Mage.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Mage.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Monk.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Monk.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Monk.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Monk.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Necromancer.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Necromancer.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Necromancer.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Necromancer.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Paladin.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Paladin.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Paladin.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Paladin.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Ranger.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Ranger.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Ranger.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Ranger.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Rogue.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Rogue.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Rogue.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Rogue.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Sorcerer.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Sorcerer.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Sorcerer.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Sorcerer.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Warrior.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Warrior.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Warrior.cpp > CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/jobs/classes/Warrior.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/attributes/AttributesProcessor.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/attributes/AttributesProcessor.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/attributes/AttributesProcessor.cpp > CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/attributes/AttributesProcessor.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/modifiers/ModifiersProcessor.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/modifiers/ModifiersProcessor.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/modifiers/ModifiersProcessor.cpp > CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/modifiers/ModifiersProcessor.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/TechnicalSheet.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/TechnicalSheet.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/TechnicalSheet.cpp > CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/TechnicalSheet.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterIncubator.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterIncubator.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterIncubator.cpp > CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterIncubator.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterProcessor.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterProcessor.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterProcessor.cpp > CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/character/CharacterProcessor.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.s
+
+CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o: CMakeFiles/HeroesNotFound.dir/flags.make
+CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o: /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/main.cpp
+CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o: CMakeFiles/HeroesNotFound.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o -MF CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o.d -o CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o -c /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/main.cpp
+
+CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/main.cpp > CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.i
+
+CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/src/model/main.cpp -o CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.s
 
 # Object files for target HeroesNotFound
 HeroesNotFound_OBJECTS = \
-"CMakeFiles/HeroesNotFound.dir/src/main.cpp.o"
+"CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o" \
+"CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o"
 
 # External object files for target HeroesNotFound
 HeroesNotFound_EXTERNAL_OBJECTS =
 
-HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/main.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/Attributes.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/AttributesType.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/Classes.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/Corroutines.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/Job.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/Race.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/Species.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/utils/NameGenerator.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/RacesInterface.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/Races.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/RaceIncubator.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Demihuman.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Draconic.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Elf.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Fairy.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Giant.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Human.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Infernal.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Orc.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Undead.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/races/species/Vampire.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/Jobs.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobsInterface.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/JobIncubator.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Barbarian.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Bard.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Cleric.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Druid.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Mage.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Monk.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Necromancer.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Paladin.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Ranger.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Rogue.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Sorcerer.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/jobs/classes/Warrior.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/attributes/AttributesProcessor.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/modifiers/ModifiersProcessor.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/character/TechnicalSheet.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterIncubator.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/character/CharacterProcessor.cpp.o
+HeroesNotFound: CMakeFiles/HeroesNotFound.dir/src/model/main.cpp.o
 HeroesNotFound: CMakeFiles/HeroesNotFound.dir/build.make
 HeroesNotFound: CMakeFiles/HeroesNotFound.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rafael/404---Heroes-Not-Found-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HeroesNotFound"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX executable HeroesNotFound"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HeroesNotFound.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +761,6 @@ CMakeFiles/HeroesNotFound.dir/clean:
 .PHONY : CMakeFiles/HeroesNotFound.dir/clean
 
 CMakeFiles/HeroesNotFound.dir/depend:
-	cd /home/rafael/404---Heroes-Not-Found-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafael/404---Heroes-Not-Found-1 /home/rafael/404---Heroes-Not-Found-1 /home/rafael/404---Heroes-Not-Found-1/build /home/rafael/404---Heroes-Not-Found-1/build /home/rafael/404---Heroes-Not-Found-1/build/CMakeFiles/HeroesNotFound.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6 /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6 /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build /home/gsbarroso/projetos/pds2/404---Heroes-Not-Found/404---Heroes-Not-Found-6/build/CMakeFiles/HeroesNotFound.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/HeroesNotFound.dir/depend
 

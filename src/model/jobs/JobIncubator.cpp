@@ -1,18 +1,5 @@
 #include <memory>
 #include <string>
-#include "../../../utils/include/Classes.hpp"
-#include "../../model/jobs/include/JobsInterface.hpp"
-#include "../../model/jobs/classes/include/Barbarian.hpp"
-#include "../../model/jobs/classes/include/Bard.hpp"
-#include "../../model/jobs/classes/include/Druid.hpp"
-#include "../../model/jobs/classes/include/Mage.hpp"
-#include "../../model/jobs/classes/include/Monk.hpp"
-#include "../../model/jobs/classes/include/Necromancer.hpp"
-#include "../../model/jobs/classes/include/Paladin.hpp"
-#include "../../model/jobs/classes/include/Ranger.hpp"
-#include "../../model/jobs/classes/include/Rogue.hpp"
-#include "../../model/jobs/classes/include/Sorcerer.hpp"
-#include "../../model/jobs/classes/include/Warrior.hpp"
 #include "JobIncubator.hpp"
 
 /**
