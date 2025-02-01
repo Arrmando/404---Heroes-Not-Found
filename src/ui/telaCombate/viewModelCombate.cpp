@@ -4,12 +4,12 @@
 ViewModelCombate::ViewModelCombate() {
     healthPlayer = 5000.0f;
     healthBoss = 50000.0f;   
-    healthAliado1 = 100.0f;
+    healthAliado1 = 150.0f;
     healthAliado2 = 100.0f;
-    healthAliado3 = 100.0f;
+    healthAliado3 = 50.0f;
 
     damagePlayer = 100.0f; 
-    damageBoss = 1.0f;
+    damageBoss = 30.0f;
     attackSpeed = 0.1f;
     attackCooldown = 0.1f;
 
