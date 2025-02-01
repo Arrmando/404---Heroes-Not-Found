@@ -21,6 +21,7 @@ public:
 private:
     void checkBossDefeat();
     void updateLifeBars();
+    void handleMouseClick(const sf::Vector2i& mousePos);
 
     sf::RenderWindow window;
     sf::Font font;

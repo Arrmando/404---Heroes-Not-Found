@@ -38,13 +38,13 @@ CombatScreen::CombatScreen() {
     aliadoName2.setPosition(785.0f, 245.0f);
     aliadoName2.setCharacterSize(20);
     aliadoName2.setFillColor(sf::Color::Black);
-    aliadoName2.setString("Armando Lv: 200");
+    aliadoName2.setString("Rafaiola Lv: 250");
 
     aliadoName3.setFont(font);
     aliadoName3.setPosition(785.0f, 355.0f);
     aliadoName3.setCharacterSize(20);
     aliadoName3.setFillColor(sf::Color::Black);
-    aliadoName3.setString("Campello Lv: 100");
+    aliadoName3.setString("Armando Lv: 100");
 
     // Configuração do background
     if (!backgroundTexture.loadFromFile("assets/images/dragao-verde.png")) {
@@ -67,9 +67,9 @@ CombatScreen::CombatScreen() {
     playerInitialLife = viewModel->getHealthPlayer();
     lifeBossBar = new lifeBar(25.0f, 55.0f, 560.0f, 25.0f, sf::Color::Red, bossInitialLife, viewModel->getHealthBoss());
     lifePlayerBar = new lifeBar(785.0f, 55.0f, 350.0f, 25.0f, sf::Color::Blue, playerInitialLife, viewModel->getHealthPlayer());
-    lifeAliado1 = new lifeBar(785.0f, 165.0f, 250.0f, 25.0f, sf::Color::Green, 100, 100);
-    lifeAliado2 = new lifeBar(785.0f, 275.0f, 250.0f, 25.0f, sf::Color::Green, 100, 100);
-    lifeAliado3 = new lifeBar(785.0f, 385.0f, 250.0f, 25.0f, sf::Color::Green, 100, 100);
+    lifeAliado1 = new lifeBar(785.0f, 165.0f, 250.0f, 25.0f, sf::Color::Green, viewModel->getHealthAliado1(), viewModel->getHealthAliado1());
+    lifeAliado2 = new lifeBar(785.0f, 275.0f, 250.0f, 25.0f, sf::Color::Green, viewModel->getHealthAliado2(), viewModel->getHealthAliado2());
+    lifeAliado3 = new lifeBar(785.0f, 385.0f, 250.0f, 25.0f, sf::Color::Green, viewModel->getHealthAliado3(), viewModel->getHealthAliado3());
 
     // Configuração das áreas de interface
     area.setSize(sf::Vector2f(400.0f, 720.0f));
@@ -111,6 +111,9 @@ void CombatScreen::checkBossDefeat() {
 void CombatScreen::updateLifeBars() {
     lifeBossBar->setHealth(viewModel->getHealthBoss());
     lifePlayerBar->setHealth(viewModel->getHealthPlayer());
+    lifeAliado1->setHealth(viewModel->getHealthAliado1());
+    lifeAliado2->setHealth(viewModel->getHealthAliado2());
+    lifeAliado3->setHealth(viewModel->getHealthAliado3());
 }
 
 void CombatScreen::run() {
@@ -125,6 +128,33 @@ void CombatScreen::run() {
     }
 }
 
+void CombatScreen::handleMouseClick(const sf::Vector2i& mousePos) {
+    // Verificar clique na área do boss
+    sf::FloatRect bossArea = backgroundSprite.getGlobalBounds();
+    if (bossArea.contains(static_cast<sf::Vector2f>(mousePos))) {
+        viewModel->applyClickDamage(1000.0f);
+        return;
+    }
+
+    // Verificar botões de ação
+    if (attackButton->isClicked(mousePos)) {
+        viewModel->handleAttack();
+    }
+    else if (specialButton1->isClicked(mousePos)) {
+        viewModel->handleSpecial1();
+    }
+    else if (specialButton2->isClicked(mousePos)) {
+        viewModel->handleSpecial2();
+    }
+    else if (specialButton3->isClicked(mousePos)) {
+        viewModel->handleSpecial3();
+    }
+    else if (escapeButton->isClicked(mousePos)) {
+        window.close();
+        viewModel->handleEscapeButton();
+    }
+}
+
 void CombatScreen::handleEvents() {
     sf::Event event;
     while (window.pollEvent(event)) {
@@ -132,24 +162,7 @@ void CombatScreen::handleEvents() {
             window.close();
 
         if (event.type == sf::Event::MouseButtonPressed) {
-            sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-
-            if (attackButton->isClicked(mousePos)) {
-                viewModel->handleAttack();
-            }
-            else if (specialButton1->isClicked(mousePos)) {
-                viewModel->handleSpecial();
-            }
-            else if (specialButton2->isClicked(mousePos)) {
-                viewModel->handleSpecial();
-            }
-            else if (specialButton3->isClicked(mousePos)) {
-                viewModel->handleSpecial();
-            }
-            else if (escapeButton->isClicked(mousePos)) {
-                window.close();
-                viewModel->handleEscapeButton();
-            }
+            handleMouseClick(sf::Mouse::getPosition(window));
         }
     }
 }
