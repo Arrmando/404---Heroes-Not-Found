@@ -27,5 +27,4 @@ COMO COMPILAR A MAIN:
 
 g++ -o build/main src/main.cpp src/ui/telaBar/viewBar.cpp src/ui/telaCombate/viewCombate.cpp src/ui/telaCidade/viewCidade.cpp src/ui/telaMenu/viewMenu.cpp src/ui/telaMenu/viewModelMenu.cpp src/ui/telaLoja/viewLoja.cpp src/ui/telaLoja/viewModelLoja.cpp src/ui/components/Dracmas.cpp src/ui/components/Button.cpp src/ui/components/timer.cpp src/ui/components/lifeBar.cpp src/ui/telaCombate/viewModelCombate.cpp src/ui/telaCidade/viewModelCidade.cpp src/ui/telaBar/viewModelBar.cpp src/ui/telaSobre/viewSobre.cpp src/ui/telaSobre/viewModelSobre.cpp -I./src/ui/telaSobre/include -I./src/ui/telaCidade/include -I./src/ui/telaBar/include -I./src/ui/telaCombate/include -I./src/ui/telaMenu/include -I./src/ui/telaLoja/include -I./src/ui/components -I./include -lsfml-graphics -lsfml-window -lsfml-system
 
-
 executar: ./build/main

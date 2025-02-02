@@ -20,7 +20,7 @@ CombatScreen::CombatScreen() {
     bossName.setPosition(25.0f, 25.0f);
     bossName.setCharacterSize(20);
     bossName.setFillColor(sf::Color::Black);
-    bossName.setString("LARGATIXA COMUNA Lv: 1313");
+    bossName.setString("LARGATIXA Lv: 1313");
 
     playerName.setFont(font);
     playerName.setPosition(785.0f, 25.0f);
