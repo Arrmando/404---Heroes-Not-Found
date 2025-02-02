@@ -1,9 +1,10 @@
 #include <string>
 #include <memory>
 #include "./include/TechnicalSheet.hpp"
+#include "PlayerSheetHolder.hpp"
 
 class PlayerSheetHolder { 
-    
+
     // Atributos privados da classe
 
     int level = 1;
