@@ -4,8 +4,10 @@
 #include <iostream>
 #include <random>
 #include "RandomName.hpp"
+#include "RandomSheetGenerator.hpp"
 
 enum dificultType {
+    
     VeryEasy,
     Easy,
     EarlyMedium,
@@ -26,102 +28,74 @@ enum places {
 
 class RandomSheetGenerator { 
 private:
-    //inicialização de variáveis lógicas
+
+    // Inicialização de variáveis lógicas
+
     std::mt19937 gen;
     int min;
     int max;
     int selectedRandomNumber;
 
-    //inicialização de variaveis para a ficha
+    // Inicialização de variáveis para a ficha
+
     int level = 1;
     std::string name = "Morpheus";
     Species species_ = Human;
     Classes classes_ = Mage;
     TechnicalSheet RandomSheet;
 
+    // Função para gerar números aleatórios
+
     int getRandomNumber(int min, int max) {
         std::uniform_int_distribution<int> dist(min, max);
         return dist(gen);
     }
 
-//define raça, classe e aumento de dificuldade
-    void definePlace(places c) {
-    switch (c) {
-        case castleDoors:
-            min = 0;
-            max = 9;
-            while (true) {
-                selectedRandomNumber = getRandomNumber(min, max);
-                if (selectedRandomNumber % (static_cast<int>(castleDoors) + 1) == 0) {
-                    break;
-                }
+    // Função para definir espécie e classe com base no local
+
+    void defineSpeciesAndClass(places place) {
+        min = 0;
+        max = 9;
+        while (true) {
+            selectedRandomNumber = getRandomNumber(min, max);
+            if (selectedRandomNumber % (static_cast<int>(place) + 1) == 0) {
+                break;
             }
-            species_ = static_cast<Species>(selectedRandomNumber);
+        }
+        species_ = static_cast<Species>(selectedRandomNumber);
 
-            min = 0;
-            max = 11;
-            while (true) {
-                selectedRandomNumber = getRandomNumber(min, max);
-                if (selectedRandomNumber % (static_cast<int>(castleDoors) + 1) == 0) {
-                    break;
-                }
+        min = 0;
+        max = 11;
+        while (true) {
+            selectedRandomNumber = getRandomNumber(min, max);
+            if (selectedRandomNumber % (static_cast<int>(place) + 1) == 0) {
+                break;
             }
-            classes_ = static_cast<Classes>(selectedRandomNumber);
-            break;
-
-        case castleRooms:
-            min = 0;
-            max = 9;
-            while (true) {
-                selectedRandomNumber = getRandomNumber(min, max);
-                if (selectedRandomNumber % (static_cast<int>(castleRooms) + 1) == 0) {
-                    break;
-                }
-            }
-            species_ = static_cast<Species>(selectedRandomNumber);
-
-            min = 0;
-            max = 11;
-            while (true) {
-                selectedRandomNumber = getRandomNumber(min, max);
-                if (selectedRandomNumber % (static_cast<int>(castleRooms) + 1) == 0) {
-                    break;
-                }
-            }
-            classes_ = static_cast<Classes>(selectedRandomNumber);
-
-            level += 50;
-            break;
-
-        case castleKing:
-            min = 0;
-            max = 9;
-            while (true) {
-                selectedRandomNumber = getRandomNumber(min, max);
-                if (selectedRandomNumber % (static_cast<int>(castleKing) + 1) == 0) {
-                    break;
-                }
-            }
-            species_ = static_cast<Species>(selectedRandomNumber);
-
-            min = 0;
-            max = 11;
-            while (true) {
-                selectedRandomNumber = getRandomNumber(min, max);
-                if (selectedRandomNumber % (static_cast<int>(castleKing) + 1) == 0) {
-                    break;
-                }
-            }
-            classes_ = static_cast<Classes>(selectedRandomNumber);
-
-            level += 100;
-            break;
+        }
+        classes_ = static_cast<Classes>(selectedRandomNumber);
     }
-}
 
-//define xp
-    void defineLevel(dificultType D) {
-        switch(D) {
+    // Define o local e ajusta o nível
+
+    void definePlace(places place) {
+        defineSpeciesAndClass(place);
+
+        switch (place) {
+            case castleDoors:
+                break;
+            case castleRooms:
+                level += 50;
+                break;
+            case castleKing:
+                level += 100;
+                break;
+        }
+    }
+
+    // Define o nível com base na dificuldade
+
+    void defineLevel(dificultType difficulty) {
+        switch(difficulty) {
             case VeryEasy:   min = 0;   max = 10; break;
             case Easy:       min = 10;  max = 20; break;
             case EarlyMedium:min = 20;  max = 30; break;
@@ -137,11 +111,19 @@ private:
     }
 
 public:
-    //gerar fichas aleatórias
- RandomSheetGenerator(places local, dificultType dificuldade) 
-    : gen(std::random_device{}()) { 
-    defineLevel(dificuldade);
-    definePlace(local);
-    name = getRandomName(species_);
-    RandomSheet = TechnicalSheet(level, name, species_, classes_);
-}
+    // Construtor para gerar fichas aleatórias
+
+    RandomSheetGenerator(places place, dificultType difficulty) 
+        : gen(std::random_device{}()) { 
+        defineLevel(difficulty);
+        definePlace(place);
+        name = getRandomName(species_);
+        RandomSheet = TechnicalSheet(level, name, species_, classes_);
+    }
+
+    // Método para obter a ficha gerada
+
+    const TechnicalSheet& getRandomSheet() const {
+        return RandomSheet;
+    }
+};
