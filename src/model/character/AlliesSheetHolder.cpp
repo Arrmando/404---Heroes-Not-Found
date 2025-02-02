@@ -2,6 +2,7 @@
 #include <vector>
 #include <memory>
 #include "./include/TechnicalSheet.hpp"
+#include "AlliesSheetHolder.hpp"
 
 class AlliesSheetHolder {
 private:
